@@ -51,10 +51,37 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmAlterar.Designer.cs">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmConsultar.Designer.cs">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFornecedor\frmNovo.Designer.cs">
+      <DependentUpon>frmNovo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFornecedor\frmAlterar.resx">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFornecedor\frmConsultar.resx">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFornecedor\frmNovo.resx">
+      <DependentUpon>frmNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,8 +106,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Modulos\ControleDeAulas\" />
     <Folder Include="Modulos\ControleDeCliente\" />
-    <Folder Include="Modulos\NewFolder1\" />
+    <Folder Include="Modulos\ControleDeCompra\" />
+    <Folder Include="Modulos\ControleDeEstoque\" />
+    <Folder Include="Modulos\ControleDeFuncionario\" />
+    <Folder Include="Modulos\ControleDeProdutos\" />
+    <Folder Include="Modulos\ControleDeUsuario\" />
+    <Folder Include="Modulos\ControleDeVenda\" />
+    <Folder Include="Modulos\FluxoDeCaixa\" />
+    <Folder Include="Modulos\FolhaDePagamento\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\ScriptDeEstrutura.txt" />
