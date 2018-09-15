@@ -91,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,6 +120,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\ScriptDeEstrutura.txt" />
+    <None Include="Resources\4eda16ef97c2e9b205bb2bed92def2c0.jpg" />
+    <None Include="Resources\images %284%29.jpg" />
+    <None Include="Resources\home.jpg" />
+    <None Include="Resources\franquia-de-academia1.jpg" />
+    <None Include="Resources\homem-3-pronto-para-entrar-em-forma-indside-academia-toledo-pr.png" />
+    <None Include="Resources\fundo_numismatico_gd01.jpg" />
+    <None Include="Resources\26560de1b81c983.jpg" />
+    <None Include="Resources\fundo-de-borrao-abstrato-de-linhas-de-halteres-na-academia_10589-170.jpg" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\capa-para-facebook-academia-8.jpg" />
+    <None Include="Resources\capa-academia10-750x290.jpg" />
+    <None Include="Resources\franquia-de-academia.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
