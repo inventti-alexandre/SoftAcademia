@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modulos\ControleDeCliente\" />
+    <Folder Include="Modulos\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\ScriptDeEstrutura.txt" />
