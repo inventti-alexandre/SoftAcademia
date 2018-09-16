@@ -162,7 +162,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(331, 125);
+            this.label7.Location = new System.Drawing.Point(326, 125);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(193, 34);
             this.label7.TabIndex = 36;
