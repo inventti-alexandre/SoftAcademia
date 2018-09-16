@@ -16,5 +16,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeAulas
         {
             InitializeComponent();
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

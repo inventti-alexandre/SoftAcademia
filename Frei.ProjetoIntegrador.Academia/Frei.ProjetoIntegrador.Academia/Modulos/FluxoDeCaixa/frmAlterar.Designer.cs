@@ -33,54 +33,85 @@
             this.dtppedidovenda = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsalvar
             // 
-            this.btnsalvar.Location = new System.Drawing.Point(432, 136);
+            this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnsalvar.Location = new System.Drawing.Point(589, 362);
             this.btnsalvar.Name = "btnsalvar";
-            this.btnsalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnsalvar.Size = new System.Drawing.Size(75, 28);
             this.btnsalvar.TabIndex = 7;
             this.btnsalvar.Text = "salvar";
             this.btnsalvar.UseVisualStyleBackColor = true;
             // 
             // dtppedidocompra
             // 
-            this.dtppedidocompra.Location = new System.Drawing.Point(166, 98);
+            this.dtppedidocompra.Location = new System.Drawing.Point(242, 272);
             this.dtppedidocompra.Name = "dtppedidocompra";
-            this.dtppedidocompra.Size = new System.Drawing.Size(200, 20);
+            this.dtppedidocompra.Size = new System.Drawing.Size(230, 20);
             this.dtppedidocompra.TabIndex = 5;
             // 
             // dtppedidovenda
             // 
-            this.dtppedidovenda.Location = new System.Drawing.Point(166, 38);
+            this.dtppedidovenda.Location = new System.Drawing.Point(242, 205);
             this.dtppedidovenda.Name = "dtppedidovenda";
-            this.dtppedidovenda.Size = new System.Drawing.Size(200, 20);
+            this.dtppedidovenda.Size = new System.Drawing.Size(230, 20);
             this.dtppedidovenda.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 105);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(79, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 13);
+            this.label2.Size = new System.Drawing.Size(157, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "data pedido de compra";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 45);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label1.Location = new System.Drawing.Point(67, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.Size = new System.Drawing.Size(169, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "data do pedido de venda:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(302, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(254, 113);
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(380, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 34);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Alterar";
             // 
             // frmAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsalvar);
             this.Controls.Add(this.dtppedidocompra);
             this.Controls.Add(this.dtppedidovenda);
@@ -88,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAlterar";
             this.Text = "frmAlterar";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,5 +132,7 @@
         private System.Windows.Forms.DateTimePicker dtppedidovenda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

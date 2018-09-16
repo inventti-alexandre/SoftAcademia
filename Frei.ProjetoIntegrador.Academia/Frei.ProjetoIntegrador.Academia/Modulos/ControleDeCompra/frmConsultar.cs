@@ -16,5 +16,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCompra
         {
             InitializeComponent();
         }
+
+        private void frmConsultar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
