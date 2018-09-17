@@ -98,7 +98,7 @@
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label3.Location = new System.Drawing.Point(58, 291);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Telefone:";
             // 
@@ -116,9 +116,9 @@
             this.btnBuscar.BackColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnBuscar.Location = new System.Drawing.Point(608, 369);
+            this.btnBuscar.Location = new System.Drawing.Point(618, 355);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(144, 42);
+            this.btnBuscar.Size = new System.Drawing.Size(108, 31);
             this.btnBuscar.TabIndex = 20;
             this.btnBuscar.Text = "Salvar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -137,7 +137,7 @@
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.Location = new System.Drawing.Point(80, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 20);
+            this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "CNPJ:";
             // 
@@ -191,6 +191,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(264, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 120);

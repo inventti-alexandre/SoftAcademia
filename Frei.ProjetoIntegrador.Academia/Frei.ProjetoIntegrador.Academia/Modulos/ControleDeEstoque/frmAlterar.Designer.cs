@@ -45,7 +45,7 @@
             // btnalvar
             // 
             this.btnalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnalvar.Location = new System.Drawing.Point(578, 366);
+            this.btnalvar.Location = new System.Drawing.Point(644, 317);
             this.btnalvar.Name = "btnalvar";
             this.btnalvar.Size = new System.Drawing.Size(75, 37);
             this.btnalvar.TabIndex = 11;
@@ -126,6 +126,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(294, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);

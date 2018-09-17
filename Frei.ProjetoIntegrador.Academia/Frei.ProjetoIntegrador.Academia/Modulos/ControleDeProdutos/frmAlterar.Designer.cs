@@ -30,7 +30,7 @@
         {
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btncad = new System.Windows.Forms.Button();
             this.txtemailfornecedor = new System.Windows.Forms.TextBox();
             this.txtnumfornecedor = new System.Windows.Forms.TextBox();
             this.txtqntprod = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(365, 146);
+            this.label7.Location = new System.Drawing.Point(280, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(193, 34);
             this.label7.TabIndex = 51;
@@ -59,21 +59,23 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(332, 30);
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(247, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btncad
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(647, 391);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 29);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btncad.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btncad.Location = new System.Drawing.Point(670, 389);
+            this.btncad.Name = "btncad";
+            this.btncad.Size = new System.Drawing.Size(98, 29);
+            this.btncad.TabIndex = 49;
+            this.btncad.Text = "cadastrar";
+            this.btncad.UseVisualStyleBackColor = true;
             // 
             // txtemailfornecedor
             // 
@@ -135,7 +137,7 @@
             this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label5.Location = new System.Drawing.Point(39, 323);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 20);
+            this.label5.Size = new System.Drawing.Size(138, 20);
             this.label5.TabIndex = 38;
             this.label5.Text = "CNPJ do fornecedor:";
             // 
@@ -187,10 +189,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btncad);
             this.Controls.Add(this.txtemailfornecedor);
             this.Controls.Add(this.txtnumfornecedor);
             this.Controls.Add(this.txtqntprod);
@@ -204,7 +208,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "frmAlterar";
-            this.Text = "frmAlterar";
+            this.Text = "Cadastrar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,7 +219,7 @@
 
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btncad;
         private System.Windows.Forms.TextBox txtemailfornecedor;
         private System.Windows.Forms.TextBox txtnumfornecedor;
         private System.Windows.Forms.TextBox txtqntprod;

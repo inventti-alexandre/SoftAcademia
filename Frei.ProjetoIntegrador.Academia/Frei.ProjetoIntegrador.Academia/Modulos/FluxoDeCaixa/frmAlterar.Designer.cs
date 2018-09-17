@@ -41,7 +41,7 @@
             // btnsalvar
             // 
             this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnsalvar.Location = new System.Drawing.Point(589, 362);
+            this.btnsalvar.Location = new System.Drawing.Point(481, 351);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 28);
             this.btnsalvar.TabIndex = 7;
@@ -50,14 +50,14 @@
             // 
             // dtppedidocompra
             // 
-            this.dtppedidocompra.Location = new System.Drawing.Point(242, 272);
+            this.dtppedidocompra.Location = new System.Drawing.Point(326, 279);
             this.dtppedidocompra.Name = "dtppedidocompra";
             this.dtppedidocompra.Size = new System.Drawing.Size(230, 20);
             this.dtppedidocompra.TabIndex = 5;
             // 
             // dtppedidovenda
             // 
-            this.dtppedidovenda.Location = new System.Drawing.Point(242, 205);
+            this.dtppedidovenda.Location = new System.Drawing.Point(326, 212);
             this.dtppedidovenda.Name = "dtppedidovenda";
             this.dtppedidovenda.Size = new System.Drawing.Size(230, 20);
             this.dtppedidovenda.TabIndex = 6;
@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(79, 272);
+            this.label2.Location = new System.Drawing.Point(163, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 20);
             this.label2.TabIndex = 3;
@@ -78,7 +78,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(67, 205);
+            this.label1.Location = new System.Drawing.Point(151, 212);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 20);
             this.label1.TabIndex = 4;
@@ -86,6 +86,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(302, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);

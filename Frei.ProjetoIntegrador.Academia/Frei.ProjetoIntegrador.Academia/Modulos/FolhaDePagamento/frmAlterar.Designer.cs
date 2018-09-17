@@ -28,60 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.txtobs = new System.Windows.Forms.TextBox();
+            this.txtdescontos = new System.Windows.Forms.TextBox();
+            this.txtvalor = new System.Windows.Forms.TextBox();
+            this.dtpdatadepag = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnsalvar
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(672, 388);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnsalvar.Location = new System.Drawing.Point(585, 381);
+            this.btnsalvar.Name = "btnsalvar";
+            this.btnsalvar.Size = new System.Drawing.Size(75, 28);
+            this.btnsalvar.TabIndex = 12;
+            this.btnsalvar.Text = "salvar";
+            this.btnsalvar.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtobs
             // 
-            this.textBox3.Location = new System.Drawing.Point(209, 306);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(361, 69);
-            this.textBox3.TabIndex = 9;
+            this.txtobs.Location = new System.Drawing.Point(299, 296);
+            this.txtobs.Multiline = true;
+            this.txtobs.Name = "txtobs";
+            this.txtobs.Size = new System.Drawing.Size(361, 69);
+            this.txtobs.TabIndex = 9;
             // 
-            // textBox2
+            // txtdescontos
             // 
-            this.textBox2.Location = new System.Drawing.Point(299, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtdescontos.Location = new System.Drawing.Point(299, 253);
+            this.txtdescontos.Name = "txtdescontos";
+            this.txtdescontos.Size = new System.Drawing.Size(212, 20);
+            this.txtdescontos.TabIndex = 10;
             // 
-            // textBox1
+            // txtvalor
             // 
-            this.textBox1.Location = new System.Drawing.Point(299, 224);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtvalor.Location = new System.Drawing.Point(299, 224);
+            this.txtvalor.Name = "txtvalor";
+            this.txtvalor.Size = new System.Drawing.Size(212, 20);
+            this.txtvalor.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dtpdatadepag
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(299, 191);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(212, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtpdatadepag.Location = new System.Drawing.Point(299, 191);
+            this.dtpdatadepag.Name = "dtpdatadepag";
+            this.dtpdatadepag.Size = new System.Drawing.Size(212, 20);
+            this.dtpdatadepag.TabIndex = 8;
             // 
             // label4
             // 
@@ -127,30 +127,10 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "data de pagamento:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label5.Location = new System.Drawing.Point(122, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "id";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label6.Location = new System.Drawing.Point(166, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "d";
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(299, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
@@ -168,6 +148,24 @@
             this.label7.TabIndex = 36;
             this.label7.Text = "Alterar";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label5.Location = new System.Drawing.Point(272, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 20);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "id";
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(299, 162);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(212, 20);
+            this.txtid.TabIndex = 11;
+            // 
             // frmAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,15 +175,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnsalvar);
+            this.Controls.Add(this.txtobs);
+            this.Controls.Add(this.txtdescontos);
+            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.txtvalor);
+            this.Controls.Add(this.dtpdatadepag);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "frmAlterar";
@@ -198,18 +196,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnsalvar;
+        private System.Windows.Forms.TextBox txtobs;
+        private System.Windows.Forms.TextBox txtdescontos;
+        private System.Windows.Forms.TextBox txtvalor;
+        private System.Windows.Forms.DateTimePicker dtpdatadepag;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtid;
     }
 }

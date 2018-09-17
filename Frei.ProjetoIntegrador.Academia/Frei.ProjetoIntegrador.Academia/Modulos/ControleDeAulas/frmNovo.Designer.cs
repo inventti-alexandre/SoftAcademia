@@ -34,13 +34,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtnomealu = new System.Windows.Forms.TextBox();
+            this.txtnmprof = new System.Windows.Forms.TextBox();
+            this.txttelalu = new System.Windows.Forms.TextBox();
+            this.txtemailalu = new System.Windows.Forms.TextBox();
+            this.txtnmalu = new System.Windows.Forms.TextBox();
+            this.txtdescaula = new System.Windows.Forms.TextBox();
+            this.btncad = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -100,7 +100,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(393, 172);
+            this.label6.Location = new System.Drawing.Point(391, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 20);
             this.label6.TabIndex = 0;
@@ -112,72 +112,72 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(373, 201);
+            this.label8.Location = new System.Drawing.Point(371, 198);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 20);
+            this.label8.Size = new System.Drawing.Size(125, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Telefone do Aluno:";
             // 
-            // textBox1
+            // txtnomealu
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(152, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtnomealu.ForeColor = System.Drawing.Color.Black;
+            this.txtnomealu.Location = new System.Drawing.Point(152, 175);
+            this.txtnomealu.Name = "txtnomealu";
+            this.txtnomealu.Size = new System.Drawing.Size(214, 20);
+            this.txtnomealu.TabIndex = 1;
             // 
-            // textBox2
+            // txtnmprof
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(152, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtnmprof.ForeColor = System.Drawing.Color.Black;
+            this.txtnmprof.Location = new System.Drawing.Point(152, 201);
+            this.txtnmprof.Name = "txtnmprof";
+            this.txtnmprof.Size = new System.Drawing.Size(214, 20);
+            this.txtnmprof.TabIndex = 1;
             // 
-            // textBox5
+            // txttelalu
             // 
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(503, 201);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(206, 20);
-            this.textBox5.TabIndex = 2;
+            this.txttelalu.ForeColor = System.Drawing.Color.Black;
+            this.txttelalu.Location = new System.Drawing.Point(501, 198);
+            this.txttelalu.Name = "txttelalu";
+            this.txttelalu.Size = new System.Drawing.Size(206, 20);
+            this.txttelalu.TabIndex = 2;
             // 
-            // textBox6
+            // txtemailalu
             // 
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(503, 175);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(206, 20);
-            this.textBox6.TabIndex = 3;
+            this.txtemailalu.ForeColor = System.Drawing.Color.Black;
+            this.txtemailalu.Location = new System.Drawing.Point(501, 172);
+            this.txtemailalu.Name = "txtemailalu";
+            this.txtemailalu.Size = new System.Drawing.Size(206, 20);
+            this.txtemailalu.TabIndex = 3;
             // 
-            // textBox7
+            // txtnmalu
             // 
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(152, 227);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(214, 20);
-            this.textBox7.TabIndex = 4;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txtnmalu.ForeColor = System.Drawing.Color.Black;
+            this.txtnmalu.Location = new System.Drawing.Point(152, 227);
+            this.txtnmalu.Name = "txtnmalu";
+            this.txtnmalu.Size = new System.Drawing.Size(214, 20);
+            this.txtnmalu.TabIndex = 4;
+            this.txtnmalu.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox8
+            // txtdescaula
             // 
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(152, 284);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(557, 57);
-            this.textBox8.TabIndex = 1;
+            this.txtdescaula.ForeColor = System.Drawing.Color.Black;
+            this.txtdescaula.Location = new System.Drawing.Point(120, 284);
+            this.txtdescaula.Multiline = true;
+            this.txtdescaula.Name = "txtdescaula";
+            this.txtdescaula.Size = new System.Drawing.Size(557, 57);
+            this.txtdescaula.TabIndex = 1;
             // 
-            // button1
+            // btncad
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(613, 347);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 34);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btncad.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btncad.ForeColor = System.Drawing.Color.Black;
+            this.btncad.Location = new System.Drawing.Point(581, 347);
+            this.btncad.Name = "btncad";
+            this.btncad.Size = new System.Drawing.Size(96, 34);
+            this.btncad.TabIndex = 5;
+            this.btncad.Text = "cadastrar";
+            this.btncad.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -211,13 +211,13 @@
             this.ClientSize = new System.Drawing.Size(719, 403);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btncad);
+            this.Controls.Add(this.txttelalu);
+            this.Controls.Add(this.txtemailalu);
+            this.Controls.Add(this.txtnmalu);
+            this.Controls.Add(this.txtdescaula);
+            this.Controls.Add(this.txtnmprof);
+            this.Controls.Add(this.txtnomealu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -243,13 +243,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtnomealu;
+        private System.Windows.Forms.TextBox txtnmprof;
+        private System.Windows.Forms.TextBox txttelalu;
+        private System.Windows.Forms.TextBox txtemailalu;
+        private System.Windows.Forms.TextBox txtnmalu;
+        private System.Windows.Forms.TextBox txtdescaula;
+        private System.Windows.Forms.Button btncad;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

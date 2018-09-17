@@ -97,7 +97,7 @@
             // btnsalvar
             // 
             this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnsalvar.Location = new System.Drawing.Point(616, 370);
+            this.btnsalvar.Location = new System.Drawing.Point(464, 331);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 30);
             this.btnsalvar.TabIndex = 9;
@@ -106,7 +106,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(310, 22);
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(268, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
             this.pictureBox1.TabIndex = 35;
@@ -117,7 +119,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(396, 138);
+            this.label7.Location = new System.Drawing.Point(354, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 34);
             this.label7.TabIndex = 36;

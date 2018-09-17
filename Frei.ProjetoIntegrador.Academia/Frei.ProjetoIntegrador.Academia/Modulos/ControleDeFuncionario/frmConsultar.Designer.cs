@@ -42,9 +42,9 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnremove = new System.Windows.Forms.Button();
+            this.btnalt = new System.Windows.Forms.Button();
+            this.btnnovo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
@@ -160,45 +160,47 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnBuscar.Location = new System.Drawing.Point(362, 201);
+            this.btnBuscar.Location = new System.Drawing.Point(348, 204);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 26);
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnremove
             // 
-            this.button3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(484, 386);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 28);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Remover";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnremove.Location = new System.Drawing.Point(567, 386);
+            this.btnremove.Name = "btnremove";
+            this.btnremove.Size = new System.Drawing.Size(78, 28);
+            this.btnremove.TabIndex = 7;
+            this.btnremove.Text = "Remover";
+            this.btnremove.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnalt
             // 
-            this.button2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(399, 386);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 28);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Alterar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnalt.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnalt.Location = new System.Drawing.Point(446, 386);
+            this.btnalt.Name = "btnalt";
+            this.btnalt.Size = new System.Drawing.Size(78, 28);
+            this.btnalt.TabIndex = 8;
+            this.btnalt.Text = "Alterar";
+            this.btnalt.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnnovo
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(577, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 28);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Novo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnnovo.Location = new System.Drawing.Point(682, 386);
+            this.btnnovo.Name = "btnnovo";
+            this.btnnovo.Size = new System.Drawing.Size(78, 28);
+            this.btnnovo.TabIndex = 9;
+            this.btnnovo.Text = "Novo";
+            this.btnnovo.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(308, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
@@ -225,9 +227,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnremove);
+            this.Controls.Add(this.btnalt);
+            this.Controls.Add(this.btnnovo);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
@@ -257,9 +259,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnremove;
+        private System.Windows.Forms.Button btnalt;
+        private System.Windows.Forms.Button btnnovo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
     }

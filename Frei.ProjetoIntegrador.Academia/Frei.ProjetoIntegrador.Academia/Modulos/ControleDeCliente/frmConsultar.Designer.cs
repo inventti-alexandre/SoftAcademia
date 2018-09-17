@@ -67,7 +67,7 @@
             this.dgvViagem.RowTemplate.Height = 30;
             this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(607, 187);
+            this.dgvViagem.Size = new System.Drawing.Size(602, 187);
             this.dgvViagem.TabIndex = 6;
             // 
             // Column1
@@ -109,7 +109,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(595, 389);
+            this.button3.Location = new System.Drawing.Point(516, 389);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 30);
             this.button3.TabIndex = 10;
@@ -119,7 +119,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(692, 389);
+            this.button2.Location = new System.Drawing.Point(623, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 30);
             this.button2.TabIndex = 11;
@@ -129,7 +129,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(487, 389);
+            this.button1.Location = new System.Drawing.Point(413, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 12;
@@ -138,7 +138,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(251, 159);
+            this.txtNome.Location = new System.Drawing.Point(237, 159);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(269, 20);
             this.txtNome.TabIndex = 9;
@@ -148,7 +148,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(106, 159);
+            this.label1.Location = new System.Drawing.Point(92, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 8;
@@ -156,6 +156,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(294, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 77);
@@ -167,7 +169,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(316, 89);
+            this.label7.Location = new System.Drawing.Point(303, 89);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(217, 34);
             this.label7.TabIndex = 36;

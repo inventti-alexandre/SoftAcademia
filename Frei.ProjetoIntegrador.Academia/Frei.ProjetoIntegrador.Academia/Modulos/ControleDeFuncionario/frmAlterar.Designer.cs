@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.txtbairro = new System.Windows.Forms.TextBox();
+            this.txtnasc = new System.Windows.Forms.TextBox();
+            this.txtdemi = new System.Windows.Forms.TextBox();
+            this.txtadmissao = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtel = new System.Windows.Forms.TextBox();
+            this.txtcel = new System.Windows.Forms.TextBox();
+            this.txtcep = new System.Windows.Forms.TextBox();
+            this.txtcpf = new System.Windows.Forms.TextBox();
+            this.txtnm = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,85 +54,85 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnsalvar
             // 
-            this.button2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(623, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 27);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnsalvar.Location = new System.Drawing.Point(638, 371);
+            this.btnsalvar.Name = "btnsalvar";
+            this.btnsalvar.Size = new System.Drawing.Size(75, 27);
+            this.btnsalvar.TabIndex = 29;
+            this.btnsalvar.Text = "Salvar";
+            this.btnsalvar.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtbairro
             // 
-            this.textBox6.Location = new System.Drawing.Point(514, 315);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(199, 20);
-            this.textBox6.TabIndex = 24;
+            this.txtbairro.Location = new System.Drawing.Point(514, 315);
+            this.txtbairro.Name = "txtbairro";
+            this.txtbairro.Size = new System.Drawing.Size(199, 20);
+            this.txtbairro.TabIndex = 24;
             // 
-            // textBox7
+            // txtnasc
             // 
-            this.textBox7.Location = new System.Drawing.Point(514, 289);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(199, 20);
-            this.textBox7.TabIndex = 25;
+            this.txtnasc.Location = new System.Drawing.Point(514, 289);
+            this.txtnasc.Name = "txtnasc";
+            this.txtnasc.Size = new System.Drawing.Size(199, 20);
+            this.txtnasc.TabIndex = 25;
             // 
-            // textBox8
+            // txtdemi
             // 
-            this.textBox8.Location = new System.Drawing.Point(514, 263);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(199, 20);
-            this.textBox8.TabIndex = 26;
+            this.txtdemi.Location = new System.Drawing.Point(514, 263);
+            this.txtdemi.Name = "txtdemi";
+            this.txtdemi.Size = new System.Drawing.Size(199, 20);
+            this.txtdemi.TabIndex = 26;
             // 
-            // textBox9
+            // txtadmissao
             // 
-            this.textBox9.Location = new System.Drawing.Point(514, 237);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(199, 20);
-            this.textBox9.TabIndex = 27;
+            this.txtadmissao.Location = new System.Drawing.Point(514, 237);
+            this.txtadmissao.Name = "txtadmissao";
+            this.txtadmissao.Size = new System.Drawing.Size(199, 20);
+            this.txtadmissao.TabIndex = 27;
             // 
-            // textBox10
+            // txtemail
             // 
-            this.textBox10.Location = new System.Drawing.Point(514, 208);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(199, 20);
-            this.textBox10.TabIndex = 28;
+            this.txtemail.Location = new System.Drawing.Point(514, 208);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(199, 20);
+            this.txtemail.TabIndex = 28;
             // 
-            // textBox5
+            // txtel
             // 
-            this.textBox5.Location = new System.Drawing.Point(195, 312);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(201, 20);
-            this.textBox5.TabIndex = 22;
+            this.txtel.Location = new System.Drawing.Point(195, 312);
+            this.txtel.Name = "txtel";
+            this.txtel.Size = new System.Drawing.Size(201, 20);
+            this.txtel.TabIndex = 22;
             // 
-            // textBox4
+            // txtcel
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 20);
-            this.textBox4.TabIndex = 21;
+            this.txtcel.Location = new System.Drawing.Point(195, 286);
+            this.txtcel.Name = "txtcel";
+            this.txtcel.Size = new System.Drawing.Size(201, 20);
+            this.txtcel.TabIndex = 21;
             // 
-            // textBox3
+            // txtcep
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 260);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 20);
-            this.textBox3.TabIndex = 20;
+            this.txtcep.Location = new System.Drawing.Point(197, 260);
+            this.txtcep.Name = "txtcep";
+            this.txtcep.Size = new System.Drawing.Size(199, 20);
+            this.txtcep.TabIndex = 20;
             // 
-            // textBox2
+            // txtcpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(197, 234);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 23;
+            this.txtcpf.Location = new System.Drawing.Point(197, 234);
+            this.txtcpf.Name = "txtcpf";
+            this.txtcpf.Size = new System.Drawing.Size(199, 20);
+            this.txtcpf.TabIndex = 23;
             // 
-            // textBox1
+            // txtnm
             // 
-            this.textBox1.Location = new System.Drawing.Point(197, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 19;
+            this.txtnm.Location = new System.Drawing.Point(197, 208);
+            this.txtnm.Name = "txtnm";
+            this.txtnm.Size = new System.Drawing.Size(199, 20);
+            this.txtnm.TabIndex = 19;
             // 
             // label5
             // 
@@ -141,7 +141,7 @@
             this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label5.Location = new System.Drawing.Point(122, 312);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "Telefone:";
             // 
@@ -246,6 +246,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(312, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
@@ -272,17 +274,17 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnsalvar);
+            this.Controls.Add(this.txtbairro);
+            this.Controls.Add(this.txtnasc);
+            this.Controls.Add(this.txtdemi);
+            this.Controls.Add(this.txtadmissao);
+            this.Controls.Add(this.txtemail);
+            this.Controls.Add(this.txtel);
+            this.Controls.Add(this.txtcel);
+            this.Controls.Add(this.txtcep);
+            this.Controls.Add(this.txtcpf);
+            this.Controls.Add(this.txtnm);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -303,17 +305,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnsalvar;
+        private System.Windows.Forms.TextBox txtbairro;
+        private System.Windows.Forms.TextBox txtnasc;
+        private System.Windows.Forms.TextBox txtdemi;
+        private System.Windows.Forms.TextBox txtadmissao;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtel;
+        private System.Windows.Forms.TextBox txtcel;
+        private System.Windows.Forms.TextBox txtcep;
+        private System.Windows.Forms.TextBox txtcpf;
+        private System.Windows.Forms.TextBox txtnm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

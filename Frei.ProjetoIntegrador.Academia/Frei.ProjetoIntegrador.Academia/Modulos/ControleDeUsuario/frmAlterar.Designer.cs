@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.txtpermpedcomp = new System.Windows.Forms.TextBox();
+            this.txtpermadm = new System.Windows.Forms.TextBox();
+            this.txtpermpedestoque = new System.Windows.Forms.TextBox();
+            this.txtpermclient = new System.Windows.Forms.TextBox();
+            this.txtpermfor = new System.Windows.Forms.TextBox();
+            this.txtpermpedusu = new System.Windows.Forms.TextBox();
+            this.txtpemcaixa = new System.Windows.Forms.TextBox();
+            this.txtpermvenda = new System.Windows.Forms.TextBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
+            this.txtnm = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,85 +54,85 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnsalvar
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(616, 381);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "salvar:";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnsalvar.Location = new System.Drawing.Point(697, 366);
+            this.btnsalvar.Name = "btnsalvar";
+            this.btnsalvar.Size = new System.Drawing.Size(75, 26);
+            this.btnsalvar.TabIndex = 28;
+            this.btnsalvar.Text = "salvar";
+            this.btnsalvar.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtpermpedcomp
             // 
-            this.textBox6.Location = new System.Drawing.Point(616, 226);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 20);
-            this.textBox6.TabIndex = 23;
+            this.txtpermpedcomp.Location = new System.Drawing.Point(616, 226);
+            this.txtpermpedcomp.Name = "txtpermpedcomp";
+            this.txtpermpedcomp.Size = new System.Drawing.Size(156, 20);
+            this.txtpermpedcomp.TabIndex = 23;
             // 
-            // textBox7
+            // txtpermadm
             // 
-            this.textBox7.Location = new System.Drawing.Point(616, 194);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(156, 20);
-            this.textBox7.TabIndex = 24;
+            this.txtpermadm.Location = new System.Drawing.Point(616, 194);
+            this.txtpermadm.Name = "txtpermadm";
+            this.txtpermadm.Size = new System.Drawing.Size(156, 20);
+            this.txtpermadm.TabIndex = 24;
             // 
-            // textBox8
+            // txtpermpedestoque
             // 
-            this.textBox8.Location = new System.Drawing.Point(616, 256);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(156, 20);
-            this.textBox8.TabIndex = 25;
+            this.txtpermpedestoque.Location = new System.Drawing.Point(616, 256);
+            this.txtpermpedestoque.Name = "txtpermpedestoque";
+            this.txtpermpedestoque.Size = new System.Drawing.Size(156, 20);
+            this.txtpermpedestoque.TabIndex = 25;
             // 
-            // textBox9
+            // txtpermclient
             // 
-            this.textBox9.Location = new System.Drawing.Point(616, 286);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(156, 20);
-            this.textBox9.TabIndex = 26;
+            this.txtpermclient.Location = new System.Drawing.Point(616, 286);
+            this.txtpermclient.Name = "txtpermclient";
+            this.txtpermclient.Size = new System.Drawing.Size(156, 20);
+            this.txtpermclient.TabIndex = 26;
             // 
-            // textBox10
+            // txtpermfor
             // 
-            this.textBox10.Location = new System.Drawing.Point(616, 314);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(156, 20);
-            this.textBox10.TabIndex = 27;
+            this.txtpermfor.Location = new System.Drawing.Point(616, 314);
+            this.txtpermfor.Name = "txtpermfor";
+            this.txtpermfor.Size = new System.Drawing.Size(156, 20);
+            this.txtpermfor.TabIndex = 27;
             // 
-            // textBox5
+            // txtpermpedusu
             // 
-            this.textBox5.Location = new System.Drawing.Point(218, 314);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 20);
-            this.textBox5.TabIndex = 21;
+            this.txtpermpedusu.Location = new System.Drawing.Point(218, 314);
+            this.txtpermpedusu.Name = "txtpermpedusu";
+            this.txtpermpedusu.Size = new System.Drawing.Size(162, 20);
+            this.txtpermpedusu.TabIndex = 21;
             // 
-            // textBox4
+            // txtpemcaixa
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 283);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 20);
-            this.textBox4.TabIndex = 20;
+            this.txtpemcaixa.Location = new System.Drawing.Point(218, 283);
+            this.txtpemcaixa.Name = "txtpemcaixa";
+            this.txtpemcaixa.Size = new System.Drawing.Size(162, 20);
+            this.txtpemcaixa.TabIndex = 20;
             // 
-            // textBox3
+            // txtpermvenda
             // 
-            this.textBox3.Location = new System.Drawing.Point(218, 253);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 19;
+            this.txtpermvenda.Location = new System.Drawing.Point(218, 253);
+            this.txtpermvenda.Name = "txtpermvenda";
+            this.txtpermvenda.Size = new System.Drawing.Size(162, 20);
+            this.txtpermvenda.TabIndex = 19;
             // 
-            // textBox2
+            // txtsenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(218, 223);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 22;
+            this.txtsenha.Location = new System.Drawing.Point(218, 223);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.Size = new System.Drawing.Size(162, 20);
+            this.txtsenha.TabIndex = 22;
             // 
-            // textBox1
+            // txtnm
             // 
-            this.textBox1.Location = new System.Drawing.Point(218, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 18;
+            this.txtnm.Location = new System.Drawing.Point(218, 194);
+            this.txtnm.Name = "txtnm";
+            this.txtnm.Size = new System.Drawing.Size(162, 20);
+            this.txtnm.TabIndex = 18;
             // 
             // label5
             // 
@@ -246,6 +246,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(261, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
@@ -272,17 +274,17 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnsalvar);
+            this.Controls.Add(this.txtpermpedcomp);
+            this.Controls.Add(this.txtpermadm);
+            this.Controls.Add(this.txtpermpedestoque);
+            this.Controls.Add(this.txtpermclient);
+            this.Controls.Add(this.txtpermfor);
+            this.Controls.Add(this.txtpermpedusu);
+            this.Controls.Add(this.txtpemcaixa);
+            this.Controls.Add(this.txtpermvenda);
+            this.Controls.Add(this.txtsenha);
+            this.Controls.Add(this.txtnm);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -303,17 +305,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnsalvar;
+        private System.Windows.Forms.TextBox txtpermpedcomp;
+        private System.Windows.Forms.TextBox txtpermadm;
+        private System.Windows.Forms.TextBox txtpermpedestoque;
+        private System.Windows.Forms.TextBox txtpermclient;
+        private System.Windows.Forms.TextBox txtpermfor;
+        private System.Windows.Forms.TextBox txtpermpedusu;
+        private System.Windows.Forms.TextBox txtpemcaixa;
+        private System.Windows.Forms.TextBox txtpermvenda;
+        private System.Windows.Forms.TextBox txtsenha;
+        private System.Windows.Forms.TextBox txtnm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;

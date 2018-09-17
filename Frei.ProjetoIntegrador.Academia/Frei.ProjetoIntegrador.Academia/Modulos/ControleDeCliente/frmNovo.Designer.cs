@@ -34,15 +34,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtel = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtcel = new System.Windows.Forms.TextBox();
+            this.btncad = new System.Windows.Forms.Button();
+            this.dtpcad = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,60 +119,55 @@
             this.label6.Text = "data do cadastro:";
             this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtnome
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtnome.Location = new System.Drawing.Point(159, 211);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(200, 20);
+            this.txtnome.TabIndex = 1;
             // 
-            // textBox2
+            // txtel
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtel.Location = new System.Drawing.Point(159, 281);
+            this.txtel.Name = "txtel";
+            this.txtel.Size = new System.Drawing.Size(200, 20);
+            this.txtel.TabIndex = 1;
             // 
-            // textBox3
+            // txtemail
             // 
-            this.textBox3.Location = new System.Drawing.Point(159, 281);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtemail.Location = new System.Drawing.Point(487, 243);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(200, 20);
+            this.txtemail.TabIndex = 3;
             // 
-            // textBox5
+            // txtcel
             // 
-            this.textBox5.Location = new System.Drawing.Point(487, 243);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 20);
-            this.textBox5.TabIndex = 3;
+            this.txtcel.Location = new System.Drawing.Point(487, 211);
+            this.txtcel.Name = "txtcel";
+            this.txtcel.Size = new System.Drawing.Size(200, 20);
+            this.txtcel.TabIndex = 4;
             // 
-            // textBox6
+            // btncad
             // 
-            this.textBox6.Location = new System.Drawing.Point(487, 211);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 20);
-            this.textBox6.TabIndex = 4;
+            this.btncad.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btncad.Location = new System.Drawing.Point(603, 331);
+            this.btncad.Name = "btncad";
+            this.btncad.Size = new System.Drawing.Size(84, 33);
+            this.btncad.TabIndex = 5;
+            this.btncad.Text = "cadastrar";
+            this.btncad.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // dtpcad
             // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(615, 367);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(487, 282);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpcad.Location = new System.Drawing.Point(487, 282);
+            this.dtpcad.Name = "dtpcad";
+            this.dtpcad.Size = new System.Drawing.Size(200, 20);
+            this.dtpcad.TabIndex = 6;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(298, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 113);
@@ -189,6 +185,32 @@
             this.label8.TabIndex = 36;
             this.label8.Text = "Cadastrar  Novo";
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.radioButton2.Location = new System.Drawing.Point(224, 243);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(73, 24);
+            this.radioButton2.TabIndex = 37;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Inativo";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.radioButton1.Location = new System.Drawing.Point(159, 243);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(59, 24);
+            this.radioButton1.TabIndex = 38;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Ativo";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
             // frmNovo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,15 +218,16 @@
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtpcad);
+            this.Controls.Add(this.btncad);
+            this.Controls.Add(this.txtemail);
+            this.Controls.Add(this.txtcel);
+            this.Controls.Add(this.txtel);
+            this.Controls.Add(this.txtnome);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -227,14 +250,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtel;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtcel;
+        private System.Windows.Forms.Button btncad;
+        private System.Windows.Forms.DateTimePicker dtpcad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
