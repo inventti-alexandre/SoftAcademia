@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frei.ProjetoIntegrador.Academia.Modulos
+namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeProdutos
 {
     public partial class frmAlterar : Form
     {

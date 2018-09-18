@@ -26,5 +26,29 @@ namespace Frei.ProjetoIntegrador.Academia
         {
 
         }
+
+        private void btnAulas_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeAulas.frmConsultar frm = new Modulos.ControleDeAulas.frmConsultar();
+            Hide();
+            frm.ShowDialog();
+            Show();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeAulas.frmConsultar frm = new Modulos.ControleDeAulas.frmConsultar();
+            Hide();
+            frm.ShowDialog();
+            Show();
+        }
+
+        private void adicionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeAulas.frmNovo frm = new Modulos.ControleDeAulas.frmNovo();
+            Hide();
+            frm.ShowDialog();
+            Show();
+        }
     }
 }

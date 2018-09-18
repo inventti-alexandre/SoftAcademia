@@ -159,6 +159,12 @@
     <Compile Include="Modulos\ControleDeFuncionario\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeProdutos\frmAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeProdutos\frmAlterar.Designer.cs">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeProdutos\frmConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,12 +249,6 @@
     <Compile Include="Modulos\FolhaDePagamento\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\frmAlterar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\frmAlterar.Designer.cs">
-      <DependentUpon>frmAlterar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -307,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeProdutos\frmAlterar.resx">
+      <DependentUpon>frmAlterar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeProdutos\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
@@ -376,6 +379,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DB\ScriptDeEstrutura.txt" />
+    <None Include="Resources\logoAcademia.png" />
     <None Include="Resources\4eda16ef97c2e9b205bb2bed92def2c0.jpg" />
     <None Include="Resources\images %284%29.jpg" />
     <None Include="Resources\home.jpg" />
