@@ -8,5 +8,11 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FluxoDeCaixa
 {
     class FluxoDeCaixaDTO
     {
+        public int id_Fluxo_Caixa { get; set; }
+        public int fk_FluxoCaixa_PedidoCompra { get; set; }
+        public int fk_FluxoCaixa_PedidoVenda { get; set; }
+        public int fk_FluxoCaixa_Filial { get; set; }
+
+
     }
 }
