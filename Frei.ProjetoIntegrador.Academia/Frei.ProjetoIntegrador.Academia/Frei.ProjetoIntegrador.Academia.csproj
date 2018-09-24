@@ -410,7 +410,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DB\DDL.txt" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoAcademia.png" />
     <None Include="Resources\4eda16ef97c2e9b205bb2bed92def2c0.jpg" />
