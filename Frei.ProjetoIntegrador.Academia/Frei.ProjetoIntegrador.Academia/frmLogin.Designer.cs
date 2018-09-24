@@ -64,6 +64,7 @@
             // 
             this.txtSenha.Font = new System.Drawing.Font("High Tower Text", 14.25F);
             this.txtSenha.Location = new System.Drawing.Point(72, 81);
+            this.txtSenha.MaxLength = 16;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(162, 30);
             this.txtSenha.TabIndex = 66;
@@ -73,6 +74,7 @@
             // 
             this.txtNome.Font = new System.Drawing.Font("High Tower Text", 14.25F);
             this.txtNome.Location = new System.Drawing.Point(72, 45);
+            this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(162, 30);
             this.txtNome.TabIndex = 65;
@@ -101,7 +103,7 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "Nome:";
             // 
-            // frnLogin
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,7 +117,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frnLogin";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BlackFit LTDA";
             this.ResumeLayout(false);
