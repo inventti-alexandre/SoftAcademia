@@ -1,5 +1,4 @@
 ﻿using Frei.ProjetoIntegrador.Academia.DB.Usuario;
-using Nsf._2018.Modulo3.App.DB.Produto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
