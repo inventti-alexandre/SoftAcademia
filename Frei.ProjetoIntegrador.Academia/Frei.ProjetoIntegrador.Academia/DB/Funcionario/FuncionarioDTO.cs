@@ -9,22 +9,23 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
     class FuncionarioDTO
     {
         public int idFuncionario { get; set; }
-        public string Nome { get; set; }
-        public int cpf { get; set; }
-        public int cep { get; set; }
-        public string bairro{ get; set; }
-        public int logradouro { get; set; }
-        public int uf { get; set; }
-        public int complemento { get; set; }
-        public int celular { get; set; }
-        public int telefone { get; set; }
-        public int residencia { get; set; }
-        public string email { get; set; }
-        public DateTime admissao  { get; set; }
-        public DateTime demissao { get; set; }
-        public DateTime nascimento { get; set; }
+        public string nm_Nome { get; set; }
+        public string ds_Sexo { get; set; }
+        public int ds_CPF { get; set; }
+        public int ds_CEP { get; set; }
+        public string ds_Bairro { get; set; }
+        public int ds_Logradouro { get; set; }
+        public int ds_UF { get; set; }
+        public int ds_Complemento { get; set; }
+        public int num_Celular { get; set; }
+        public int num_Telefone { get; set; }
+        public int num_Residencia { get; set; }
+        public string ds_Email { get; set; }
+        public DateTime dt_Admissao { get; set; }
+        public DateTime dt_Demissao { get; set; }
+        public DateTime dt_Nasc { get; set; }
         public int fk_Func_Usuario { get; set; }
-
+        public int fk_Func_Filial { get; set; }
 
 
 
