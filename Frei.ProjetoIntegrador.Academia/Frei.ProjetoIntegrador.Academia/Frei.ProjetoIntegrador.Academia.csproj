@@ -95,6 +95,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeAulas\frmAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,7 +180,7 @@
       <DependentUpon>frmAlterar.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\ControleDeFornecedor\frmConsultar.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\ControleDeFornecedor\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>

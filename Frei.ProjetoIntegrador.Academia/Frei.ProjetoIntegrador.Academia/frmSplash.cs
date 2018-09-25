@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFornecedor
+namespace Frei.ProjetoIntegrador.Academia
 {
-    public partial class frmConsultar : Form
+    public partial class frmSplash : Form
     {
-        public frmConsultar()
+        public frmSplash()
         {
             InitializeComponent();
         }
