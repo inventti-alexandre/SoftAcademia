@@ -15,7 +15,3 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Estoque
         
     }
 }
-id_Estoque` INT(11) NOT NULL AUTO_INCREMENT,
-  `qnt_Produto` INT(11) NOT NULL,
-  `num_Est_Min` INT(11) NULL DEFAULT NULL,
-  `num_Est_Max` INT(11) NULL DEFAULT NULL,
