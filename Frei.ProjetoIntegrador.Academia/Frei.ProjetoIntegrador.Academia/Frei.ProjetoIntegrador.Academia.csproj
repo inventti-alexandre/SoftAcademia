@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -308,6 +308,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeAulas\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
     </EmbeddedResource>
@@ -432,6 +435,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\DDL.txt" />
+    <None Include="Resources\480px-Break_Dancer.png" />
+    <None Include="Resources\1195422210884365214dancing_guy_gerald_g._02.svg.hi.png" />
+    <None Include="Resources\loading-gif-png-1.gif" />
+    <None Include="Resources\dancing couple silhouette.png" />
+    <None Include="Resources\ballerina-silhouette-gif-9.png" />
+    <None Include="Resources\QghjXph.gif" />
+    <None Include="Resources\png-gif-dancing-1.gif" />
+    <None Include="Resources\image_preview.gif" />
+    <None Include="Resources\1288412340-carregando-e-o-1-gif-d-pedrohdlm.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoAcademia.png" />
