@@ -8,12 +8,13 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Produto
 {
     class ProdutoDTO
     {
-        public int idproduto { get; set; }
-        public string Nomepreoduto { get; set; }
-        public int valorcompra { get; set; }
-        public int valorvenda { get; set; }
-        public string descricaoproduto { get; set; }
+        public int id_Produto { get; set; }
+        public string nm_Produto { get; set; }
+        public int vl_Compra { get; set; }
+        public int vl_Venda { get; set; }
+        public string ds_Produto { get; set; }
         public string fk_Produto_Fornecedor { get; set; }
+        public string fk_Produto_Filial { get; set; }
 
     }
 }
