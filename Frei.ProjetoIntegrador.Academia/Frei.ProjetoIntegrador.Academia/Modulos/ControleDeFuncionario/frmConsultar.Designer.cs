@@ -151,7 +151,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(62, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
@@ -160,6 +160,7 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnBuscar.Location = new System.Drawing.Point(348, 204);
             this.btnBuscar.Name = "btnBuscar";
@@ -170,6 +171,7 @@
             // 
             // btnremove
             // 
+            this.btnremove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnremove.Location = new System.Drawing.Point(567, 386);
             this.btnremove.Name = "btnremove";
@@ -180,6 +182,7 @@
             // 
             // btnalt
             // 
+            this.btnalt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnalt.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnalt.Location = new System.Drawing.Point(446, 386);
             this.btnalt.Name = "btnalt";
@@ -190,6 +193,7 @@
             // 
             // btnnovo
             // 
+            this.btnnovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnnovo.Location = new System.Drawing.Point(682, 386);
             this.btnnovo.Name = "btnnovo";

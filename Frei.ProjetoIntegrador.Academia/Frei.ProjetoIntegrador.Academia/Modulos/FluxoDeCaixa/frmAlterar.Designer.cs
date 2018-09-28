@@ -40,10 +40,11 @@
             // 
             // btnsalvar
             // 
+            this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalvar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnsalvar.Location = new System.Drawing.Point(481, 351);
             this.btnsalvar.Name = "btnsalvar";
-            this.btnsalvar.Size = new System.Drawing.Size(75, 28);
+            this.btnsalvar.Size = new System.Drawing.Size(75, 32);
             this.btnsalvar.TabIndex = 7;
             this.btnsalvar.Text = "salvar";
             this.btnsalvar.UseVisualStyleBackColor = true;
@@ -67,24 +68,24 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(163, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 20);
+            this.label2.Size = new System.Drawing.Size(158, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "data pedido de compra";
+            this.label2.Text = "Data pedido de compra";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(151, 212);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 20);
+            this.label1.Size = new System.Drawing.Size(170, 20);
             this.label1.TabIndex = 4;
-            this.label1.Text = "data do pedido de venda:";
+            this.label1.Text = "Data do pedido de venda:";
             // 
             // label7
             // 

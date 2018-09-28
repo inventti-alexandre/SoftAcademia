@@ -36,11 +36,11 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvViagem = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +130,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvViagem.Location = new System.Drawing.Point(23, 237);
+            this.dgvViagem.Location = new System.Drawing.Point(35, 226);
             this.dgvViagem.Name = "dgvViagem";
             this.dgvViagem.ReadOnly = true;
             this.dgvViagem.RowHeadersVisible = false;
@@ -138,32 +138,8 @@
             this.dgvViagem.RowTemplate.Height = 30;
             this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(536, 220);
+            this.dgvViagem.Size = new System.Drawing.Size(398, 183);
             this.dgvViagem.TabIndex = 21;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "quantidade do produto";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "nome do produto";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "valor da compra";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "valor da venda";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // pictureBox1
             // 
@@ -175,6 +151,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Quantidade do produto";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nome do produto";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Valor da compra";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Valor da venda";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // frmConsultar
             // 
@@ -212,10 +212,10 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvViagem;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

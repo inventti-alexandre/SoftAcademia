@@ -35,11 +35,11 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvViagem = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             // 
             this.btnremove.BackColor = System.Drawing.Color.White;
             this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremove.Location = new System.Drawing.Point(464, 385);
+            this.btnremove.Location = new System.Drawing.Point(502, 385);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(92, 34);
             this.btnremove.TabIndex = 25;
@@ -70,7 +70,7 @@
             // 
             this.btnalterar.BackColor = System.Drawing.Color.White;
             this.btnalterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnalterar.Location = new System.Drawing.Point(339, 237);
+            this.btnalterar.Location = new System.Drawing.Point(479, 164);
             this.btnalterar.Name = "btnalterar";
             this.btnalterar.Size = new System.Drawing.Size(100, 34);
             this.btnalterar.TabIndex = 26;
@@ -81,7 +81,7 @@
             // 
             this.btnnovo.BackColor = System.Drawing.Color.White;
             this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnovo.Location = new System.Drawing.Point(340, 385);
+            this.btnnovo.Location = new System.Drawing.Point(377, 385);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(99, 34);
             this.btnnovo.TabIndex = 27;
@@ -90,7 +90,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(63, 171);
+            this.txtNome.Location = new System.Drawing.Point(156, 174);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(236, 20);
             this.txtNome.TabIndex = 24;
@@ -100,8 +100,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-3, 171);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(101, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 23;
@@ -118,7 +118,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvViagem.Location = new System.Drawing.Point(29, 237);
+            this.dgvViagem.Location = new System.Drawing.Point(113, 206);
             this.dgvViagem.Name = "dgvViagem";
             this.dgvViagem.ReadOnly = true;
             this.dgvViagem.RowHeadersVisible = false;
@@ -126,32 +126,14 @@
             this.dgvViagem.RowTemplate.Height = 30;
             this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(304, 220);
+            this.dgvViagem.Size = new System.Drawing.Size(303, 173);
             this.dgvViagem.TabIndex = 21;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "data da compra";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "nome do usuário";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "senha do usuário";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.White;
             this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(323, 171);
+            this.btnBuscar.Location = new System.Drawing.Point(398, 164);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 34);
             this.btnBuscar.TabIndex = 32;
@@ -168,6 +150,24 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Data da compra";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nome do usuário";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Senha do usuário";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // frmConsultar
             // 
@@ -205,10 +205,10 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvViagem;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
