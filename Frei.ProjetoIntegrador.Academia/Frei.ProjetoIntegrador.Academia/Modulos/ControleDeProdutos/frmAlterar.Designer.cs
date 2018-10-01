@@ -51,6 +51,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(295, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(193, 34);
@@ -65,7 +66,7 @@
             this.btncad.Name = "btncad";
             this.btncad.Size = new System.Drawing.Size(98, 29);
             this.btncad.TabIndex = 49;
-            this.btncad.Text = "cadastrar";
+            this.btncad.Text = "Cadastrar";
             this.btncad.UseVisualStyleBackColor = true;
             // 
             // txtemailfornecedor
@@ -115,22 +116,22 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(435, 320);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 20);
+            this.label6.Size = new System.Drawing.Size(150, 20);
             this.label6.TabIndex = 37;
-            this.label6.Text = "email do forneccedor:";
+            this.label6.Text = "Email do forneccedor:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(39, 323);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 20);
+            this.label5.Size = new System.Drawing.Size(138, 20);
             this.label5.TabIndex = 38;
             this.label5.Text = "CNPJ do fornecedor:";
             // 
@@ -139,48 +140,48 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(353, 275);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(424, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(233, 20);
+            this.label4.Size = new System.Drawing.Size(161, 20);
             this.label4.TabIndex = 39;
-            this.label4.Text = "número do telefone do fornecedor:";
+            this.label4.Text = "telefone do fornecedor:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(33, 278);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 20);
+            this.label2.Size = new System.Drawing.Size(144, 20);
             this.label2.TabIndex = 40;
-            this.label2.Text = "nome do fornecedor:";
+            this.label2.Text = "Nome do fornecedor:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(428, 231);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 20);
+            this.label3.Size = new System.Drawing.Size(159, 20);
             this.label3.TabIndex = 41;
-            this.label3.Text = "quantidade de produto:";
+            this.label3.Text = "Quantidade de produto:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(55, 231);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 20);
+            this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 42;
-            this.label1.Text = "nome do produto:";
+            this.label1.Text = "Nome do produto:";
             // 
             // pictureBox1
             // 
