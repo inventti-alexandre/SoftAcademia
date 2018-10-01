@@ -9,6 +9,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Filial
     class FilialDTO
     {
         public int id_Filial { get; set; }
+        public string nm_Nome { get; set; }
         public string ds_CEP { get; set; }
         public string ds_Logradouro { get; set; }
         public string ds_Bairro { get; set; }

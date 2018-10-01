@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 {
-    class FuncionarioDTO
+    class view_Func_Usua_Filial
     {
         public int id_Funcionario { get; set; }
         public string nm_NomeFunc { get; set; }
@@ -26,5 +26,11 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
         public DateTime dt_Nasc { get; set; }
         public int fk_Func_Usuario { get; set; }
         public int fk_Func_Filial { get; set; }
+
+        public string nm_Usuario { get; set; }
+        public bool ds_Situacao { get; set; }
+
+        public string nm_Nome { get; set; }
+        public string ds_CEP { get; set; }
     }
 }

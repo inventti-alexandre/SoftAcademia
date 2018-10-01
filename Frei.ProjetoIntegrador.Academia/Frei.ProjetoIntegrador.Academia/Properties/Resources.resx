@@ -118,8 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="4eda16ef97c2e9b205bb2bed92def2c0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4eda16ef97c2e9b205bb2bed92def2c0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundo-de-borrao-abstrato-de-linhas-de-halteres-na-academia_10589-170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo-de-borrao-abstrato-de-linhas-de-halteres-na-academia_10589-170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="franquia-de-academia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\franquia-de-academia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-gif-dancing-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-gif-dancing-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ballerina-silhouette-gif-9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ballerina-silhouette-gif-9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="480px-Break_Dancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\480px-Break_Dancer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1288412340-carregando-e-o-1-gif-d-pedrohdlm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1288412340-carregando-e-o-1-gif-d-pedrohdlm.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="homem-3-pronto-para-entrar-em-forma-indside-academia-toledo-pr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\homem-3-pronto-para-entrar-em-forma-indside-academia-toledo-pr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,61 +148,43 @@
   <data name="26560de1b81c983" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\26560de1b81c983.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="capa-para-facebook-academia-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\capa-para-facebook-academia-8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoAcademia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoAcademia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo_numismatico_gd01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo_numismatico_gd01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-gif-dancing-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-gif-dancing-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QghjXph" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QghjXph.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4eda16ef97c2e9b205bb2bed92def2c0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4eda16ef97c2e9b205bb2bed92def2c0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1195422210884365214dancing_guy_gerald_g._02.svg.hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1195422210884365214dancing_guy_gerald_g._02.svg.hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1288412340-carregando-e-o-1-gif-d-pedrohdlm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1288412340-carregando-e-o-1-gif-d-pedrohdlm.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="QghjXph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QghjXph.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dancing couple silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dancing couple silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoAcademia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoAcademia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading-gif-png-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading-gif-png-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo-de-borrao-abstrato-de-linhas-de-halteres-na-academia_10589-170" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo-de-borrao-abstrato-de-linhas-de-halteres-na-academia_10589-170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ballerina-silhouette-gif-9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ballerina-silhouette-gif-9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="capa-para-facebook-academia-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\capa-para-facebook-academia-8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="franquia-de-academia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\franquia-de-academia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="franquia-de-academia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\franquia-de-academia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dancing couple silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dancing couple silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="capa-academia10-750x290" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\capa-academia10-750x290.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="loading-gif-png-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-gif-png-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo_numismatico_gd01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo_numismatico_gd01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image_preview.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="480px-Break_Dancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\480px-Break_Dancer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
