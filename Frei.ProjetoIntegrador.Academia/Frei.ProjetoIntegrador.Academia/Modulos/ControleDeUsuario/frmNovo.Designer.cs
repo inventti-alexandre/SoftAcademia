@@ -57,7 +57,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Italic);
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Location = new System.Drawing.Point(155, 284);
+            this.btnCadastrar.Location = new System.Drawing.Point(145, 291);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(102, 30);
             this.btnCadastrar.TabIndex = 57;
