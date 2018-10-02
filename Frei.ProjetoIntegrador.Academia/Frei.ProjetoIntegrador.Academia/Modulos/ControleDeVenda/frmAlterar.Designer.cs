@@ -54,14 +54,14 @@
             // 
             // txtnmusu
             // 
-            this.txtnmusu.Location = new System.Drawing.Point(320, 291);
+            this.txtnmusu.Location = new System.Drawing.Point(320, 288);
             this.txtnmusu.Name = "txtnmusu";
             this.txtnmusu.Size = new System.Drawing.Size(214, 20);
             this.txtnmusu.TabIndex = 8;
             // 
             // txtnmcli
             // 
-            this.txtnmcli.Location = new System.Drawing.Point(320, 244);
+            this.txtnmcli.Location = new System.Drawing.Point(320, 241);
             this.txtnmcli.Name = "txtnmcli";
             this.txtnmcli.Size = new System.Drawing.Size(214, 20);
             this.txtnmcli.TabIndex = 9;
@@ -78,54 +78,54 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(197, 288);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(188, 288);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 20);
+            this.label3.Size = new System.Drawing.Size(121, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "nome do usuario";
+            this.label3.Text = "Nome do usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(199, 244);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(193, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 20);
+            this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 5;
-            this.label2.Text = "nome do cliente:";
+            this.label2.Text = "Nome do cliente:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(211, 196);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(205, 196);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "data da venda:";
+            this.label1.Text = "Data da venda:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(250, 342);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(241, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 20);
+            this.label4.Size = new System.Drawing.Size(68, 20);
             this.label4.TabIndex = 4;
-            this.label4.Text = "id venda";
+            this.label4.Text = "Id venda:";
             // 
             // txtidvenda
             // 
-            this.txtidvenda.Location = new System.Drawing.Point(315, 342);
+            this.txtidvenda.Location = new System.Drawing.Point(320, 342);
             this.txtidvenda.Name = "txtidvenda";
-            this.txtidvenda.Size = new System.Drawing.Size(219, 20);
+            this.txtidvenda.Size = new System.Drawing.Size(214, 20);
             this.txtidvenda.TabIndex = 8;
             // 
             // label7

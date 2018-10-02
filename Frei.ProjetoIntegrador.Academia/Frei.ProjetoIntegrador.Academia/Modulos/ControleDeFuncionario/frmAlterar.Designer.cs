@@ -96,7 +96,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(45, 341);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(105, 29);
@@ -161,7 +161,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(307, 97);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 20);
@@ -180,7 +180,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(337, 71);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(27, 20);
@@ -195,7 +195,7 @@
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(260, 41);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 20);
+            this.label21.Size = new System.Drawing.Size(85, 20);
             this.label21.TabIndex = 0;
             this.label21.Text = "Nº Telefone:";
             // 
@@ -420,7 +420,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(94, 71);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 20);
@@ -439,7 +439,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(97, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
@@ -462,7 +462,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(136, 130);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(229, 34);
@@ -493,6 +493,7 @@
             // 
             this.rbnF.AutoSize = true;
             this.rbnF.BackColor = System.Drawing.Color.Transparent;
+            this.rbnF.ForeColor = System.Drawing.Color.Black;
             this.rbnF.Location = new System.Drawing.Point(392, 51);
             this.rbnF.Name = "rbnF";
             this.rbnF.Size = new System.Drawing.Size(67, 17);
@@ -505,7 +506,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(111, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 20);
@@ -517,6 +518,7 @@
             this.rbnM.AutoSize = true;
             this.rbnM.BackColor = System.Drawing.Color.Transparent;
             this.rbnM.Checked = true;
+            this.rbnM.ForeColor = System.Drawing.Color.Black;
             this.rbnM.Location = new System.Drawing.Point(313, 51);
             this.rbnM.Name = "rbnM";
             this.rbnM.Size = new System.Drawing.Size(73, 17);
@@ -530,7 +532,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(4, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 20);
@@ -551,7 +553,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(265, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 20);
@@ -563,7 +565,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(45, 189);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 29);
@@ -597,7 +599,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(45, 97);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(102, 20);
@@ -618,7 +620,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(60, 45);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
@@ -630,7 +632,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(111, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 20);
@@ -660,7 +662,7 @@
             this.lblId.AutoSize = true;
             this.lblId.BackColor = System.Drawing.Color.Transparent;
             this.lblId.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
-            this.lblId.ForeColor = System.Drawing.Color.White;
+            this.lblId.ForeColor = System.Drawing.Color.Black;
             this.lblId.Location = new System.Drawing.Point(444, 135);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(26, 29);
@@ -672,7 +674,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
-            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(401, 135);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(37, 29);
@@ -684,7 +686,7 @@
             this.lblIdUser.AutoSize = true;
             this.lblIdUser.BackColor = System.Drawing.Color.Transparent;
             this.lblIdUser.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.lblIdUser.ForeColor = System.Drawing.Color.White;
+            this.lblIdUser.ForeColor = System.Drawing.Color.Black;
             this.lblIdUser.Location = new System.Drawing.Point(471, 185);
             this.lblIdUser.Name = "lblIdUser";
             this.lblIdUser.Size = new System.Drawing.Size(18, 20);
@@ -696,7 +698,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Location = new System.Drawing.Point(403, 185);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(63, 20);
