@@ -110,10 +110,10 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNSenha = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rbnAtivo = new System.Windows.Forms.RadioButton();
             this.rbnInativo = new System.Windows.Forms.RadioButton();
+            this.rbnAtivo = new System.Windows.Forms.RadioButton();
             this.label23 = new System.Windows.Forms.Label();
             this.lblFilial = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -988,11 +988,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(122, 231);
+            this.label2.Location = new System.Drawing.Point(175, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 23);
+            this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 64;
-            this.label2.Text = "Antiga Senha:";
+            this.label2.Text = "Senha:";
             // 
             // label22
             // 
@@ -1006,14 +1006,14 @@
             this.label22.TabIndex = 64;
             this.label22.Text = "Nova Senha:";
             // 
-            // textBox1
+            // txtNSenha
             // 
-            this.textBox1.Font = new System.Drawing.Font("High Tower Text", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(245, 266);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 30);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txtNSenha.Font = new System.Drawing.Font("High Tower Text", 14.25F);
+            this.txtNSenha.Location = new System.Drawing.Point(245, 266);
+            this.txtNSenha.Name = "txtNSenha";
+            this.txtNSenha.Size = new System.Drawing.Size(162, 30);
+            this.txtNSenha.TabIndex = 2;
+            this.txtNSenha.UseSystemPasswordChar = true;
             // 
             // panel1
             // 
@@ -1024,6 +1024,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(194, 57);
             this.panel1.TabIndex = 71;
+            // 
+            // rbnInativo
+            // 
+            this.rbnInativo.AutoSize = true;
+            this.rbnInativo.Font = new System.Drawing.Font("High Tower Text", 14.25F);
+            this.rbnInativo.Location = new System.Drawing.Point(90, 17);
+            this.rbnInativo.Name = "rbnInativo";
+            this.rbnInativo.Size = new System.Drawing.Size(87, 26);
+            this.rbnInativo.TabIndex = 3;
+            this.rbnInativo.Text = "Inativo";
+            this.rbnInativo.UseVisualStyleBackColor = true;
             // 
             // rbnAtivo
             // 
@@ -1037,17 +1048,6 @@
             this.rbnAtivo.TabStop = true;
             this.rbnAtivo.Text = "Ativo";
             this.rbnAtivo.UseVisualStyleBackColor = true;
-            // 
-            // rbnInativo
-            // 
-            this.rbnInativo.AutoSize = true;
-            this.rbnInativo.Font = new System.Drawing.Font("High Tower Text", 14.25F);
-            this.rbnInativo.Location = new System.Drawing.Point(90, 17);
-            this.rbnInativo.Name = "rbnInativo";
-            this.rbnInativo.Size = new System.Drawing.Size(87, 26);
-            this.rbnInativo.TabIndex = 3;
-            this.rbnInativo.Text = "Inativo";
-            this.rbnInativo.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
@@ -1142,7 +1142,7 @@
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNSenha);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txtUsuario);
@@ -1246,7 +1246,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNSenha;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rbnInativo;
         private System.Windows.Forms.RadioButton rbnAtivo;

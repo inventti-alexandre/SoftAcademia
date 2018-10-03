@@ -38,6 +38,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Cliente.Substring(2, 1) == "0")
                 {
                     novoToolStripMenuItem2.Enabled = false;
+                    btnCliente.Enabled = false;
                 }
             }
 
@@ -51,6 +52,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Funcionario.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem8.Enabled = false;
+                    btnFunc.Enabled = false;
                 }
             }
 
@@ -64,6 +66,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Usuario.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem9.Enabled = false;
+                    btnUsu.Enabled = false;
                 }
             }
 
@@ -78,6 +81,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Aulas.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem6.Enabled = false;
+                    btnAula.Enabled = false;
                 }
             }
 
@@ -104,6 +108,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Compra.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem1.Enabled = false;
+                    btnComprar.Enabled = false;
                 }
             }
 
@@ -117,6 +122,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Venda.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem2.Enabled = false;
+                    btnVender.Enabled = false;
                 }
             }
 
@@ -143,6 +149,7 @@ namespace Frei.ProjetoIntegrador.Academia
                 if (permissoes.Fornecedor.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem7.Enabled = false;
+                    btnFornecedores.Enabled = false;
                 }
             }
 
@@ -189,6 +196,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -197,6 +205,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void adicionarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,6 +214,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem6_Click(object sender, EventArgs e)
@@ -213,6 +223,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void novoToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -221,6 +232,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem7_Click(object sender, EventArgs e)
@@ -229,6 +241,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem8_Click(object sender, EventArgs e)
@@ -237,6 +250,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -245,6 +259,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem9_Click(object sender, EventArgs e)
@@ -253,6 +268,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem6_Click(object sender, EventArgs e)
@@ -261,6 +277,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -269,6 +286,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -277,6 +295,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -285,6 +304,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -293,6 +313,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -301,6 +322,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -309,6 +331,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -317,6 +340,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -325,6 +349,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -333,6 +358,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void cadastrarToolStripMenuItem5_Click(object sender, EventArgs e)
@@ -341,6 +367,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem7_Click(object sender, EventArgs e)
@@ -349,6 +376,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -357,6 +385,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -365,6 +394,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -373,6 +403,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void consultarToolStripMenuItem5_Click(object sender, EventArgs e)
@@ -381,6 +412,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnCliente_Click(object sender, EventArgs e)
@@ -389,6 +421,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
@@ -397,6 +430,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnFunc_Click(object sender, EventArgs e)
@@ -405,6 +439,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnUsu_Click(object sender, EventArgs e)
@@ -413,6 +448,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnAula_Click(object sender, EventArgs e)
@@ -421,6 +457,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnVender_Click(object sender, EventArgs e)
@@ -429,6 +466,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
@@ -437,6 +475,7 @@ namespace Frei.ProjetoIntegrador.Academia
             Hide();
             frm.ShowDialog();
             Show();
+            Permissoes();
         }
     }
 }

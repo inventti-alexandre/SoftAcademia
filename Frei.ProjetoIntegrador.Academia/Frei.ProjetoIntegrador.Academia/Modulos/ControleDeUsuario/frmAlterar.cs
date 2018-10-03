@@ -1,4 +1,5 @@
 ﻿using Frei.ProjetoIntegrador.Academia.DB.Usuario;
+using Nsf._2018.Modulo3.App;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -98,10 +99,20 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
             try
             {
                 UsuarioDTO user = new UsuarioDTO();
+                user.id_Usuario = Convert.ToInt32(lblId.Text);
                 user.nm_Usuario = txtUsuario.Text;
-                user.ds_Senha = txtSenha.Text;
                 user.ds_Situacao = true;
                 user.Cod_Perm = Code();
+
+                if (txtNSenha.Text == string.Empty)
+                {
+                    user.ds_Senha = txtSenha.Text;
+                }
+                else
+                    user.ds_Senha = txtSenha.Text == txtNSenha.Text ? txtSenha.Text : throw new ArgumentException("As senhas não são iguais.");
+
+                if (user.id_Usuario == UserSession.UsuarioLogado.id_Usuario)
+                    throw new ArgumentException("Impossível alterar seu usuário enquanto estiver logado.");
 
                 UsuarioBusiness business = new UsuarioBusiness();
                 business.AlterarUsuario(user);

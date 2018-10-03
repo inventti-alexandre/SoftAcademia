@@ -16,6 +16,9 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Usuario
 
         public int AlterarUsuario(UsuarioDTO dto)
         {
+            if (dto.ds_Senha == string.Empty)
+                throw new ArgumentException("A senha não pode ser nula");
+
             UsuarioDatabase db = new UsuarioDatabase();
             return db.AlterarUsuario(dto);
         }
