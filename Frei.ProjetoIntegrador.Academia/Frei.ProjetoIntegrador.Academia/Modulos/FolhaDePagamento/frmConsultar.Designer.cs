@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvViagem = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnremove = new System.Windows.Forms.Button();
             this.btnalterar = new System.Windows.Forms.Button();
             this.btnnovo = new System.Windows.Forms.Button();
@@ -40,6 +37,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             // 
             this.dgvViagem.AllowUserToAddRows = false;
             this.dgvViagem.AllowUserToDeleteRows = false;
+            this.dgvViagem.BackgroundColor = System.Drawing.Color.White;
             this.dgvViagem.ColumnHeadersHeight = 40;
             this.dgvViagem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvViagem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -62,26 +63,8 @@
             this.dgvViagem.RowTemplate.Height = 30;
             this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(699, 172);
+            this.dgvViagem.Size = new System.Drawing.Size(303, 172);
             this.dgvViagem.TabIndex = 6;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "data";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "valor";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "desconto";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // btnremove
             // 
@@ -96,7 +79,7 @@
             // btnalterar
             // 
             this.btnalterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnalterar.Location = new System.Drawing.Point(430, 393);
+            this.btnalterar.Location = new System.Drawing.Point(479, 393);
             this.btnalterar.Name = "btnalterar";
             this.btnalterar.Size = new System.Drawing.Size(75, 28);
             this.btnalterar.TabIndex = 11;
@@ -106,7 +89,7 @@
             // btnnovo
             // 
             this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnnovo.Location = new System.Drawing.Point(687, 393);
+            this.btnnovo.Location = new System.Drawing.Point(641, 393);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(75, 28);
             this.btnnovo.TabIndex = 12;
@@ -115,9 +98,9 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(176, 189);
+            this.txtID.Location = new System.Drawing.Point(73, 178);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(210, 20);
+            this.txtID.Size = new System.Drawing.Size(293, 20);
             this.txtID.TabIndex = 9;
             // 
             // label1
@@ -125,12 +108,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(131, 189);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(42, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 20);
+            this.label1.Size = new System.Drawing.Size(25, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "id";
+            this.label1.Text = "Id:";
             // 
             // label7
             // 
@@ -164,6 +147,24 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Data";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Valor";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Desconto";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // frmConsultar
             // 
@@ -200,11 +201,11 @@
         private System.Windows.Forms.Button btnnovo;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
