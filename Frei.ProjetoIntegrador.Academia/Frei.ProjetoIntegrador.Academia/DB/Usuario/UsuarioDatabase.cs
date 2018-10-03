@@ -46,12 +46,12 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Usuario
             return db.ExecuteInsertScriptWithPk(script, parms);
         }
 
-        public int RemoverUsuario(UsuarioDTO dto)
+        public int RemoverUsuario(int id)
         {
             string script = @"DELETE FROM tb_usuario WHERE id_Usuario = @id_Usuario";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
-            parms.Add(new MySqlParameter("id_Usuario", dto.id_Usuario));
+            parms.Add(new MySqlParameter("id_Usuario", id));
 
             Database db = new Database();
             return db.ExecuteInsertScriptWithPk(script, parms);
@@ -119,6 +119,39 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Usuario
 
             reader.Close();
             return usuarios;
+        }
+
+        public view_Usuario_Filial ConsultarPorId(string id)
+        {
+            string script = $@"SELECT `tb_usuario`.*,
+                                      `tb_Filial`.nm_Nome,
+                                      `tb_Filial`.ds_CEP
+                                 FROM `tb_usuario` 
+                                 JOIN `tb_Filial` 
+                                   ON fk_Usuario_Filial = id_Filial
+    
+                                WHERE id_Usuario LIKE '%{id}%'";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+
+            Database db = new Database();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            view_Usuario_Filial user = new view_Usuario_Filial();
+            while (reader.Read())
+            {
+                user.id_Usuario = reader.GetInt32("id_Usuario");
+                user.nm_Nome = reader.GetString("nm_Nome");
+                user.nm_Usuario = reader.GetString("nm_Usuario");
+                user.fk_Usuario_Filial = reader.GetInt32("fk_Usuario_Filial");
+                user.ds_Situacao = reader.GetBoolean("ds_Situacao");
+                user.ds_Senha = reader.GetString("ds_Senha");
+                user.ds_CEP = reader.GetString("ds_CEP");
+                user.Cod_Perm = reader.GetString("Cod_Perm");
+            }
+
+            reader.Close();
+            return user;
         }
 
         public List<view_Usuario_Filial> ConsultarPorNome_Filial(string nome, int filial)

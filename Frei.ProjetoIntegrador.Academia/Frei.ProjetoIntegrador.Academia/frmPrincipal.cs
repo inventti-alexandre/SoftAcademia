@@ -25,23 +25,150 @@ namespace Frei.ProjetoIntegrador.Academia
             UsuarioDTO user = UserSession.UsuarioLogado;
             lblBV.Text = $"Bem vindo, {user.nm_Usuario}";
 
-            if (user.Cod_Perm.Substring(0,1) == "0")
+            UsuarioPermissoes chamar = new UsuarioPermissoes();
+            UsuarioPermissoes permissoes = chamar.Permissoes(user.Cod_Perm);
+
+            if (permissoes.Cliente.Substring(0, 1) == "0")
             {
-                if (user.Cod_Perm.Substring(1, 1) == "0")
+                if (permissoes.Cliente.Substring(1, 1) == "0")
                 {
-                    pessoalToolStripMenuItem.Enabled = false;
+                    cadastrarToolStripMenuItem6.Enabled = false;
                 }
-                if (user.Cod_Perm.Substring(2, 1) == "0")
+
+                if (permissoes.Cliente.Substring(2, 1) == "0")
                 {
-                    serviçosToolStripMenuItem.Enabled = false;
+                    novoToolStripMenuItem2.Enabled = false;
                 }
-                if (user.Cod_Perm.Substring(3, 1) == "0")
+            }
+
+            if (permissoes.Funcionario.Substring(0, 1) == "0")
+            {
+                if (permissoes.Funcionario.Substring(1, 1) == "0")
                 {
-                    produtosToolStripMenuItem.Enabled = false;
+                    cadastrarToolStripMenuItem7.Enabled = false;
                 }
-                if (user.Cod_Perm.Substring(4, 1) == "0")
+
+                if (permissoes.Funcionario.Substring(2, 1) == "0")
                 {
-                    finançasToolStripMenuItem.Enabled = false;
+                    consultarToolStripMenuItem8.Enabled = false;
+                }
+            }
+
+            if (permissoes.Usuario.Substring(0, 1) == "0")
+            {
+                if (permissoes.Usuario.Substring(1, 1) == "0")
+                {
+                    cadastarToolStripMenuItem.Enabled = false;
+                }
+
+                if (permissoes.Usuario.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem9.Enabled = false;
+                }
+            }
+
+            if (permissoes.Aulas.Substring(0, 1) == "0")
+            {
+
+                if (permissoes.Aulas.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem4.Enabled = false;
+                }
+
+                if (permissoes.Aulas.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem6.Enabled = false;
+                }
+            }
+
+            if (permissoes.Produto.Substring(0, 1) == "0")
+            {
+                if (permissoes.Produto.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem.Enabled = false;
+                }
+
+                if (permissoes.Produto.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem.Enabled = false;
+                }
+            }
+
+            if (permissoes.Compra.Substring(0, 1) == "0")
+            {
+                if (permissoes.Compra.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem1.Enabled = false;
+                }
+
+                if (permissoes.Compra.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem1.Enabled = false;
+                }
+            }
+
+            if (permissoes.Venda.Substring(0, 1) == "0")
+            {
+                if (permissoes.Venda.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem2.Enabled = false;
+                }
+
+                if (permissoes.Venda.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem2.Enabled = false;
+                }
+            }
+
+            if (permissoes.Estoque.Substring(0, 1) == "0")
+            {
+                if (permissoes.Estoque.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem3.Enabled = false;
+                }
+
+                if (permissoes.Estoque.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem3.Enabled = false;
+                }
+            }
+
+            if (permissoes.Fornecedor.Substring(0, 1) == "0")
+            {
+                if (permissoes.Fornecedor.Substring(1, 1) == "0")
+                {
+                    cadastrarToolStripMenuItem5.Enabled = false;
+                }
+
+                if (permissoes.Fornecedor.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem7.Enabled = false;
+                }
+            }
+
+            if (permissoes.FluxoDeCaixa.Substring(0, 1) == "0")
+            {
+                if (permissoes.FluxoDeCaixa.Substring(1, 1) == "0")
+                {
+                    novoToolStripMenuItem.Enabled = false;
+                }
+
+                if (permissoes.FluxoDeCaixa.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem4.Enabled = false;
+                }
+            }
+
+            if (permissoes.FolhaDePgmt.Substring(0, 1) == "0")
+            {
+                if (permissoes.FolhaDePgmt.Substring(1, 1) == "0")
+                {
+                    novoToolStripMenuItem1.Enabled = false;
+                }
+
+                if (permissoes.FolhaDePgmt.Substring(2, 1) == "0")
+                {
+                    consultarToolStripMenuItem5.Enabled = false;
                 }
             }
         } 
