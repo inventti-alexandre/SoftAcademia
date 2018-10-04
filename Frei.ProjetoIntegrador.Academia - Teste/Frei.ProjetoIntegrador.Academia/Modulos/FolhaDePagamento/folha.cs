@@ -16,5 +16,15 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
         {
             InitializeComponent();
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
