@@ -253,6 +253,12 @@
     <Compile Include="Modulos\ControleDeUsuario\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeVenda\Cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeVenda\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeVenda\frmAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeUsuario\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeVenda\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeVenda\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
