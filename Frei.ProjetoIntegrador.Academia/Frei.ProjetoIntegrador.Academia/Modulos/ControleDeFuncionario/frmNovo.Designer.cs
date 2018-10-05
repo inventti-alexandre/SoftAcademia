@@ -98,6 +98,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(152, 22);
+            this.txtNome.MaxLength = 150;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(307, 20);
             this.txtNome.TabIndex = 0;
@@ -287,20 +288,25 @@
             // txtNRes
             // 
             this.txtNRes.Location = new System.Drawing.Point(370, 100);
+            this.txtNRes.MaxLength = 10;
             this.txtNRes.Name = "txtNRes";
             this.txtNRes.Size = new System.Drawing.Size(89, 20);
             this.txtNRes.TabIndex = 11;
+            this.txtNRes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNRes_KeyPress);
             // 
             // txtUF
             // 
             this.txtUF.Location = new System.Drawing.Point(370, 74);
+            this.txtUF.MaxLength = 2;
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(89, 20);
             this.txtUF.TabIndex = 9;
+            this.txtUF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUF_KeyPress);
             // 
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(152, 74);
+            this.txtBairro.MaxLength = 150;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(179, 20);
             this.txtBairro.TabIndex = 8;
@@ -308,6 +314,7 @@
             // txtComplemento
             // 
             this.txtComplemento.Location = new System.Drawing.Point(152, 100);
+            this.txtComplemento.MaxLength = 150;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(149, 20);
             this.txtComplemento.TabIndex = 10;
@@ -327,6 +334,7 @@
             // txtLogradouro
             // 
             this.txtLogradouro.Location = new System.Drawing.Point(152, 48);
+            this.txtLogradouro.MaxLength = 200;
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(307, 20);
             this.txtLogradouro.TabIndex = 7;
@@ -430,7 +438,7 @@
             // txtNTelefone
             // 
             this.txtNTelefone.Location = new System.Drawing.Point(350, 44);
-            this.txtNTelefone.Mask = "(99) 99999-9999";
+            this.txtNTelefone.Mask = "(99) 9999-9999";
             this.txtNTelefone.Name = "txtNTelefone";
             this.txtNTelefone.Size = new System.Drawing.Size(109, 20);
             this.txtNTelefone.TabIndex = 14;

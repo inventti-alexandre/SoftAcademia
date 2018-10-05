@@ -322,6 +322,7 @@
     <Compile Include="UserSession.cs" />
     <Compile Include="Validacoes\CNPJ.cs" />
     <Compile Include="Validacoes\CPF.cs" />
+    <Compile Include="Validacoes\exReg.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

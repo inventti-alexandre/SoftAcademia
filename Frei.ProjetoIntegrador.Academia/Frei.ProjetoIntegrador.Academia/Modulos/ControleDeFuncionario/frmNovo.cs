@@ -41,10 +41,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -81,9 +81,16 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (ex.Message.Contains("'ds_CPF'"))
+                    MessageBox.Show("Este CPF já foi cadastrado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (ex.Message.Contains("`id_Usuario`"))
+                    MessageBox.Show("Usuário não autenticado!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (ex.Message.Contains("'fk_Func_Usuario'"))
+                    MessageBox.Show("Este usuário já está em uso.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -93,6 +100,26 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
             UsuarioDTO user = business.Autenticar(nome, senha);
 
             return user.id_Usuario;
+        }
+
+        private void txtUF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void txtNRes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
         }
     }
 }

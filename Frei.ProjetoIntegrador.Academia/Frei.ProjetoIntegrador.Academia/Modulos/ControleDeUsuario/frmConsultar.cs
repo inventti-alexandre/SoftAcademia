@@ -78,6 +78,9 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
 
                 view_Usuario_Filial data = dgvUsuario.CurrentRow.DataBoundItem as view_Usuario_Filial;
 
+                if (data.id_Usuario == 1)
+                    throw new ArgumentException("Esse usuário não pode ser excluído!");
+
                 UsuarioBusiness business = new UsuarioBusiness();
                 business.RemoverUsuario(data.id_Usuario);
                 CarregarGrid();

@@ -134,6 +134,7 @@
             this.txtNRes.Name = "txtNRes";
             this.txtNRes.Size = new System.Drawing.Size(89, 20);
             this.txtNRes.TabIndex = 11;
+            this.txtNRes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNRes_KeyPress);
             // 
             // txtUF
             // 
@@ -141,6 +142,7 @@
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(89, 20);
             this.txtUF.TabIndex = 9;
+            this.txtUF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUF_KeyPress);
             // 
             // txtBairro
             // 
@@ -712,7 +714,7 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(518, 496);
+            this.ClientSize = new System.Drawing.Size(535, 496);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label10);

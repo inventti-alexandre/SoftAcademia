@@ -106,13 +106,19 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
 
                 if (txtNSenha.Text == string.Empty)
                 {
-                    user.ds_Senha = txtSenha.Text;
+                    if (ValidarUsuario(txtUsuario.Text, txtSenha.Text) != 0)
+                        user.ds_Senha = txtSenha.Text;
+                    else
+                        throw new ArgumentException("Autenticação falhou!");
                 }
                 else
                     user.ds_Senha = txtSenha.Text == txtNSenha.Text ? txtSenha.Text : throw new ArgumentException("As senhas não são iguais.");
 
                 if (user.id_Usuario == UserSession.UsuarioLogado.id_Usuario)
                     throw new ArgumentException("Impossível alterar seu usuário enquanto estiver logado.");
+
+                if (user.id_Usuario == 1)
+                    throw new ArgumentException("Impossível alterar o usuário Admin.");
 
                 UsuarioBusiness business = new UsuarioBusiness();
                 business.AlterarUsuario(user);
@@ -127,6 +133,14 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
             {
                 MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private int ValidarUsuario(string nome, string senha)
+        {
+            LoginBusiness business = new LoginBusiness();
+            UsuarioDTO user = business.Autenticar(nome, senha);
+
+            return user.id_Usuario;
         }
 
         private string Code()
