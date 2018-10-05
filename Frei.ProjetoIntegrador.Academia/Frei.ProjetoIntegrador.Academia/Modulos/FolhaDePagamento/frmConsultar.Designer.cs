@@ -28,143 +28,215 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvViagem = new System.Windows.Forms.DataGridView();
-            this.btnremove = new System.Windows.Forms.Button();
-            this.btnalterar = new System.Windows.Forms.Button();
-            this.btnnovo = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtFilial = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.dgvFolha = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVisualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFolha)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvViagem
-            // 
-            this.dgvViagem.AllowUserToAddRows = false;
-            this.dgvViagem.AllowUserToDeleteRows = false;
-            this.dgvViagem.BackgroundColor = System.Drawing.Color.White;
-            this.dgvViagem.ColumnHeadersHeight = 40;
-            this.dgvViagem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvViagem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dgvViagem.Location = new System.Drawing.Point(63, 215);
-            this.dgvViagem.Name = "dgvViagem";
-            this.dgvViagem.ReadOnly = true;
-            this.dgvViagem.RowHeadersVisible = false;
-            this.dgvViagem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvViagem.RowTemplate.Height = 30;
-            this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(303, 172);
-            this.dgvViagem.TabIndex = 6;
-            // 
-            // btnremove
-            // 
-            this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnremove.Location = new System.Drawing.Point(560, 393);
-            this.btnremove.Name = "btnremove";
-            this.btnremove.Size = new System.Drawing.Size(75, 28);
-            this.btnremove.TabIndex = 10;
-            this.btnremove.Text = "Remover";
-            this.btnremove.UseVisualStyleBackColor = true;
-            // 
-            // btnalterar
-            // 
-            this.btnalterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnalterar.Location = new System.Drawing.Point(479, 393);
-            this.btnalterar.Name = "btnalterar";
-            this.btnalterar.Size = new System.Drawing.Size(75, 28);
-            this.btnalterar.TabIndex = 11;
-            this.btnalterar.Text = "Alterar";
-            this.btnalterar.UseVisualStyleBackColor = true;
-            // 
-            // btnnovo
-            // 
-            this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnnovo.Location = new System.Drawing.Point(641, 393);
-            this.btnnovo.Name = "btnnovo";
-            this.btnnovo.Size = new System.Drawing.Size(75, 28);
-            this.btnnovo.TabIndex = 12;
-            this.btnnovo.Text = "Novo";
-            this.btnnovo.UseVisualStyleBackColor = true;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(73, 178);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(293, 20);
-            this.txtID.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(42, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Id:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(321, 117);
+            this.label7.Location = new System.Drawing.Point(186, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(217, 34);
+            this.label7.Size = new System.Drawing.Size(367, 34);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Consultar Estoque";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(402, 175);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 34);
-            this.btnBuscar.TabIndex = 37;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.label7.Text = "Consultar Folhas de Pagamento";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(278, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
             // 
+            // txtFilial
+            // 
+            this.txtFilial.Location = new System.Drawing.Point(266, 34);
+            this.txtFilial.Name = "txtFilial";
+            this.txtFilial.Size = new System.Drawing.Size(81, 20);
+            this.txtFilial.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(218, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Filial:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(7, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "CPF:";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtFilial);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtCPF);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Location = new System.Drawing.Point(12, 188);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(699, 76);
+            this.panel1.TabIndex = 45;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(48, 34);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(151, 20);
+            this.txtCPF.TabIndex = 5;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnBuscar.Location = new System.Drawing.Point(611, 28);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 26);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnRemover.Location = new System.Drawing.Point(531, 570);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(87, 28);
+            this.btnRemover.TabIndex = 40;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnAlterar.Location = new System.Drawing.Point(438, 570);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(87, 28);
+            this.btnAlterar.TabIndex = 41;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnNovo.Location = new System.Drawing.Point(12, 570);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(87, 28);
+            this.btnNovo.TabIndex = 42;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            // 
+            // dgvFolha
+            // 
+            this.dgvFolha.AllowUserToAddRows = false;
+            this.dgvFolha.AllowUserToDeleteRows = false;
+            this.dgvFolha.ColumnHeadersHeight = 40;
+            this.dgvFolha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvFolha.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgvFolha.Location = new System.Drawing.Point(12, 276);
+            this.dgvFolha.Name = "dgvFolha";
+            this.dgvFolha.ReadOnly = true;
+            this.dgvFolha.RowHeadersVisible = false;
+            this.dgvFolha.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvFolha.RowTemplate.Height = 30;
+            this.dgvFolha.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFolha.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFolha.Size = new System.Drawing.Size(699, 288);
+            this.dgvFolha.TabIndex = 39;
+            // 
             // Column1
             // 
-            this.Column1.HeaderText = "Data";
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "nm_NomeFunc";
+            this.Column1.HeaderText = "Nome";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Valor";
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "ds_CPF";
+            this.Column2.HeaderText = "CPF";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Desconto";
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "ds_Cargo";
+            this.Column3.HeaderText = "Função";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "vl_SalarioBruto";
+            this.Column4.HeaderText = "Salário Bruto";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "ds_DiasTrabalhados";
+            this.Column5.HeaderText = "Dias Trabalhados";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnVisualizar.Location = new System.Drawing.Point(624, 570);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(87, 28);
+            this.btnVisualizar.TabIndex = 41;
+            this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // frmConsultar
             // 
@@ -172,40 +244,46 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(722, 612);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnRemover);
+            this.Controls.Add(this.btnVisualizar);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.dgvFolha);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dgvViagem);
-            this.Controls.Add(this.btnremove);
-            this.Controls.Add(this.btnalterar);
-            this.Controls.Add(this.btnnovo);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Fit LTDA";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFolha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvViagem;
-        private System.Windows.Forms.Button btnremove;
-        private System.Windows.Forms.Button btnalterar;
-        private System.Windows.Forms.Button btnnovo;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtFilial;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.DataGridView dgvFolha;
+        private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

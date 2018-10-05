@@ -65,9 +65,13 @@
     <Compile Include="DB\FluxoDeCaixa\FluxoDeCaixaBusiness.cs" />
     <Compile Include="DB\FluxoDeCaixa\FluxoDeCaixaDatabase.cs" />
     <Compile Include="DB\FluxoDeCaixa\FluxoDeCaixaDTO.cs" />
+    <Compile Include="DB\FolhaPgmt\Descontos_DTO.cs" />
     <Compile Include="DB\FolhaPgmt\FolhaPgmtBusiness.cs" />
     <Compile Include="DB\FolhaPgmt\FolhaPgmtDatabase.cs" />
     <Compile Include="DB\FolhaPgmt\FolhaPgmtDTO.cs" />
+    <Compile Include="DB\FolhaPgmt\INSS_DTO.cs" />
+    <Compile Include="DB\FolhaPgmt\IR_DTO.cs" />
+    <Compile Include="DB\FolhaPgmt\view_func_folha.cs" />
     <Compile Include="DB\Fornecedor\FornecedorBusiness.cs" />
     <Compile Include="DB\Fornecedor\FornecedorDatabase.cs" />
     <Compile Include="DB\Fornecedor\FornecedorDTO.cs" />
@@ -295,6 +299,12 @@
     <Compile Include="Modulos\FolhaDePagamento\frmAlterar.Designer.cs">
       <DependentUpon>frmAlterar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\FolhaDePagamento\frmVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\FolhaDePagamento\frmVisualizar.Designer.cs">
+      <DependentUpon>frmVisualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\FolhaDePagamento\frmConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -416,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\FolhaDePagamento\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\FolhaDePagamento\frmVisualizar.resx">
+      <DependentUpon>frmVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -138,15 +138,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorNome(string nome)
         {
-            string script = $@"SELECT `tb_Funcionario`.*,
-		                             `tb_Usuario`.nm_Usuario,
-		                             `tb_Usuario`.ds_Situacao,
+            string script = $@"SELECT `tb_funcionario`.*,
+		                             `tb_usuario`.nm_Usuario,
+		                             `tb_usuario`.ds_Situacao,
                                      `tb_Filial`.nm_Nome,
                                      `tb_Filial`.ds_CEP
-                                FROM `tb_Funcionario`
+                                FROM `tb_funcionario`
                                 JOIN `tb_Filial` 
                                 ON fk_Func_Filial = id_Filial 
-                                JOIN `tb_Usuario` 
+                                JOIN `tb_usuario` 
                                 ON fk_Func_Usuario = id_Usuario
 
                                 WHERE nm_NomeFunc LIKE '%{nome}%'";
@@ -192,15 +192,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public view_Func_Usua_Filial ConsultarPorId(int id)
         {
-            string script = $@"SELECT `tb_Funcionario`.*,
-		                             `tb_Usuario`.nm_Usuario,
-		                             `tb_Usuario`.ds_Situacao,
+            string script = $@"SELECT `tb_funcionario`.*,
+		                             `tb_usuario`.nm_Usuario,
+		                             `tb_usuario`.ds_Situacao,
                                      `tb_Filial`.nm_Nome,
                                      `tb_Filial`.ds_CEP
-                                FROM `tb_Funcionario`
+                                FROM `tb_funcionario`
                                 JOIN `tb_Filial` 
                                 ON fk_Func_Filial = id_Filial 
-                                JOIN `tb_Usuario` 
+                                JOIN `tb_usuario` 
                                 ON fk_Func_Usuario = id_Usuario
 
                                 WHERE id_Funcionario = '{id}'";
@@ -243,15 +243,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorCPF(string cpf)
         {
-            string script = @"SELECT `tb_Funcionario`.*,
-		                             `tb_Usuario`.nm_Usuario,
-		                             `tb_Usuario`.ds_Situacao,
+            string script = @"SELECT `tb_funcionario`.*,
+		                             `tb_usuario`.nm_Usuario,
+		                             `tb_usuario`.ds_Situacao,
                                      `tb_Filial`.nm_Nome,
                                      `tb_Filial`.ds_CEP
-                                FROM `tb_Funcionario`
+                                FROM `tb_funcionario`
                                 JOIN `tb_Filial` 
                                 ON fk_Func_Filial = id_Filial 
-                                JOIN `tb_Usuario` 
+                                JOIN `tb_usuario` 
                                 ON fk_Func_Usuario = id_Usuario
 
                                 WHERE ds_CPF = @ds_CPF";
@@ -298,15 +298,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorFilial(int idFilial)
         {
-            string script = @"SELECT `tb_Funcionario`.*,
-		                             `tb_Usuario`.nm_Usuario,
-		                             `tb_Usuario`.ds_Situacao,
+            string script = @"SELECT `tb_funcionario`.*,
+		                             `tb_usuario`.nm_Usuario,
+		                             `tb_usuario`.ds_Situacao,
                                      `tb_Filial`.nm_Nome,
                                      `tb_Filial`.ds_CEP
-                                FROM `tb_Funcionario`
+                                FROM `tb_funcionario`
                                 JOIN `tb_Filial` 
                                 ON fk_Func_Filial = id_Filial 
-                                JOIN `tb_Usuario` 
+                                JOIN `tb_usuario` 
                                 ON fk_Func_Usuario = id_Usuario
 
                                 WHERE fk_Func_Filial = @fk_Func_Filial";
@@ -353,15 +353,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorNome_Filial(int idFilial, string nome)
         {
-            string script = $@"SELECT `tb_Funcionario`.*,
-		                             `tb_Usuario`.nm_Usuario,
-		                             `tb_Usuario`.ds_Situacao,
+            string script = $@"SELECT `tb_funcionario`.*,
+		                             `tb_usuario`.nm_Usuario,
+		                             `tb_usuario`.ds_Situacao,
                                      `tb_Filial`.nm_Nome,
                                      `tb_Filial`.ds_CEP
-                                FROM `tb_Funcionario`
+                                FROM `tb_funcionario`
                                 JOIN `tb_Filial` 
                                 ON fk_Func_Filial = id_Filial 
-                                JOIN `tb_Usuario` 
+                                JOIN `tb_usuario` 
                                 ON fk_Func_Usuario = id_Usuario
 
                                 WHERE fk_Func_Filial = @fk_Func_Filial%
