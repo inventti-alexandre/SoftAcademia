@@ -37,8 +37,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
                                                           ds_Cargo = @ds_Cargo,
                                                         ds_HoraE50 = @ds_HoraE50, 
                                                        ds_HoraE100 = @ds_HoraE100,
-                                                       ds_Mensagem = @ds_Mensagem,
-                                                 fk_FolhaPgmt_Func = @fk_FolhaPgmt_Func
+                                                       ds_Mensagem = @ds_Mensagem
     
                                                WHERE id_Folha_Pgmt = @id_Folha_Pgmt";
 

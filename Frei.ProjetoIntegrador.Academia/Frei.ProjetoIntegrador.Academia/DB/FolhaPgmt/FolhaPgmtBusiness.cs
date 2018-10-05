@@ -37,5 +37,17 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
             FolhaPgmtDatabase db = new FolhaPgmtDatabase();
             return db.ConsultarPorId(id);
         }
+
+        public List<view_func_folha> ConsultarPorFilial(string filial)
+        {
+            FolhaPgmtDatabase db = new FolhaPgmtDatabase();
+            return db.ConsultarPorFilial(filial);
+        }
+
+        public view_func_folha ConsultarPorCPF(string CPF)
+        {
+            FolhaPgmtDatabase db = new FolhaPgmtDatabase();
+            return db.ConsultarPorCPF(CPF);
+        }
     }
 }
