@@ -106,7 +106,7 @@
             // txtNTelefone
             // 
             this.txtNTelefone.Location = new System.Drawing.Point(350, 44);
-            this.txtNTelefone.Mask = "(99) 99999-9999";
+            this.txtNTelefone.Mask = "(99) 9999-9999";
             this.txtNTelefone.Name = "txtNTelefone";
             this.txtNTelefone.Size = new System.Drawing.Size(109, 20);
             this.txtNTelefone.TabIndex = 14;
