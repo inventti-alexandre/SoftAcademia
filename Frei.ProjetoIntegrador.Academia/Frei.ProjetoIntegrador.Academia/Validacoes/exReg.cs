@@ -80,7 +80,7 @@ namespace Frei.ProjetoIntegrador.Academia.Validacoes
             if (senha.Contains(" "))
                 throw new ArgumentException("Não utilize espaço na senha!");
 
-            if (senha.Length > 16 || senha.Length < 5)
+            if (senha.Length >= 16 || senha.Length < 5)
                 throw new ArgumentException("A senha deve ter entre 4 e 16 caractéres");
 
             return true;

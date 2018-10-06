@@ -141,11 +141,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(34, 359);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(137, 24);
+            this.label21.Size = new System.Drawing.Size(98, 20);
             this.label21.TabIndex = 46;
             this.label21.Text = "Fluxo de Caixa";
             // 
@@ -777,11 +777,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(34, 394);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(133, 24);
+            this.label19.Size = new System.Drawing.Size(98, 20);
             this.label19.TabIndex = 46;
             this.label19.Text = "Folha de Pgmt";
             // 
@@ -801,11 +801,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(34, 326);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 24);
+            this.label18.Size = new System.Drawing.Size(83, 20);
             this.label18.TabIndex = 46;
             this.label18.Text = "Fornecedor";
             // 

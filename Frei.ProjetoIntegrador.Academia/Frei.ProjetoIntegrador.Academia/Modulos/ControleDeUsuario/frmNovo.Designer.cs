@@ -130,6 +130,7 @@
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtSenha.Location = new System.Drawing.Point(302, 227);
+            this.txtSenha.MaxLength = 16;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(162, 29);
             this.txtSenha.TabIndex = 51;
@@ -139,9 +140,11 @@
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtUsuario.Location = new System.Drawing.Point(302, 191);
+            this.txtUsuario.MaxLength = 100;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(162, 29);
             this.txtUsuario.TabIndex = 47;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // label2
             // 

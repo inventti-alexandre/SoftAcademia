@@ -146,5 +146,9 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
 
             return cod;
         }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
     }
 }
