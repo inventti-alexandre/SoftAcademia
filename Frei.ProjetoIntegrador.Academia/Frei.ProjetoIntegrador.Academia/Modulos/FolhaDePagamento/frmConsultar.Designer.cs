@@ -30,8 +30,6 @@
         {
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtFilial = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtCPF = new System.Windows.Forms.TextBox();
@@ -73,32 +71,13 @@
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
             // 
-            // txtFilial
-            // 
-            this.txtFilial.Location = new System.Drawing.Point(266, 34);
-            this.txtFilial.Name = "txtFilial";
-            this.txtFilial.Size = new System.Drawing.Size(81, 20);
-            this.txtFilial.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(218, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Filial:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(7, 31);
+            this.label2.Location = new System.Drawing.Point(249, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 20);
             this.label2.TabIndex = 4;
@@ -106,8 +85,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtFilial);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtCPF);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnBuscar);
@@ -118,7 +95,7 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(48, 34);
+            this.txtCPF.Location = new System.Drawing.Point(290, 34);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(151, 20);
             this.txtCPF.TabIndex = 5;
@@ -165,6 +142,7 @@
             this.btnNovo.TabIndex = 42;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dgvFolha
             // 
@@ -271,8 +249,6 @@
         #endregion
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtFilial;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtCPF;

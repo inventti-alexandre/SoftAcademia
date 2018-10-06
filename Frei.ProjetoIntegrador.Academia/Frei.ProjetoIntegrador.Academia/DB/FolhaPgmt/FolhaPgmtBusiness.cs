@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Frei.ProjetoIntegrador.Academia.Validacoes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +11,24 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
     {
         public int SalvarFolha(FolhaPgmtDTO dto)
         {
+            exReg regex = new exReg();
+            regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
+
+            if (dto.ds_Cargo == string.Empty)
+                throw new ArgumentException("O cargo não pode ser nulo.");
+
             FolhaPgmtDatabase db = new FolhaPgmtDatabase();
             return db.SalvarFolha(dto);
         }
 
         public int AlterarFolha(FolhaPgmtDTO dto)
         {
+            exReg regex = new exReg();
+            regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
+
+            if (dto.ds_Cargo == string.Empty)
+                throw new ArgumentException("O cargo não pode ser nulo.");
+
             FolhaPgmtDatabase db = new FolhaPgmtDatabase();
             return db.AlterarFolha(dto);
         }

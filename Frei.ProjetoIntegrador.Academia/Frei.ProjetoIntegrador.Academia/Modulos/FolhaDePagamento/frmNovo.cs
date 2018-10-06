@@ -50,13 +50,13 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
             {
                 FolhaPgmtDTO dto = new FolhaPgmtDTO();
                 dto.ds_Cargo = txtCargo.Text;
-                dto.ds_DiasTrabalhados = Convert.ToInt32(txtDias.Text);
-                dto.ds_HoraE100 = Convert.ToInt32(txtHorasE100.Text);
-                dto.ds_HoraE50 = Convert.ToInt32(txtHorasE50.Text);
+                dto.ds_DiasTrabalhados = txtDias.Text == string.Empty ? 0 : Convert.ToInt32(txtDias.Text);
+                dto.ds_HoraE100 = txtHorasE100.Text == string.Empty ? 0 : Convert.ToInt32(txtHorasE100.Text);
+                dto.ds_HoraE50 = txtHorasE50.Text == string.Empty ? 0 : Convert.ToInt32(txtHorasE50.Text);
                 dto.ds_Mensagem = txtMensagem.Text;
                 dto.dt_Registro = DateTime.Now;
                 dto.fk_FolhaPgmt_Func = funcionario.id_Funcionario;
-                dto.vl_SalarioBruto = Convert.ToDecimal(txtSalarioBruto.Text);
+                dto.vl_SalarioBruto = txtSalarioBruto.Text == string.Empty ? 0 : Convert.ToDecimal(txtSalarioBruto.Text);
 
                 FolhaPgmtBusiness business = new FolhaPgmtBusiness();
                 business.SalvarFolha(dto);

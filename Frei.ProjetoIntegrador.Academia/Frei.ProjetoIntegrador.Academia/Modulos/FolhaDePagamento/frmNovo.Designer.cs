@@ -33,14 +33,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pnDadosPessoais = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtHorasE100 = new System.Windows.Forms.TextBox();
             this.txtHorasE50 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDias = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,9 +53,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtHorasE100 = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -123,6 +123,37 @@
             this.pnDadosPessoais.Size = new System.Drawing.Size(479, 113);
             this.pnDadosPessoais.TabIndex = 43;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnBuscar.Location = new System.Drawing.Point(248, 20);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(93, 28);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Location = new System.Drawing.Point(142, 76);
+            this.txtCargo.MaxLength = 45;
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(307, 20);
+            this.txtCargo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(87, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cargo:";
+            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(142, 50);
@@ -163,25 +194,6 @@
             this.txtCPF.TabIndex = 1;
             this.txtCPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(87, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cargo:";
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Location = new System.Drawing.Point(142, 76);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(307, 20);
-            this.txtCargo.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -197,12 +209,33 @@
             this.panel1.Size = new System.Drawing.Size(479, 211);
             this.panel1.TabIndex = 43;
             // 
+            // txtHorasE100
+            // 
+            this.txtHorasE100.Location = new System.Drawing.Point(157, 168);
+            this.txtHorasE100.MaxLength = 4;
+            this.txtHorasE100.Name = "txtHorasE100";
+            this.txtHorasE100.Size = new System.Drawing.Size(184, 20);
+            this.txtHorasE100.TabIndex = 0;
+            // 
             // txtHorasE50
             // 
             this.txtHorasE50.Location = new System.Drawing.Point(157, 107);
+            this.txtHorasE50.MaxLength = 4;
             this.txtHorasE50.Name = "txtHorasE50";
             this.txtHorasE50.Size = new System.Drawing.Size(184, 20);
             this.txtHorasE50.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(155, 145);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(186, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Horas Trabalhadas (100%) :";
             // 
             // label2
             // 
@@ -219,6 +252,7 @@
             // txtDias
             // 
             this.txtDias.Location = new System.Drawing.Point(157, 50);
+            this.txtDias.MaxLength = 2;
             this.txtDias.Name = "txtDias";
             this.txtDias.Size = new System.Drawing.Size(184, 20);
             this.txtDias.TabIndex = 0;
@@ -300,36 +334,6 @@
             this.panel3.Size = new System.Drawing.Size(270, 176);
             this.panel3.TabIndex = 43;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(155, 145);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(186, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Horas Trabalhadas (100%) :";
-            // 
-            // txtHorasE100
-            // 
-            this.txtHorasE100.Location = new System.Drawing.Point(157, 168);
-            this.txtHorasE100.Name = "txtHorasE100";
-            this.txtHorasE100.Size = new System.Drawing.Size(184, 20);
-            this.txtHorasE100.TabIndex = 0;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnBuscar.Location = new System.Drawing.Point(248, 20);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(93, 28);
-            this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -345,6 +349,7 @@
             // txtMensagem
             // 
             this.txtMensagem.Location = new System.Drawing.Point(15, 28);
+            this.txtMensagem.MaxLength = 300;
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(237, 135);

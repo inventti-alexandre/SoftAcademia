@@ -72,11 +72,6 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
 
                 if (txtCPF.Text == string.Empty)
                 {
-                    if (txtFilial.Text != string.Empty)
-                    {
-                        funcionarios = business.ConsultarPorFilial(txtFilial.Text);
-                    }
-                    else
                         funcionarios = business.Consultar();
                 }
                 else
@@ -117,6 +112,15 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
             {
                 MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            frmNovo frm = new frmNovo();
+            Hide();
+            frm.ShowDialog();
+            Show();
+            CarregarGrid();
         }
     }
 }

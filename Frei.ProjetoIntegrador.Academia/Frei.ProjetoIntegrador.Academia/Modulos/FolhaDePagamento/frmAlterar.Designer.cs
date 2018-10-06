@@ -67,6 +67,7 @@
             // txtMensagem
             // 
             this.txtMensagem.Location = new System.Drawing.Point(15, 28);
+            this.txtMensagem.MaxLength = 300;
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(237, 135);
@@ -167,6 +168,7 @@
             // txtHorasE100
             // 
             this.txtHorasE100.Location = new System.Drawing.Point(157, 168);
+            this.txtHorasE100.MaxLength = 4;
             this.txtHorasE100.Name = "txtHorasE100";
             this.txtHorasE100.Size = new System.Drawing.Size(184, 20);
             this.txtHorasE100.TabIndex = 0;
@@ -174,6 +176,7 @@
             // txtHorasE50
             // 
             this.txtHorasE50.Location = new System.Drawing.Point(157, 107);
+            this.txtHorasE50.MaxLength = 4;
             this.txtHorasE50.Name = "txtHorasE50";
             this.txtHorasE50.Size = new System.Drawing.Size(184, 20);
             this.txtHorasE50.TabIndex = 0;
@@ -205,6 +208,7 @@
             // txtDias
             // 
             this.txtDias.Location = new System.Drawing.Point(157, 50);
+            this.txtDias.MaxLength = 2;
             this.txtDias.Name = "txtDias";
             this.txtDias.Size = new System.Drawing.Size(184, 20);
             this.txtDias.TabIndex = 0;
@@ -275,6 +279,7 @@
             // txtCargo
             // 
             this.txtCargo.Location = new System.Drawing.Point(142, 76);
+            this.txtCargo.MaxLength = 45;
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(307, 20);
             this.txtCargo.TabIndex = 0;

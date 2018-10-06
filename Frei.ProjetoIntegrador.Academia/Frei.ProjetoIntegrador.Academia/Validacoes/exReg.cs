@@ -85,5 +85,15 @@ namespace Frei.ProjetoIntegrador.Academia.Validacoes
 
             return true;
         }
+
+        public bool ValidarSalario(string salario)
+        {
+            Regex regra1 = new Regex(@"^[0-9]{1,10}(,[0-9]{2})?$");
+
+            if (regra1.IsMatch(salario) == false)
+                throw new ArgumentException("Formato de salario inválido!");
+
+            return true;
+        }
     }
 }
