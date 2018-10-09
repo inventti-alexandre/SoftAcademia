@@ -41,10 +41,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
