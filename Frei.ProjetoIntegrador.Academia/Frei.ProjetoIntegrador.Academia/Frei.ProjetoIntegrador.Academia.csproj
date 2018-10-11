@@ -32,9 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -185,6 +186,24 @@
     </Compile>
     <Compile Include="Modulos\ControleDeEstoque\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmCadastrar.Designer.cs">
+      <DependentUpon>frmCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmConsultar.Designer.cs">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFilial\frmVisualizar.Designer.cs">
+      <DependentUpon>frmVisualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\ControleDeFornecedor\frmAlterar.cs">
       <SubType>Form</SubType>
@@ -365,6 +384,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeEstoque\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFilial\frmCadastrar.resx">
+      <DependentUpon>frmCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFilial\frmConsultar.resx">
+      <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFornecedor\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>

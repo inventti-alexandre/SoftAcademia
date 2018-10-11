@@ -81,6 +81,9 @@
     <Compile Include="DB\PedidoVenda\PedidoVendaBusiness.cs" />
     <Compile Include="DB\PedidoVenda\PedidoVendaDatabase.cs" />
     <Compile Include="DB\PedidoVenda\PedidoVendaDTO.cs" />
+    <Compile Include="DB\ProdutoVenda\ProdutoVendaBusiness.cs" />
+    <Compile Include="DB\ProdutoVenda\ProdutoVendaDatabase.cs" />
+    <Compile Include="DB\ProdutoVenda\ProdutoVendasDTO.cs" />
     <Compile Include="DB\Produto\ProdutoBusiness.cs" />
     <Compile Include="DB\Produto\ProdutoDatabase.cs" />
     <Compile Include="DB\Produto\ProdutoDTO.cs" />
