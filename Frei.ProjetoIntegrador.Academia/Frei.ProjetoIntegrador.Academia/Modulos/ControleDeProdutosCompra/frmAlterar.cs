@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeProdutos
 {
-    public partial class frmConsultar : Form
+    public partial class frmAlterar : Form
     {
-        public frmConsultar()
+        public frmAlterar()
         {
             InitializeComponent();
+        }
+
+        public void CarregarCampos()
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
