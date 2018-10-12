@@ -44,15 +44,17 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pnContato = new System.Windows.Forms.Panel();
             this.cboFornecedor = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.txtFilial = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.pnDadosPessoais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnContato.SuspendLayout();
@@ -79,6 +81,8 @@
             this.pnDadosPessoais.Controls.Add(this.label4);
             this.pnDadosPessoais.Controls.Add(this.txtNome);
             this.pnDadosPessoais.Controls.Add(this.label1);
+            this.pnDadosPessoais.Controls.Add(this.lblId);
+            this.pnDadosPessoais.Controls.Add(this.label8);
             this.pnDadosPessoais.Controls.Add(this.label2);
             this.pnDadosPessoais.Location = new System.Drawing.Point(12, 213);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
@@ -224,7 +228,7 @@
             this.pnContato.Controls.Add(this.label7);
             this.pnContato.Controls.Add(this.label6);
             this.pnContato.Controls.Add(this.label18);
-            this.pnContato.Controls.Add(this.textBox1);
+            this.pnContato.Controls.Add(this.txtEmail);
             this.pnContato.Controls.Add(this.txtTelefone);
             this.pnContato.Location = new System.Drawing.Point(12, 457);
             this.pnContato.Name = "pnContato";
@@ -238,18 +242,19 @@
             this.cboFornecedor.Name = "cboFornecedor";
             this.cboFornecedor.Size = new System.Drawing.Size(478, 21);
             this.cboFornecedor.TabIndex = 1;
+            this.cboFornecedor.SelectedIndexChanged += new System.EventHandler(this.cboFornecedor_SelectedIndexChanged);
             // 
-            // label20
+            // label7
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(50, 441);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(126, 29);
-            this.label20.TabIndex = 60;
-            this.label20.Text = "Fornecedor";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(291, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "E-mail:";
             // 
             // label6
             // 
@@ -263,6 +268,15 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Telefone:";
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(349, 55);
+            this.txtEmail.MaxLength = 150;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(281, 20);
+            this.txtEmail.TabIndex = 0;
+            // 
             // txtTelefone
             // 
             this.txtTelefone.Enabled = false;
@@ -272,26 +286,17 @@
             this.txtTelefone.Size = new System.Drawing.Size(133, 20);
             this.txtTelefone.TabIndex = 0;
             // 
-            // textBox1
+            // label20
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(349, 55);
-            this.textBox1.MaxLength = 150;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(291, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "E-mail:";
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(50, 441);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(126, 29);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "Fornecedor";
             // 
             // panel1
             // 
@@ -338,14 +343,37 @@
             this.label12.TabIndex = 60;
             this.label12.Text = "Empresa";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(495, 48);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(25, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Id:";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.BackColor = System.Drawing.Color.Transparent;
+            this.lblId.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.lblId.ForeColor = System.Drawing.Color.Black;
+            this.lblId.Location = new System.Drawing.Point(526, 48);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(18, 20);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "0";
+            // 
             // frmAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(715, 581);
+            this.ClientSize = new System.Drawing.Size(732, 581);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label5);
@@ -393,12 +421,14 @@
         private System.Windows.Forms.ComboBox cboFornecedor;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtFilial;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label label8;
     }
 }

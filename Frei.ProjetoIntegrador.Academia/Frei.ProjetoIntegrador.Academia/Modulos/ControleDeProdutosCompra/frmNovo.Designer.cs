@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.pnDadosPessoais = new System.Windows.Forms.Panel();
+            this.dtpValidade = new System.Windows.Forms.DateTimePicker();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,13 +43,8 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.pnContato = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtpValidade = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDesc = new System.Windows.Forms.TextBox();
             this.cboFornecedor = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.pnDadosPessoais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnContato.SuspendLayout();
@@ -66,6 +66,54 @@
             this.pnDadosPessoais.Name = "pnDadosPessoais";
             this.pnDadosPessoais.Size = new System.Drawing.Size(675, 203);
             this.pnDadosPessoais.TabIndex = 54;
+            // 
+            // dtpValidade
+            // 
+            this.dtpValidade.Location = new System.Drawing.Point(152, 48);
+            this.dtpValidade.Name = "dtpValidade";
+            this.dtpValidade.Size = new System.Drawing.Size(307, 20);
+            this.dtpValidade.TabIndex = 1;
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(530, 22);
+            this.txtValor.MaxLength = 150;
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(80, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Validade:";
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(152, 74);
+            this.txtDesc.MaxLength = 150;
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(478, 107);
+            this.txtDesc.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(67, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Descrição:";
             // 
             // txtNome
             // 
@@ -170,6 +218,15 @@
             this.pnContato.Size = new System.Drawing.Size(675, 71);
             this.pnContato.TabIndex = 56;
             // 
+            // cboFornecedor
+            // 
+            this.cboFornecedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFornecedor.FormattingEnabled = true;
+            this.cboFornecedor.Location = new System.Drawing.Point(152, 28);
+            this.cboFornecedor.Name = "cboFornecedor";
+            this.cboFornecedor.Size = new System.Drawing.Size(478, 21);
+            this.cboFornecedor.TabIndex = 1;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -181,62 +238,6 @@
             this.label18.Size = new System.Drawing.Size(49, 20);
             this.label18.TabIndex = 0;
             this.label18.Text = "Nome:";
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(530, 22);
-            this.txtValor.MaxLength = 150;
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
-            this.txtValor.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(80, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Validade:";
-            // 
-            // dtpValidade
-            // 
-            this.dtpValidade.Location = new System.Drawing.Point(152, 48);
-            this.dtpValidade.Name = "dtpValidade";
-            this.dtpValidade.Size = new System.Drawing.Size(307, 20);
-            this.dtpValidade.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(67, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Descrição:";
-            // 
-            // txtDesc
-            // 
-            this.txtDesc.Location = new System.Drawing.Point(152, 74);
-            this.txtDesc.MaxLength = 150;
-            this.txtDesc.Multiline = true;
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(478, 107);
-            this.txtDesc.TabIndex = 0;
-            // 
-            // cboFornecedor
-            // 
-            this.cboFornecedor.FormattingEnabled = true;
-            this.cboFornecedor.Location = new System.Drawing.Point(152, 28);
-            this.cboFornecedor.Name = "cboFornecedor";
-            this.cboFornecedor.Size = new System.Drawing.Size(478, 21);
-            this.cboFornecedor.TabIndex = 1;
             // 
             // frmNovo
             // 
