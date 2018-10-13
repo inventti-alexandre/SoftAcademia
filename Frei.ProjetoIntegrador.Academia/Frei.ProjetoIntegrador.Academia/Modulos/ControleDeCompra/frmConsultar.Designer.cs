@@ -28,146 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnremove = new System.Windows.Forms.Button();
-            this.btnalterar = new System.Windows.Forms.Button();
-            this.btnnovo = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvViagem = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnVisualizar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.dgvPedidos = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).BeginInit();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Location = new System.Drawing.Point(12, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(699, 76);
+            this.panel1.TabIndex = 45;
+            this.panel1.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(201, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Data:";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnBuscar.Location = new System.Drawing.Point(553, 25);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 26);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
+            this.pictureBox1.Location = new System.Drawing.Point(293, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(181, 109);
+            this.label7.Location = new System.Drawing.Point(202, 121);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(217, 34);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Consultar Estoque";
+            this.label7.Size = new System.Drawing.Size(345, 34);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Consultar Pedidos de Compra";
             // 
-            // btnremove
+            // btnRemover
             // 
-            this.btnremove.BackColor = System.Drawing.Color.White;
-            this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremove.Location = new System.Drawing.Point(502, 385);
-            this.btnremove.Name = "btnremove";
-            this.btnremove.Size = new System.Drawing.Size(92, 34);
-            this.btnremove.TabIndex = 25;
-            this.btnremove.Text = "Remover";
-            this.btnremove.UseVisualStyleBackColor = false;
+            this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnRemover.Location = new System.Drawing.Point(106, 474);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(78, 28);
+            this.btnRemover.TabIndex = 40;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
-            // btnalterar
+            // btnVisualizar
             // 
-            this.btnalterar.BackColor = System.Drawing.Color.White;
-            this.btnalterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnalterar.Location = new System.Drawing.Point(479, 164);
-            this.btnalterar.Name = "btnalterar";
-            this.btnalterar.Size = new System.Drawing.Size(100, 34);
-            this.btnalterar.TabIndex = 26;
-            this.btnalterar.Text = "Alterar";
-            this.btnalterar.UseVisualStyleBackColor = false;
+            this.btnVisualizar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnVisualizar.Location = new System.Drawing.Point(12, 473);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(88, 28);
+            this.btnVisualizar.TabIndex = 41;
+            this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
-            // btnnovo
+            // btnNovo
             // 
-            this.btnnovo.BackColor = System.Drawing.Color.White;
-            this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnovo.Location = new System.Drawing.Point(377, 385);
-            this.btnnovo.Name = "btnnovo";
-            this.btnnovo.Size = new System.Drawing.Size(99, 34);
-            this.btnnovo.TabIndex = 27;
-            this.btnnovo.Text = "Novo";
-            this.btnnovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnNovo.Location = new System.Drawing.Point(633, 473);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(78, 28);
+            this.btnNovo.TabIndex = 42;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // txtNome
+            // dgvPedidos
             // 
-            this.txtNome.Location = new System.Drawing.Point(156, 174);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(236, 20);
-            this.txtNome.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(101, 171);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Nome:";
-            // 
-            // dgvViagem
-            // 
-            this.dgvViagem.AllowUserToAddRows = false;
-            this.dgvViagem.AllowUserToDeleteRows = false;
-            this.dgvViagem.BackgroundColor = System.Drawing.Color.White;
-            this.dgvViagem.ColumnHeadersHeight = 40;
-            this.dgvViagem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvViagem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
+            this.dgvPedidos.AllowUserToAddRows = false;
+            this.dgvPedidos.AllowUserToDeleteRows = false;
+            this.dgvPedidos.ColumnHeadersHeight = 40;
+            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
-            this.Column3});
-            this.dgvViagem.Location = new System.Drawing.Point(113, 206);
-            this.dgvViagem.Name = "dgvViagem";
-            this.dgvViagem.ReadOnly = true;
-            this.dgvViagem.RowHeadersVisible = false;
-            this.dgvViagem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvViagem.RowTemplate.Height = 30;
-            this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(303, 173);
-            this.dgvViagem.TabIndex = 21;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.White;
-            this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(398, 164);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 34);
-            this.btnBuscar.TabIndex = 32;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(202, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Data da compra";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.Column3,
+            this.Column1});
+            this.dgvPedidos.Location = new System.Drawing.Point(12, 179);
+            this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.ReadOnly = true;
+            this.dgvPedidos.RowHeadersVisible = false;
+            this.dgvPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvPedidos.RowTemplate.Height = 30;
+            this.dgvPedidos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPedidos.Size = new System.Drawing.Size(699, 288);
+            this.dgvPedidos.TabIndex = 39;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nome do usuário";
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "dt_Pedido";
+            this.Column2.HeaderText = "Data do Pedido";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Senha do usuário";
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "qnt_Produto";
+            this.Column3.HeaderText = "Quantidade de Produtos";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "vl_Total";
+            this.Column1.HeaderText = "Valor Total";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(249, 28);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(232, 20);
+            this.dateTimePicker1.TabIndex = 7;
             // 
             // frmConsultar
             // 
@@ -175,40 +192,41 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(617, 450);
+            this.ClientSize = new System.Drawing.Size(721, 509);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnremove);
-            this.Controls.Add(this.btnalterar);
-            this.Controls.Add(this.btnnovo);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvViagem);
+            this.Controls.Add(this.btnRemover);
+            this.Controls.Add(this.btnVisualizar);
+            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.dgvPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Fit LTDA";
             this.Load += new System.EventHandler(this.frmConsultar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViagem)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnremove;
-        private System.Windows.Forms.Button btnalterar;
-        private System.Windows.Forms.Button btnnovo;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvViagem;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button btnVisualizar;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.DataGridView dgvPedidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
