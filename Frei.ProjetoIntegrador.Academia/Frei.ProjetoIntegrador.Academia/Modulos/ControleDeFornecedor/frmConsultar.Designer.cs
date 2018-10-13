@@ -41,14 +41,14 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbnInativo = new System.Windows.Forms.RadioButton();
+            this.rbnAtivo = new System.Windows.Forms.RadioButton();
             this.txtFilial = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.rbnAtivo = new System.Windows.Forms.RadioButton();
-            this.rbnInativo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedor)).BeginInit();
             this.panel1.SuspendLayout();
@@ -189,6 +189,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnInativo);
             this.panel1.Controls.Add(this.rbnAtivo);
             this.panel1.Controls.Add(this.txtFilial);
@@ -201,6 +202,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 76);
             this.panel1.TabIndex = 47;
+            // 
+            // rbnInativo
+            // 
+            this.rbnInativo.AutoSize = true;
+            this.rbnInativo.Location = new System.Drawing.Point(394, 32);
+            this.rbnInativo.Name = "rbnInativo";
+            this.rbnInativo.Size = new System.Drawing.Size(57, 17);
+            this.rbnInativo.TabIndex = 7;
+            this.rbnInativo.TabStop = true;
+            this.rbnInativo.Text = "Inativo";
+            this.rbnInativo.UseVisualStyleBackColor = true;
+            // 
+            // rbnAtivo
+            // 
+            this.rbnAtivo.AutoSize = true;
+            this.rbnAtivo.Location = new System.Drawing.Point(327, 32);
+            this.rbnAtivo.Name = "rbnAtivo";
+            this.rbnAtivo.Size = new System.Drawing.Size(49, 17);
+            this.rbnAtivo.TabIndex = 7;
+            this.rbnAtivo.TabStop = true;
+            this.rbnAtivo.Text = "Ativo";
+            this.rbnAtivo.UseVisualStyleBackColor = true;
             // 
             // txtFilial
             // 
@@ -262,28 +285,6 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // rbnAtivo
-            // 
-            this.rbnAtivo.AutoSize = true;
-            this.rbnAtivo.Location = new System.Drawing.Point(327, 32);
-            this.rbnAtivo.Name = "rbnAtivo";
-            this.rbnAtivo.Size = new System.Drawing.Size(49, 17);
-            this.rbnAtivo.TabIndex = 7;
-            this.rbnAtivo.TabStop = true;
-            this.rbnAtivo.Text = "Ativo";
-            this.rbnAtivo.UseVisualStyleBackColor = true;
-            // 
-            // rbnInativo
-            // 
-            this.rbnInativo.AutoSize = true;
-            this.rbnInativo.Location = new System.Drawing.Point(394, 32);
-            this.rbnInativo.Name = "rbnInativo";
-            this.rbnInativo.Size = new System.Drawing.Size(57, 17);
-            this.rbnInativo.TabIndex = 7;
-            this.rbnInativo.TabStop = true;
-            this.rbnInativo.Text = "Inativo";
-            this.rbnInativo.UseVisualStyleBackColor = true;
             // 
             // frmConsultar
             // 

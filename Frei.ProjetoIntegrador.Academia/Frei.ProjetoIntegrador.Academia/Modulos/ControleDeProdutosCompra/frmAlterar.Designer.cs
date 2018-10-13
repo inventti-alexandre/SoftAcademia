@@ -36,6 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,8 +55,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtFilial = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
             this.pnDadosPessoais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnContato.SuspendLayout();
@@ -86,7 +86,7 @@
             this.pnDadosPessoais.Controls.Add(this.label2);
             this.pnDadosPessoais.Location = new System.Drawing.Point(12, 213);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
-            this.pnDadosPessoais.Size = new System.Drawing.Size(675, 203);
+            this.pnDadosPessoais.Size = new System.Drawing.Size(675, 187);
             this.pnDadosPessoais.TabIndex = 62;
             // 
             // dtpValidade
@@ -147,6 +147,30 @@
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.BackColor = System.Drawing.Color.Transparent;
+            this.lblId.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.lblId.ForeColor = System.Drawing.Color.Black;
+            this.lblId.Location = new System.Drawing.Point(526, 48);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(18, 20);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(495, 48);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(25, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Id:";
             // 
             // label2
             // 
@@ -230,9 +254,9 @@
             this.pnContato.Controls.Add(this.label18);
             this.pnContato.Controls.Add(this.txtEmail);
             this.pnContato.Controls.Add(this.txtTelefone);
-            this.pnContato.Location = new System.Drawing.Point(12, 457);
+            this.pnContato.Location = new System.Drawing.Point(12, 464);
             this.pnContato.Name = "pnContato";
-            this.pnContato.Size = new System.Drawing.Size(675, 113);
+            this.pnContato.Size = new System.Drawing.Size(675, 106);
             this.pnContato.TabIndex = 63;
             // 
             // cboFornecedor
@@ -343,35 +367,12 @@
             this.label12.TabIndex = 60;
             this.label12.Text = "Empresa";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(495, 48);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(25, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Id:";
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.BackColor = System.Drawing.Color.Transparent;
-            this.lblId.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.lblId.ForeColor = System.Drawing.Color.Black;
-            this.lblId.Location = new System.Drawing.Point(526, 48);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(18, 20);
-            this.lblId.TabIndex = 0;
-            this.lblId.Text = "0";
-            // 
             // frmAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(732, 581);
             this.Controls.Add(this.label12);
