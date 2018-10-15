@@ -196,7 +196,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvProdutos.Location = new System.Drawing.Point(-2, 264);
+            this.dgvProdutos.Location = new System.Drawing.Point(12, 264);
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.RowHeadersVisible = false;
@@ -204,7 +204,7 @@
             this.dgvProdutos.RowTemplate.Height = 30;
             this.dgvProdutos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProdutos.Size = new System.Drawing.Size(852, 220);
+            this.dgvProdutos.Size = new System.Drawing.Size(825, 220);
             this.dgvProdutos.TabIndex = 48;
             // 
             // Column1

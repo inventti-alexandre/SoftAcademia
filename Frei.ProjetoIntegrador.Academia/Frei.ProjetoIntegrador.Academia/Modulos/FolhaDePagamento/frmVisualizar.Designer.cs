@@ -1091,7 +1091,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(789, 544);
+            this.ClientSize = new System.Drawing.Size(789, 556);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel25);
