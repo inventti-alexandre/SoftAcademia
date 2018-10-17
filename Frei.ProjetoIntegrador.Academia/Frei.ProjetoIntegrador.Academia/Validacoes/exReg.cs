@@ -9,6 +9,17 @@ namespace Frei.ProjetoIntegrador.Academia.Validacoes
 {
     class exReg
     {
+        public void ValidarValor(string valor)
+        {
+            if (valor == string.Empty)
+                throw new ArgumentException("O valor não pode estar em branco.");
+
+            Regex regra1 = new Regex(@"^\d{0,}(,\d{2})?$");
+
+            if (regra1.IsMatch(valor) == false)
+                throw new ArgumentException("O valor não está num formato válido.");
+        }
+
         public void ValidarEmail(string email)
         {
             if (email == string.Empty)

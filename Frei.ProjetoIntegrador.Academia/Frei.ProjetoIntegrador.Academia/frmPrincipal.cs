@@ -477,5 +477,23 @@ namespace Frei.ProjetoIntegrador.Academia
             Show();
             Permissoes();
         }
+
+        private void consultarToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeProdutosVenda.frmConsultar frm = new Modulos.ControleDeProdutosVenda.frmConsultar();
+            Hide();
+            frm.ShowDialog();
+            Show();
+            Permissoes();
+        }
+
+        private void cadastrarToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeProdutosVenda.frmCadastrar frm = new Modulos.ControleDeProdutosVenda.frmCadastrar();
+            Hide();
+            frm.ShowDialog();
+            Show();
+            Permissoes();
+        }
     }
 }
