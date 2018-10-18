@@ -273,7 +273,7 @@
             this.cadastrarToolStripMenuItem6,
             this.novoToolStripMenuItem2});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // cadastrarToolStripMenuItem6
@@ -296,7 +296,7 @@
             this.cadastrarToolStripMenuItem7,
             this.consultarToolStripMenuItem8});
             this.funcionárioToolStripMenuItem.Name = "funcionárioToolStripMenuItem";
-            this.funcionárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funcionárioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.funcionárioToolStripMenuItem.Text = "Funcionário";
             // 
             // cadastrarToolStripMenuItem7
@@ -319,20 +319,20 @@
             this.cadastarToolStripMenuItem,
             this.consultarToolStripMenuItem9});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
             // cadastarToolStripMenuItem
             // 
             this.cadastarToolStripMenuItem.Name = "cadastarToolStripMenuItem";
-            this.cadastarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.cadastarToolStripMenuItem.Text = "Cadastar";
             this.cadastarToolStripMenuItem.Click += new System.EventHandler(this.cadastarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem9
             // 
             this.consultarToolStripMenuItem9.Name = "consultarToolStripMenuItem9";
-            this.consultarToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem9.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem9.Text = "Consultar";
             this.consultarToolStripMenuItem9.Click += new System.EventHandler(this.consultarToolStripMenuItem9_Click);
             // 
