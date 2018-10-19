@@ -90,6 +90,9 @@
     <Compile Include="DB\PedidoItemCompra\PedidoItemCompraBusiness.cs" />
     <Compile Include="DB\PedidoItemCompra\PedidoItemCompraDatabase.cs" />
     <Compile Include="DB\PedidoItemCompra\PedidoItemCompraDTO.cs" />
+    <Compile Include="DB\PedidoItemVenda\PedidoItemVendaBusiness.cs" />
+    <Compile Include="DB\PedidoItemVenda\PedidoItemVendaDatabase.cs" />
+    <Compile Include="DB\PedidoItemVenda\PedidoItemVendaDTO.cs" />
     <Compile Include="DB\PedidoVenda\PedidoVendaBusiness.cs" />
     <Compile Include="DB\PedidoVenda\PedidoVendaDatabase.cs" />
     <Compile Include="DB\PedidoVenda\PedidoVendaDTO.cs" />
