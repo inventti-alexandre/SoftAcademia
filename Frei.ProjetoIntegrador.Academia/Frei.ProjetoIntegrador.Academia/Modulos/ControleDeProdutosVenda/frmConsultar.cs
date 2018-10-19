@@ -59,5 +59,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeProdutosVenda
             Show();
             CarregarGrid();
         }
+
+        private void frmConsultar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

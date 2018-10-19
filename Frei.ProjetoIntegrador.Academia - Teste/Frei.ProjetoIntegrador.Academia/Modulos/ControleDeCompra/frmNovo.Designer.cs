@@ -106,7 +106,7 @@
             this.btncadastro.Name = "btncadastro";
             this.btncadastro.Size = new System.Drawing.Size(94, 35);
             this.btncadastro.TabIndex = 3;
-            this.btncadastro.Text = "\\ZZ";
+            this.btncadastro.Text = "Cadastrar";
             this.btncadastro.UseVisualStyleBackColor = true;
             // 
             // label7

@@ -462,6 +462,10 @@
     <Content Include="DB\DDL.txt" />
     <Content Include="DB\DML.txt" />
     <Content Include="DB\DQL.txt" />
+    <None Include="Resources\bicicleta_ergometrica.gif" />
+    <None Include="Resources\1740626_NQiv3.gif" />
+    <None Include="Resources\1740623_qazZu.gif" />
+    <None Include="Resources\27.gif" />
     <None Include="Resources\icon_Search.png" />
   </ItemGroup>
   <ItemGroup>
