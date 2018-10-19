@@ -420,6 +420,9 @@
     <EmbeddedResource Include="Modulos\ControleDeFilial\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFilial\frmVisualizar.resx">
+      <DependentUpon>frmVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFornecedor\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
     </EmbeddedResource>
@@ -524,6 +527,11 @@
     <Content Include="DB\DML.txt" />
     <Content Include="DB\DQL.txt" />
     <Content Include="logo.ico" />
+    <None Include="Resources\athlete-2026894_960_720.png" />
+    <None Include="Resources\kid-jump-icon.gif" />
+    <None Include="Resources\musculacao.png" />
+    <None Include="Resources\woman-1751186_960_720.png" />
+    <None Include="Resources\academia.png" />
     <None Include="Resources\icon_Search.png" />
   </ItemGroup>
   <ItemGroup>

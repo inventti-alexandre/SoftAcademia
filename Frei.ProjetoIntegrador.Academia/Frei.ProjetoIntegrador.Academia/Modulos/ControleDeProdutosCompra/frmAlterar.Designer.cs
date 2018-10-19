@@ -288,7 +288,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(80, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 20);
+            this.label6.Size = new System.Drawing.Size(68, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Telefone:";
             // 
@@ -374,7 +374,7 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(732, 581);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label5);

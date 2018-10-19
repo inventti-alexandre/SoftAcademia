@@ -161,7 +161,7 @@
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Controls.Add(this.lblNome);
             this.panel23.Controls.Add(this.label50);
-            this.panel23.Location = new System.Drawing.Point(86, 122);
+            this.panel23.Location = new System.Drawing.Point(101, 106);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(466, 42);
             this.panel23.TabIndex = 102;
@@ -191,7 +191,7 @@
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.lblFuncao);
             this.panel25.Controls.Add(this.label52);
-            this.panel25.Location = new System.Drawing.Point(658, 122);
+            this.panel25.Location = new System.Drawing.Point(673, 106);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(117, 42);
             this.panel25.TabIndex = 103;
@@ -229,7 +229,7 @@
             this.panel7.Controls.Add(this.label29);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(64, 170);
+            this.panel7.Location = new System.Drawing.Point(79, 154);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(382, 257);
             this.panel7.TabIndex = 101;
@@ -342,7 +342,7 @@
             this.panel8.Controls.Add(this.panel13);
             this.panel8.Controls.Add(this.lblMensagem);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Location = new System.Drawing.Point(12, 426);
+            this.panel8.Location = new System.Drawing.Point(27, 410);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(766, 62);
             this.panel8.TabIndex = 97;
@@ -505,7 +505,7 @@
             this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.lblAdiantamentos);
             this.panel6.Controls.Add(this.label20);
-            this.panel6.Location = new System.Drawing.Point(654, 170);
+            this.panel6.Location = new System.Drawing.Point(669, 154);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(124, 260);
             this.panel6.TabIndex = 100;
@@ -564,7 +564,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel24);
             this.panel1.Controls.Add(this.panel22);
-            this.panel1.Location = new System.Drawing.Point(12, 122);
+            this.panel1.Location = new System.Drawing.Point(27, 106);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(766, 42);
             this.panel1.TabIndex = 96;
@@ -632,7 +632,7 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label17);
-            this.panel4.Location = new System.Drawing.Point(558, 170);
+            this.panel4.Location = new System.Drawing.Point(573, 154);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(94, 260);
             this.panel4.TabIndex = 99;
@@ -735,7 +735,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(12, 170);
+            this.panel2.Location = new System.Drawing.Point(27, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(766, 368);
             this.panel2.TabIndex = 98;
@@ -1078,7 +1078,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(262, 85);
+            this.label6.Location = new System.Drawing.Point(277, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(240, 34);
             this.label6.TabIndex = 104;
@@ -1091,7 +1091,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(789, 556);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel25);

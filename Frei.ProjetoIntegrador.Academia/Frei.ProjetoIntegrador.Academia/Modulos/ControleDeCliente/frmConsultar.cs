@@ -103,5 +103,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
                 MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

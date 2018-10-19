@@ -48,7 +48,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(55, 241);
+            this.label1.Location = new System.Drawing.Point(56, 314);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(84, 285);
+            this.label2.Location = new System.Drawing.Point(85, 358);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 20);
             this.label2.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(424, 241);
+            this.label3.Location = new System.Drawing.Point(425, 314);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 20);
             this.label3.TabIndex = 0;
@@ -84,7 +84,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(434, 288);
+            this.label4.Location = new System.Drawing.Point(435, 361);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 0;
@@ -92,28 +92,28 @@
             // 
             // txtnomeprod
             // 
-            this.txtnomeprod.Location = new System.Drawing.Point(221, 288);
+            this.txtnomeprod.Location = new System.Drawing.Point(222, 361);
             this.txtnomeprod.Name = "txtnomeprod";
             this.txtnomeprod.Size = new System.Drawing.Size(182, 20);
             this.txtnomeprod.TabIndex = 1;
             // 
             // txtvalorvenda
             // 
-            this.txtvalorvenda.Location = new System.Drawing.Point(557, 288);
+            this.txtvalorvenda.Location = new System.Drawing.Point(558, 361);
             this.txtvalorvenda.Name = "txtvalorvenda";
             this.txtvalorvenda.Size = new System.Drawing.Size(182, 20);
             this.txtvalorvenda.TabIndex = 1;
             // 
             // txtvlcompra
             // 
-            this.txtvlcompra.Location = new System.Drawing.Point(557, 244);
+            this.txtvlcompra.Location = new System.Drawing.Point(558, 317);
             this.txtvlcompra.Name = "txtvlcompra";
             this.txtvlcompra.Size = new System.Drawing.Size(182, 20);
             this.txtvlcompra.TabIndex = 1;
             // 
             // txtqntprod
             // 
-            this.txtqntprod.Location = new System.Drawing.Point(221, 244);
+            this.txtqntprod.Location = new System.Drawing.Point(222, 317);
             this.txtqntprod.Name = "txtqntprod";
             this.txtqntprod.Size = new System.Drawing.Size(182, 20);
             this.txtqntprod.TabIndex = 1;
@@ -122,7 +122,7 @@
             // 
             this.btncadastrar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btncadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btncadastrar.Location = new System.Drawing.Point(636, 346);
+            this.btncadastrar.Location = new System.Drawing.Point(637, 419);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(103, 32);
             this.btncadastrar.TabIndex = 2;
@@ -135,7 +135,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(321, 131);
+            this.label7.Location = new System.Drawing.Point(322, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(193, 34);
             this.label7.TabIndex = 36;
@@ -145,7 +145,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(339, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(340, 72);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btncadastrar);

@@ -55,11 +55,20 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txtMensagem = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDadosPessoais.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGerar
@@ -101,7 +110,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(63, 196);
+            this.label5.Location = new System.Drawing.Point(63, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 29);
             this.label5.TabIndex = 42;
@@ -118,7 +127,7 @@
             this.pnDadosPessoais.Controls.Add(this.label3);
             this.pnDadosPessoais.Controls.Add(this.label4);
             this.pnDadosPessoais.Controls.Add(this.txtCPF);
-            this.pnDadosPessoais.Location = new System.Drawing.Point(28, 215);
+            this.pnDadosPessoais.Location = new System.Drawing.Point(28, 184);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
             this.pnDadosPessoais.Size = new System.Drawing.Size(479, 113);
             this.pnDadosPessoais.TabIndex = 43;
@@ -204,7 +213,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDias);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(28, 363);
+            this.panel1.Location = new System.Drawing.Point(28, 346);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(479, 211);
             this.panel1.TabIndex = 43;
@@ -275,7 +284,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(63, 344);
+            this.label9.Location = new System.Drawing.Point(63, 327);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(189, 29);
             this.label9.TabIndex = 42;
@@ -355,19 +364,108 @@
             this.txtMensagem.Size = new System.Drawing.Size(237, 135);
             this.txtMensagem.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Location = new System.Drawing.Point(32, 328);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(479, 211);
+            this.panel4.TabIndex = 43;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(157, 168);
+            this.textBox1.MaxLength = 4;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(157, 107);
+            this.textBox2.MaxLength = 4;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(184, 20);
+            this.textBox2.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(155, 145);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(186, 20);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Horas Trabalhadas (100%) :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(155, 84);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(180, 20);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Horas Trabalhadas (50%) :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(157, 50);
+            this.textBox3.MaxLength = 2;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(184, 20);
+            this.textBox3.TabIndex = 0;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(182, 27);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(125, 20);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Dias Trabalhados:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(67, 309);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(189, 29);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "Trabalho Efetuado";
+            // 
             // frmNovo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(830, 588);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.btnGerar);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnDadosPessoais);
             this.Controls.Add(this.pictureBox1);
@@ -385,6 +483,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,5 +518,13 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtMensagem;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }

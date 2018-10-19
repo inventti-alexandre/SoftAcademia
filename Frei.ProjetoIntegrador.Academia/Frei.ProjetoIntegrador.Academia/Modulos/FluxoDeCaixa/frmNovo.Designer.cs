@@ -44,7 +44,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(183, 207);
+            this.label1.Location = new System.Drawing.Point(184, 259);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 20);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(195, 267);
+            this.label2.Location = new System.Drawing.Point(196, 319);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 20);
             this.label2.TabIndex = 0;
@@ -64,14 +64,14 @@
             // 
             // dtppedidovenda
             // 
-            this.dtppedidovenda.Location = new System.Drawing.Point(358, 207);
+            this.dtppedidovenda.Location = new System.Drawing.Point(359, 259);
             this.dtppedidovenda.Name = "dtppedidovenda";
             this.dtppedidovenda.Size = new System.Drawing.Size(213, 20);
             this.dtppedidovenda.TabIndex = 1;
             // 
             // dtppedidocompra
             // 
-            this.dtppedidocompra.Location = new System.Drawing.Point(358, 267);
+            this.dtppedidocompra.Location = new System.Drawing.Point(359, 319);
             this.dtppedidocompra.Name = "dtppedidocompra";
             this.dtppedidocompra.Size = new System.Drawing.Size(213, 20);
             this.dtppedidocompra.TabIndex = 1;
@@ -79,7 +79,7 @@
             // btncad
             // 
             this.btncad.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btncad.Location = new System.Drawing.Point(487, 333);
+            this.btncad.Location = new System.Drawing.Point(488, 385);
             this.btncad.Name = "btncad";
             this.btncad.Size = new System.Drawing.Size(84, 32);
             this.btncad.TabIndex = 2;
@@ -91,7 +91,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(317, 128);
+            this.label7.Location = new System.Drawing.Point(318, 180);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(193, 34);
             this.label7.TabIndex = 36;
@@ -101,7 +101,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(335, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(336, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btncad);

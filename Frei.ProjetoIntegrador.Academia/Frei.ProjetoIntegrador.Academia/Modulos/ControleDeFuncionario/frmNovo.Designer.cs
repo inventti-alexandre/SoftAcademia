@@ -75,12 +75,18 @@
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDadosPessoais.SuspendLayout();
             this.pnEndereco.SuspendLayout();
             this.pnContato.SuspendLayout();
             this.pnEmpresa.SuspendLayout();
             this.pnUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,7 +114,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Location = new System.Drawing.Point(206, 841);
+            this.btnCadastrar.Location = new System.Drawing.Point(339, 841);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(102, 28);
             this.btnCadastrar.TabIndex = 21;
@@ -122,7 +128,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(161, 130);
+            this.label11.Location = new System.Drawing.Point(294, 130);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(193, 34);
             this.label11.TabIndex = 36;
@@ -132,7 +138,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(173, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,7 +236,7 @@
             this.pnDadosPessoais.Controls.Add(this.label4);
             this.pnDadosPessoais.Controls.Add(this.txtCPF);
             this.pnDadosPessoais.Controls.Add(this.label3);
-            this.pnDadosPessoais.Location = new System.Drawing.Point(12, 211);
+            this.pnDadosPessoais.Location = new System.Drawing.Point(145, 211);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
             this.pnDadosPessoais.Size = new System.Drawing.Size(479, 118);
             this.pnDadosPessoais.TabIndex = 0;
@@ -241,7 +247,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(47, 192);
+            this.label5.Location = new System.Drawing.Point(180, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 29);
             this.label5.TabIndex = 0;
@@ -264,7 +270,7 @@
             this.pnEndereco.Controls.Add(this.txtCEP);
             this.pnEndereco.Controls.Add(this.label6);
             this.pnEndereco.Controls.Add(this.label7);
-            this.pnEndereco.Location = new System.Drawing.Point(12, 363);
+            this.pnEndereco.Location = new System.Drawing.Point(145, 363);
             this.pnEndereco.Name = "pnEndereco";
             this.pnEndereco.Size = new System.Drawing.Size(479, 143);
             this.pnEndereco.TabIndex = 1;
@@ -414,7 +420,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(47, 344);
+            this.label10.Location = new System.Drawing.Point(180, 344);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(105, 29);
             this.label10.TabIndex = 0;
@@ -430,7 +436,7 @@
             this.pnContato.Controls.Add(this.label19);
             this.pnContato.Controls.Add(this.txtEmail);
             this.pnContato.Controls.Add(this.label18);
-            this.pnContato.Location = new System.Drawing.Point(12, 545);
+            this.pnContato.Location = new System.Drawing.Point(145, 545);
             this.pnContato.Name = "pnContato";
             this.pnContato.Size = new System.Drawing.Size(479, 82);
             this.pnContato.TabIndex = 2;
@@ -452,7 +458,7 @@
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(260, 41);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 20);
+            this.label21.Size = new System.Drawing.Size(85, 20);
             this.label21.TabIndex = 0;
             this.label21.Text = "Nº Telefone:";
             // 
@@ -502,7 +508,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(47, 526);
+            this.label20.Location = new System.Drawing.Point(180, 526);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 29);
             this.label20.TabIndex = 0;
@@ -514,7 +520,7 @@
             this.pnEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnEmpresa.Controls.Add(this.dtpAdmissao);
             this.pnEmpresa.Controls.Add(this.label23);
-            this.pnEmpresa.Location = new System.Drawing.Point(12, 665);
+            this.pnEmpresa.Location = new System.Drawing.Point(145, 665);
             this.pnEmpresa.Name = "pnEmpresa";
             this.pnEmpresa.Size = new System.Drawing.Size(479, 58);
             this.pnEmpresa.TabIndex = 3;
@@ -544,7 +550,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(47, 646);
+            this.label17.Location = new System.Drawing.Point(180, 646);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(98, 29);
             this.label17.TabIndex = 0;
@@ -558,7 +564,7 @@
             this.pnUsuario.Controls.Add(this.label9);
             this.pnUsuario.Controls.Add(this.txtNomeUsuario);
             this.pnUsuario.Controls.Add(this.label8);
-            this.pnUsuario.Location = new System.Drawing.Point(12, 753);
+            this.pnUsuario.Location = new System.Drawing.Point(145, 753);
             this.pnUsuario.Name = "pnUsuario";
             this.pnUsuario.Size = new System.Drawing.Size(479, 75);
             this.pnUsuario.TabIndex = 4;
@@ -608,11 +614,44 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(47, 734);
+            this.label25.Location = new System.Drawing.Point(180, 734);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(89, 29);
             this.label25.TabIndex = 0;
             this.label25.Text = "Usuario";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.academia;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(648, 297);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(138, 232);
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.athlete_2026894_960_720;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(28, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(146, 195);
+            this.pictureBox3.TabIndex = 54;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.woman_1751186_960_720;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 633);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(135, 232);
+            this.pictureBox4.TabIndex = 55;
+            this.pictureBox4.TabStop = false;
             // 
             // frmNovo
             // 
@@ -621,7 +660,10 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(518, 518);
+            this.ClientSize = new System.Drawing.Size(865, 532);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label20);
@@ -638,6 +680,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmNovo";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Fit LTDA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -651,6 +694,9 @@
             this.pnEmpresa.PerformLayout();
             this.pnUsuario.ResumeLayout(false);
             this.pnUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,5 +751,8 @@
         private System.Windows.Forms.TextBox txtNomeUsuario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

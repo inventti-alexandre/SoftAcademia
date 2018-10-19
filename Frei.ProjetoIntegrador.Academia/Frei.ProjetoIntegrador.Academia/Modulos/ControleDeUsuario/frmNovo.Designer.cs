@@ -995,7 +995,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(745, 514);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
