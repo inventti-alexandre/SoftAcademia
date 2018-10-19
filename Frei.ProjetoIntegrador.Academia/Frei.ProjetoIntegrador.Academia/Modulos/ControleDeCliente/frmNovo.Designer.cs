@@ -31,11 +31,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtNTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btnSearchCEP = new System.Windows.Forms.Button();
-            this.txtNRes = new System.Windows.Forms.TextBox();
             this.txtUF = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -101,14 +99,7 @@
             this.btnSearchCEP.Size = new System.Drawing.Size(25, 24);
             this.btnSearchCEP.TabIndex = 6;
             this.btnSearchCEP.UseVisualStyleBackColor = false;
-            // 
-            // txtNRes
-            // 
-            this.txtNRes.Location = new System.Drawing.Point(370, 100);
-            this.txtNRes.MaxLength = 10;
-            this.txtNRes.Name = "txtNRes";
-            this.txtNRes.Size = new System.Drawing.Size(89, 20);
-            this.txtNRes.TabIndex = 11;
+            this.btnSearchCEP.Click += new System.EventHandler(this.btnSearchCEP_Click);
             // 
             // txtUF
             // 
@@ -131,20 +122,8 @@
             this.txtComplemento.Location = new System.Drawing.Point(152, 100);
             this.txtComplemento.MaxLength = 150;
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(149, 20);
+            this.txtComplemento.Size = new System.Drawing.Size(307, 20);
             this.txtComplemento.TabIndex = 10;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(307, 97);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 20);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Nº Res.:";
             // 
             // txtLogradouro
             // 
@@ -311,6 +290,7 @@
             this.btnCadastrar.TabIndex = 48;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label2
             // 
@@ -350,11 +330,9 @@
             this.pnEndereco.BackColor = System.Drawing.Color.Transparent;
             this.pnEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnEndereco.Controls.Add(this.btnSearchCEP);
-            this.pnEndereco.Controls.Add(this.txtNRes);
             this.pnEndereco.Controls.Add(this.txtUF);
             this.pnEndereco.Controls.Add(this.txtBairro);
             this.pnEndereco.Controls.Add(this.txtComplemento);
-            this.pnEndereco.Controls.Add(this.label15);
             this.pnEndereco.Controls.Add(this.txtLogradouro);
             this.pnEndereco.Controls.Add(this.label13);
             this.pnEndereco.Controls.Add(this.label12);
@@ -463,11 +441,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox txtNTelefone;
         private System.Windows.Forms.Button btnSearchCEP;
-        private System.Windows.Forms.TextBox txtNRes;
         private System.Windows.Forms.TextBox txtUF;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtComplemento;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtLogradouro;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label21;

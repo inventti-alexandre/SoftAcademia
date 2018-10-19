@@ -11,8 +11,6 @@ namespace Frei.ProjetoIntegrador.Academia.DB.ProdutoVenda
     {
         public int CadastrarProduto(ProdutoVendaDTO dto)
         {
-            exReg validar = new exReg();
-            validar.ValidarValor(dto.vl_Venda.ToString());
 
             ProdutoVendaDatabase db = new ProdutoVendaDatabase();
             return db.CadastrarProduto(dto);
