@@ -204,7 +204,7 @@
             this.dgvProdutos.RowTemplate.Height = 30;
             this.dgvProdutos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProdutos.Size = new System.Drawing.Size(825, 220);
+            this.dgvProdutos.Size = new System.Drawing.Size(807, 220);
             this.dgvProdutos.TabIndex = 48;
             // 
             // Column1
@@ -253,7 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(849, 531);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRemover);

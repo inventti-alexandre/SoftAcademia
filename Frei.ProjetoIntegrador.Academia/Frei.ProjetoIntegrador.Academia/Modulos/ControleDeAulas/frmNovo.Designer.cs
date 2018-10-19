@@ -43,7 +43,9 @@
             this.btncad = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +54,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(48, 172);
+            this.label1.Location = new System.Drawing.Point(90, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 20);
             this.label1.TabIndex = 0;
@@ -64,7 +66,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(332, 261);
+            this.label2.Location = new System.Drawing.Point(374, 318);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 20);
             this.label2.TabIndex = 0;
@@ -76,7 +78,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 198);
+            this.label3.Location = new System.Drawing.Point(52, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 20);
             this.label3.TabIndex = 0;
@@ -88,7 +90,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(40, 224);
+            this.label5.Location = new System.Drawing.Point(82, 281);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 20);
             this.label5.TabIndex = 0;
@@ -100,7 +102,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(391, 169);
+            this.label6.Location = new System.Drawing.Point(433, 226);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 20);
             this.label6.TabIndex = 0;
@@ -112,7 +114,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(371, 198);
+            this.label8.Location = new System.Drawing.Point(413, 255);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 20);
             this.label8.TabIndex = 0;
@@ -121,7 +123,7 @@
             // txtnomealu
             // 
             this.txtnomealu.ForeColor = System.Drawing.Color.Black;
-            this.txtnomealu.Location = new System.Drawing.Point(152, 175);
+            this.txtnomealu.Location = new System.Drawing.Point(194, 232);
             this.txtnomealu.Name = "txtnomealu";
             this.txtnomealu.Size = new System.Drawing.Size(214, 20);
             this.txtnomealu.TabIndex = 1;
@@ -129,7 +131,7 @@
             // txtnmprof
             // 
             this.txtnmprof.ForeColor = System.Drawing.Color.Black;
-            this.txtnmprof.Location = new System.Drawing.Point(152, 201);
+            this.txtnmprof.Location = new System.Drawing.Point(194, 258);
             this.txtnmprof.Name = "txtnmprof";
             this.txtnmprof.Size = new System.Drawing.Size(214, 20);
             this.txtnmprof.TabIndex = 1;
@@ -137,7 +139,7 @@
             // txttelalu
             // 
             this.txttelalu.ForeColor = System.Drawing.Color.Black;
-            this.txttelalu.Location = new System.Drawing.Point(501, 198);
+            this.txttelalu.Location = new System.Drawing.Point(543, 255);
             this.txttelalu.Name = "txttelalu";
             this.txttelalu.Size = new System.Drawing.Size(206, 20);
             this.txttelalu.TabIndex = 2;
@@ -145,7 +147,7 @@
             // txtemailalu
             // 
             this.txtemailalu.ForeColor = System.Drawing.Color.Black;
-            this.txtemailalu.Location = new System.Drawing.Point(501, 172);
+            this.txtemailalu.Location = new System.Drawing.Point(543, 229);
             this.txtemailalu.Name = "txtemailalu";
             this.txtemailalu.Size = new System.Drawing.Size(206, 20);
             this.txtemailalu.TabIndex = 3;
@@ -153,7 +155,7 @@
             // txtnmalu
             // 
             this.txtnmalu.ForeColor = System.Drawing.Color.Black;
-            this.txtnmalu.Location = new System.Drawing.Point(152, 227);
+            this.txtnmalu.Location = new System.Drawing.Point(194, 284);
             this.txtnmalu.Name = "txtnmalu";
             this.txtnmalu.Size = new System.Drawing.Size(214, 20);
             this.txtnmalu.TabIndex = 4;
@@ -162,7 +164,7 @@
             // txtdescaula
             // 
             this.txtdescaula.ForeColor = System.Drawing.Color.Black;
-            this.txtdescaula.Location = new System.Drawing.Point(120, 284);
+            this.txtdescaula.Location = new System.Drawing.Point(162, 341);
             this.txtdescaula.Multiline = true;
             this.txtdescaula.Name = "txtdescaula";
             this.txtdescaula.Size = new System.Drawing.Size(557, 57);
@@ -172,7 +174,7 @@
             // 
             this.btncad.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btncad.ForeColor = System.Drawing.Color.Black;
-            this.btncad.Location = new System.Drawing.Point(581, 347);
+            this.btncad.Location = new System.Drawing.Point(653, 462);
             this.btncad.Name = "btncad";
             this.btncad.Size = new System.Drawing.Size(96, 34);
             this.btncad.TabIndex = 5;
@@ -185,7 +187,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(272, 119);
+            this.label10.Location = new System.Drawing.Point(314, 176);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(193, 34);
             this.label10.TabIndex = 36;
@@ -195,12 +197,23 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox2.Location = new System.Drawing.Point(282, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(324, 69);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(175, 104);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.academia;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(602, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(138, 208);
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
             // 
             // frmNovo
             // 
@@ -208,7 +221,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(719, 403);
+            this.ClientSize = new System.Drawing.Size(831, 532);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btncad);
@@ -230,6 +244,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Fit LTDA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +267,6 @@
         private System.Windows.Forms.Button btncad;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

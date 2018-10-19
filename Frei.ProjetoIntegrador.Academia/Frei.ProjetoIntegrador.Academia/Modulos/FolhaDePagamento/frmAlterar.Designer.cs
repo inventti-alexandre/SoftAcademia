@@ -160,7 +160,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDias);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(12, 349);
+            this.panel1.Location = new System.Drawing.Point(12, 330);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(479, 211);
             this.panel1.TabIndex = 52;
@@ -387,7 +387,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(810, 580);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);

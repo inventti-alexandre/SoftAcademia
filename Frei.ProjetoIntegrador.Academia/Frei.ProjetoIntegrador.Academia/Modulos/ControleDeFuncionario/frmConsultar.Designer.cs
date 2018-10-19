@@ -92,7 +92,7 @@
             this.Column17,
             this.Column18,
             this.Column19});
-            this.dgvFuncionario.Location = new System.Drawing.Point(12, 257);
+            this.dgvFuncionario.Location = new System.Drawing.Point(17, 238);
             this.dgvFuncionario.Name = "dgvFuncionario";
             this.dgvFuncionario.ReadOnly = true;
             this.dgvFuncionario.RowHeadersVisible = false;
@@ -291,7 +291,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(717, 516);
+            this.btnNovo.Location = new System.Drawing.Point(722, 492);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(78, 28);
             this.btnNovo.TabIndex = 9;
@@ -304,7 +304,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(250, 119);
+            this.label7.Location = new System.Drawing.Point(255, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(274, 34);
             this.label7.TabIndex = 36;
@@ -316,7 +316,7 @@
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
             this.pictureBox1.Location = new System.Drawing.Point(293, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(175, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -330,7 +330,7 @@
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Location = new System.Drawing.Point(12, 169);
+            this.panel1.Location = new System.Drawing.Point(17, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 76);
             this.panel1.TabIndex = 38;
@@ -379,7 +379,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 560);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);

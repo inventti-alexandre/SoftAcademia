@@ -49,7 +49,7 @@
             this.Column1,
             this.Column2});
             this.dgvProdutos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvProdutos.Location = new System.Drawing.Point(12, 136);
+            this.dgvProdutos.Location = new System.Drawing.Point(151, 158);
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.RowHeadersVisible = false;
             this.dgvProdutos.Size = new System.Drawing.Size(524, 284);
@@ -71,7 +71,7 @@
             // btnVisualisar
             // 
             this.btnVisualisar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnVisualisar.Location = new System.Drawing.Point(29, 426);
+            this.btnVisualisar.Location = new System.Drawing.Point(168, 448);
             this.btnVisualisar.Name = "btnVisualisar";
             this.btnVisualisar.Size = new System.Drawing.Size(92, 35);
             this.btnVisualisar.TabIndex = 1;
@@ -82,7 +82,7 @@
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnRemover.Location = new System.Drawing.Point(138, 426);
+            this.btnRemover.Location = new System.Drawing.Point(277, 448);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(92, 35);
             this.btnRemover.TabIndex = 1;
@@ -93,7 +93,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(444, 426);
+            this.btnNovo.Location = new System.Drawing.Point(583, 448);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(92, 35);
             this.btnNovo.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(318, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(132, 99);
+            this.label7.Location = new System.Drawing.Point(271, 121);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(329, 34);
             this.label7.TabIndex = 39;
@@ -129,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(550, 463);
+            this.ClientSize = new System.Drawing.Size(831, 528);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnNovo);

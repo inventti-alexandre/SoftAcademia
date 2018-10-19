@@ -23,7 +23,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Clientes
             parms.Add(new MySqlParameter("ds_Bairro", dto.ds_Bairro));
             parms.Add(new MySqlParameter("ds_UF", dto.ds_UF));
             parms.Add(new MySqlParameter("ds_Complemento", dto.ds_Complemento));
-            parms.Add(new MySqlParameter("ds_Situacao", dto.ds_Situacao));
+            parms.Add(new MySqlParameter("ds_Situacao", true));
             parms.Add(new MySqlParameter("num_Telefone", dto.num_Telefone));
             parms.Add(new MySqlParameter("num_Celular", dto.num_Celular));
             parms.Add(new MySqlParameter("ds_Email", dto.ds_Email));

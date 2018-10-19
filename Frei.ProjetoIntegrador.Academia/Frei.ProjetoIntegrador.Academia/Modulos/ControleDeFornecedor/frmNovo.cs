@@ -72,5 +72,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFornecedor
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmNovo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

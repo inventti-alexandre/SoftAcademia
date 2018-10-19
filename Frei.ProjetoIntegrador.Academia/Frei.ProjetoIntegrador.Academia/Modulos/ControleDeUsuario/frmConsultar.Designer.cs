@@ -157,7 +157,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(717, 516);
+            this.btnNovo.Location = new System.Drawing.Point(717, 492);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(78, 28);
             this.btnNovo.TabIndex = 42;
@@ -184,7 +184,7 @@
             this.dgvUsuario.RowTemplate.Height = 30;
             this.dgvUsuario.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuario.Size = new System.Drawing.Size(699, 288);
+            this.dgvUsuario.Size = new System.Drawing.Size(699, 263);
             this.dgvUsuario.TabIndex = 39;
             // 
             // Column1
@@ -225,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 559);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);

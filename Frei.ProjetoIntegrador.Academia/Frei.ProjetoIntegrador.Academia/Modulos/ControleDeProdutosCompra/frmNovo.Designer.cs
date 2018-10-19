@@ -62,7 +62,7 @@
             this.pnDadosPessoais.Controls.Add(this.txtNome);
             this.pnDadosPessoais.Controls.Add(this.label1);
             this.pnDadosPessoais.Controls.Add(this.label2);
-            this.pnDadosPessoais.Location = new System.Drawing.Point(12, 210);
+            this.pnDadosPessoais.Location = new System.Drawing.Point(74, 201);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
             this.pnDadosPessoais.Size = new System.Drawing.Size(675, 203);
             this.pnDadosPessoais.TabIndex = 54;
@@ -153,7 +153,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(47, 191);
+            this.label5.Location = new System.Drawing.Point(109, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 29);
             this.label5.TabIndex = 53;
@@ -163,7 +163,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(280, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(336, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +176,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(268, 141);
+            this.label11.Location = new System.Drawing.Point(330, 132);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(193, 34);
             this.label11.TabIndex = 58;
@@ -187,7 +187,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Location = new System.Drawing.Point(585, 524);
+            this.btnCadastrar.Location = new System.Drawing.Point(647, 515);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(102, 28);
             this.btnCadastrar.TabIndex = 57;
@@ -201,7 +201,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(47, 428);
+            this.label20.Location = new System.Drawing.Point(109, 419);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(126, 29);
             this.label20.TabIndex = 52;
@@ -213,7 +213,7 @@
             this.pnContato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnContato.Controls.Add(this.cboFornecedor);
             this.pnContato.Controls.Add(this.label18);
-            this.pnContato.Location = new System.Drawing.Point(12, 447);
+            this.pnContato.Location = new System.Drawing.Point(74, 438);
             this.pnContato.Name = "pnContato";
             this.pnContato.Size = new System.Drawing.Size(675, 71);
             this.pnContato.TabIndex = 56;
@@ -245,7 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(709, 566);
+            this.ClientSize = new System.Drawing.Size(831, 532);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pnDadosPessoais);
             this.Controls.Add(this.pictureBox1);

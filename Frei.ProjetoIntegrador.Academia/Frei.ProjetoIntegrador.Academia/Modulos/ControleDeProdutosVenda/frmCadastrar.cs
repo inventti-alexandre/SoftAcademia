@@ -26,7 +26,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeProdutosVenda
                 dto.nm_Produto = txtNome.Text;
                 dto.ds_Produto = txtDescricao.Text;
                 dto.dt_Validade = dtpValidade.Value;
-                dto.vl_Venda = txtValor.Text == string.Empty ? throw new ArgumentException("Valor não pode ser nulo.") : Convert.ToDecimal(txtValor.Text);
+                //dto.vl_Venda = txtValor.Text == string.Empty ? throw new ArgumentException("Valor não pode ser nulo.") : Convert.ToDecimal(txtValor.Text);
                 dto.fk_ProdutoVenda_Filial = Program.id_Filial;
                 
                 ProdutoVendaBusiness business = new ProdutoVendaBusiness();
