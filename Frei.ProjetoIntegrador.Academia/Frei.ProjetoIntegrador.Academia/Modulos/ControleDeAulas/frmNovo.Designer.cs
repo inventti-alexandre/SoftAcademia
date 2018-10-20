@@ -116,7 +116,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(413, 255);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 20);
+            this.label8.Size = new System.Drawing.Size(124, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Telefone do Aluno:";
             // 
