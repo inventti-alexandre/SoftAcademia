@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.DB.Usuario;
+﻿using Frei.ProjetoIntegrador.Academia.Criptografia;
+using Frei.ProjetoIntegrador.Academia.DB.Usuario;
 using Nsf._2018.Modulo3.App;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,16 @@ namespace Frei.ProjetoIntegrador.Academia
         public frmLogin()
         {
             InitializeComponent();
+            Cripto();
+        }
+
+        private string Cripto()
+        {
+            DESCripto cripto = new DESCripto();
+            string chave = "camaleao";
+
+            string senha = cripto.Criptografar(chave, "pbtadmin1234");
+            return senha;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)

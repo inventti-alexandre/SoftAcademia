@@ -90,6 +90,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 Hide();
                 frm.ShowDialog();
                 Show();
+                CarregarGrid();
             }
             catch (ArgumentException ex)
             {
@@ -122,7 +123,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 business.RemoverFuncionario(data.id_Funcionario);
 
                 MessageBox.Show("Funcionário Removido com Sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                CarregarGrid();
             }
             catch (ArgumentException ex)
             {
@@ -155,6 +156,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 frm.CarregarCampos(data.id_Funcionario);
                 frm.ShowDialog();
                 Show();
+                CarregarGrid();
             }
             catch (ArgumentException ex)
             {

@@ -55,6 +55,9 @@
   <ItemGroup>
     <Compile Include="APIs\Correio\CorreioModel.cs" />
     <Compile Include="APIs\Correio\CorreioResponse.cs" />
+    <Compile Include="APIs\Email\EmailDTO.cs" />
+    <Compile Include="APIs\Email\Send.cs" />
+    <Compile Include="Criptografia\DESCripto.cs" />
     <Compile Include="DB\Base\Connection.cs" />
     <Compile Include="DB\Base\Database.cs" />
     <Compile Include="DB\Clientes\ClientesBusiness.cs" />
@@ -256,6 +259,12 @@
     <Compile Include="Modulos\ControleDeFuncionario\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ControleDeFuncionario\frmVerificarEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ControleDeFuncionario\frmVerificarEmail.Designer.cs">
+      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ControleDeProdutosCompra\frmAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -444,6 +453,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmVerificarEmail.resx">
+      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeProdutosCompra\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>

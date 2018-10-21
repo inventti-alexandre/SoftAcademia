@@ -71,6 +71,8 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 dto.fk_Func_Filial = Program.id_Filial;
                 dto.fk_Func_Usuario = id_User;
 
+                VerificarEmail(dto.ds_Email, dto.nm_NomeFunc);               
+
                 FuncionarioBusiness business = new FuncionarioBusiness();
                 business.CadastrarFuncionario(dto);
 
@@ -90,8 +92,29 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 else if (ex.Message.Contains("'fk_Func_Usuario'"))
                     MessageBox.Show("Este usuário já está em uso.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
-                    MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Ocorreu um erro não identificado: {ex.Message}", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void VerificarEmail(string email, string nome)
+        {
+            Random cod = new Random();
+
+            APIs.Email.EmailDTO mail = new APIs.Email.EmailDTO();
+            mail.Assunto = "Verificação de Email";
+            mail.CodVerificacao = cod.Next(11111, 99999);
+            mail.ReceptorEmail = email;
+            mail.ReceptorNome = nome;
+
+            APIs.Email.Send verificar = new APIs.Email.Send();
+            verificar.EnviarEmail(mail);
+
+            frmVerificarEmail frm = new frmVerificarEmail();
+            frm.Codigo(mail.CodVerificacao);
+            frm.ShowDialog();
+
+            if (frm.Verificado == false)
+                throw new ArgumentException("O email não foi verificado!");
         }
 
         private int ValidarUsuario(string nome, string senha)
