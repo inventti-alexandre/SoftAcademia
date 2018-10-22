@@ -28,7 +28,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Clientes
             parms.Add(new MySqlParameter("num_Celular", dto.num_Celular));
             parms.Add(new MySqlParameter("ds_Email", dto.ds_Email));
             parms.Add(new MySqlParameter("dt_Cadastro", dto.dt_Cadastro));
-            parms.Add(new MySqlParameter("fk_Cliente_Filial", dto.fk_Cliente_Filial));
+            parms.Add(new MySqlParameter("fk_Cliente_Filial", Program.id_Filial));
 
             Database db = new Database();
             return db.ExecuteInsertScriptWithPk(script, parms);
