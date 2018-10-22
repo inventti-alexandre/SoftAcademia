@@ -72,5 +72,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
                 MessageBox.Show("Ocorreu um erro não identificado: " + ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmNovo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
