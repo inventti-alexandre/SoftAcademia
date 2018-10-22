@@ -322,7 +322,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pnDadosPessoais);
             this.Name = "frmCadastrar";
-            this.Text = "frmCadastrar";
+            this.Text = "Black  fit LTDA";
+            this.Load += new System.EventHandler(this.frmCadastrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnDadosPessoais.ResumeLayout(false);
             this.pnDadosPessoais.PerformLayout();

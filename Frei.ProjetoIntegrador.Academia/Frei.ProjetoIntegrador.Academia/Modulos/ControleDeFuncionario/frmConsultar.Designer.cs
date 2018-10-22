@@ -70,6 +70,7 @@
             // 
             this.dgvFuncionario.AllowUserToAddRows = false;
             this.dgvFuncionario.AllowUserToDeleteRows = false;
+            this.dgvFuncionario.BackgroundColor = System.Drawing.Color.White;
             this.dgvFuncionario.ColumnHeadersHeight = 40;
             this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {

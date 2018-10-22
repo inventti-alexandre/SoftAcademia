@@ -114,7 +114,7 @@
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnRemover.Location = new System.Drawing.Point(531, 570);
+            this.btnRemover.Location = new System.Drawing.Point(531, 526);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(87, 28);
             this.btnRemover.TabIndex = 40;
@@ -125,7 +125,7 @@
             // btnAlterar
             // 
             this.btnAlterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnAlterar.Location = new System.Drawing.Point(438, 570);
+            this.btnAlterar.Location = new System.Drawing.Point(438, 526);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(87, 28);
             this.btnAlterar.TabIndex = 41;
@@ -136,7 +136,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(12, 570);
+            this.btnNovo.Location = new System.Drawing.Point(12, 526);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(87, 28);
             this.btnNovo.TabIndex = 42;
@@ -148,6 +148,7 @@
             // 
             this.dgvFolha.AllowUserToAddRows = false;
             this.dgvFolha.AllowUserToDeleteRows = false;
+            this.dgvFolha.BackgroundColor = System.Drawing.Color.White;
             this.dgvFolha.ColumnHeadersHeight = 40;
             this.dgvFolha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvFolha.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -210,7 +211,7 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnVisualizar.Location = new System.Drawing.Point(624, 570);
+            this.btnVisualizar.Location = new System.Drawing.Point(624, 526);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(87, 28);
             this.btnVisualizar.TabIndex = 41;
@@ -222,6 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 532);

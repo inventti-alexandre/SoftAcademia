@@ -51,5 +51,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFilial
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmCadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,7 +50,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(249, 109);
+            this.label7.Location = new System.Drawing.Point(270, 125);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(217, 34);
             this.label7.TabIndex = 30;
@@ -60,7 +60,7 @@
             // 
             this.btnremove.BackColor = System.Drawing.Color.White;
             this.btnremove.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremove.Location = new System.Drawing.Point(687, 386);
+            this.btnremove.Location = new System.Drawing.Point(727, 486);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(92, 34);
             this.btnremove.TabIndex = 25;
@@ -71,7 +71,7 @@
             // 
             this.btnAlterar.BackColor = System.Drawing.Color.White;
             this.btnAlterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.Location = new System.Drawing.Point(565, 237);
+            this.btnAlterar.Location = new System.Drawing.Point(516, 486);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(100, 34);
             this.btnAlterar.TabIndex = 26;
@@ -82,7 +82,7 @@
             // 
             this.btnnovo.BackColor = System.Drawing.Color.White;
             this.btnnovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnovo.Location = new System.Drawing.Point(565, 386);
+            this.btnnovo.Location = new System.Drawing.Point(622, 486);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(99, 34);
             this.btnnovo.TabIndex = 27;
@@ -93,7 +93,7 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.White;
             this.btnBuscar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(299, 164);
+            this.btnBuscar.Location = new System.Drawing.Point(541, 196);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 34);
             this.btnBuscar.TabIndex = 28;
@@ -102,7 +102,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(57, 171);
+            this.txtNome.Location = new System.Drawing.Point(299, 206);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(236, 20);
             this.txtNome.TabIndex = 24;
@@ -112,7 +112,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 171);
+            this.label1.Location = new System.Drawing.Point(215, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 23;
@@ -130,7 +130,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvViagem.Location = new System.Drawing.Point(35, 226);
+            this.dgvViagem.Location = new System.Drawing.Point(209, 251);
             this.dgvViagem.Name = "dgvViagem";
             this.dgvViagem.ReadOnly = true;
             this.dgvViagem.RowHeadersVisible = false;
@@ -138,7 +138,7 @@
             this.dgvViagem.RowTemplate.Height = 30;
             this.dgvViagem.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViagem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViagem.Size = new System.Drawing.Size(398, 183);
+            this.dgvViagem.Size = new System.Drawing.Size(407, 183);
             this.dgvViagem.TabIndex = 21;
             // 
             // Column1
@@ -169,7 +169,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(276, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(299, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

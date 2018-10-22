@@ -176,7 +176,7 @@
             this.btnNovo.BackColor = System.Drawing.Color.White;
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.ForeColor = System.Drawing.Color.Black;
-            this.btnNovo.Location = new System.Drawing.Point(739, 490);
+            this.btnNovo.Location = new System.Drawing.Point(720, 490);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(99, 34);
             this.btnNovo.TabIndex = 51;

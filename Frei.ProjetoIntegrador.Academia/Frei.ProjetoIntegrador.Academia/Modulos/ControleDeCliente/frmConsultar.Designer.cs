@@ -49,7 +49,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(293, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(333, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,7 +61,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(270, 116);
+            this.label7.Location = new System.Drawing.Point(316, 119);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(221, 34);
             this.label7.TabIndex = 43;
@@ -104,6 +104,7 @@
             // 
             this.dgvClientes.AllowUserToAddRows = false;
             this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvClientes.ColumnHeadersHeight = 40;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -112,6 +113,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
+            this.dgvClientes.GridColor = System.Drawing.Color.White;
             this.dgvClientes.Location = new System.Drawing.Point(80, 173);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
