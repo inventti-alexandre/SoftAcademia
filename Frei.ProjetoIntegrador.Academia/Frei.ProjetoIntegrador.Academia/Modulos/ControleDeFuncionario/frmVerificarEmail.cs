@@ -16,6 +16,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
         {
             InitializeComponent();
             Verificado = false;
+            MessageBox.Show("Foi enviado um email para o endereço fornecido!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         int codVerificacao = 0;

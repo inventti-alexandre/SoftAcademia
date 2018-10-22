@@ -18,7 +18,7 @@ namespace Frei.ProjetoIntegrador.Academia
         public frmLogin()
         {
             InitializeComponent();
-            Cripto();
+            //Cripto();
         }
 
         private string Cripto()
@@ -26,7 +26,7 @@ namespace Frei.ProjetoIntegrador.Academia
             DESCripto cripto = new DESCripto();
             string chave = "camaleao";
 
-            string senha = cripto.Criptografar(chave, "pbtadmin1234");
+            string senha = cripto.Criptografar(chave, "");
             return senha;
         }
 
