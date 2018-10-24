@@ -54,6 +54,7 @@
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(243, 330);
+            this.txtValor.MaxLength = 10;
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(341, 20);
             this.txtValor.TabIndex = 9;
@@ -83,6 +84,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Location = new System.Drawing.Point(243, 285);
+            this.txtDescricao.MaxLength = 200;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(341, 20);
             this.txtDescricao.TabIndex = 10;
@@ -103,6 +105,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(243, 238);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(341, 20);
             this.txtNome.TabIndex = 11;
@@ -166,6 +169,7 @@
             // 
             this.txtFilial.Enabled = false;
             this.txtFilial.Location = new System.Drawing.Point(243, 423);
+            this.txtFilial.MaxLength = 50;
             this.txtFilial.Name = "txtFilial";
             this.txtFilial.Size = new System.Drawing.Size(341, 20);
             this.txtFilial.TabIndex = 11;

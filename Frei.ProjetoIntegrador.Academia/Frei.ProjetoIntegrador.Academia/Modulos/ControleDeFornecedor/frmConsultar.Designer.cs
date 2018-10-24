@@ -228,6 +228,7 @@
             // txtFilial
             // 
             this.txtFilial.Location = new System.Drawing.Point(504, 31);
+            this.txtFilial.MaxLength = 150;
             this.txtFilial.Name = "txtFilial";
             this.txtFilial.Size = new System.Drawing.Size(81, 20);
             this.txtFilial.TabIndex = 5;
@@ -259,6 +260,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(58, 31);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(170, 20);
             this.txtNome.TabIndex = 5;
