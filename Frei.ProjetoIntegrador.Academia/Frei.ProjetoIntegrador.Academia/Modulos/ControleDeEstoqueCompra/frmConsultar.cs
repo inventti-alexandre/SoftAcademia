@@ -27,5 +27,26 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeEstoque
             dgvEstoque.AutoGenerateColumns = false;
             dgvEstoque.DataSource = estoque;
         }
+
+        private void btnComprar_Click(object sender, EventArgs e)
+        {
+            ControleDeCompra.frmNovo frm = new ControleDeCompra.frmNovo();
+            Hide();
+            frm.ShowDialog();
+            Show();
+            CarregarGrid();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            view_Estoque estoque = dgvEstoque.CurrentRow.DataBoundItem as view_Estoque;
+
+            frmAlterar frm = new frmAlterar();
+            Hide();
+            frm.CarregarCampos(estoque.fk_Estoque_Produto.ToString());
+            frm.ShowDialog();
+            Show();
+            CarregarGrid();
+        }
     }
 }

@@ -89,12 +89,12 @@ namespace Frei.ProjetoIntegrador.Academia
             {
                 if (permissoes.Produto.Substring(1, 1) == "0")
                 {
-                    cadastrarToolStripMenuItem.Enabled = false;
+                    cadastrarToolStripMenuItem9.Enabled = false;
                 }
 
                 if (permissoes.Produto.Substring(2, 1) == "0")
                 {
-                    consultarToolStripMenuItem.Enabled = false;
+                    consultarToolStripMenuItem11.Enabled = false;
                 }
             }
 
@@ -128,14 +128,9 @@ namespace Frei.ProjetoIntegrador.Academia
 
             if (permissoes.Estoque.Substring(0, 1) == "0")
             {
-                if (permissoes.Estoque.Substring(1, 1) == "0")
-                {
-                    cadastrarToolStripMenuItem3.Enabled = false;
-                }
-
                 if (permissoes.Estoque.Substring(2, 1) == "0")
                 {
-                    consultarToolStripMenuItem3.Enabled = false;
+                    estoqueToolStripMenuItem.Enabled = false;
                 }
             }
 
@@ -343,15 +338,6 @@ namespace Frei.ProjetoIntegrador.Academia
             Permissoes();
         }
 
-        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            Modulos.ControleDeEstoque.frmNovo frm = new Modulos.ControleDeEstoque.frmNovo();
-            Hide();
-            frm.ShowDialog();
-            Show();
-            Permissoes();
-        }
-
         private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Modulos.ControleDeEstoque.frmConsultar frm = new Modulos.ControleDeEstoque.frmConsultar();
@@ -490,6 +476,15 @@ namespace Frei.ProjetoIntegrador.Academia
         private void cadastrarToolStripMenuItem8_Click(object sender, EventArgs e)
         {
             Modulos.ControleDeProdutosVenda.frmCadastrar frm = new Modulos.ControleDeProdutosVenda.frmCadastrar();
+            Hide();
+            frm.ShowDialog();
+            Show();
+            Permissoes();
+        }
+
+        private void estoqueDeVendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Modulos.ControleDeEstoqueVenda.frmConsultar frm = new Modulos.ControleDeEstoqueVenda.frmConsultar();
             Hide();
             frm.ShowDialog();
             Show();

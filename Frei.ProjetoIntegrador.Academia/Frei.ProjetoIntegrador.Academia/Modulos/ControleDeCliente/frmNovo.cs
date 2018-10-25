@@ -53,10 +53,10 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSearchCEP_Click(object sender, EventArgs e)

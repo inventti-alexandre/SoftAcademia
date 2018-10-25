@@ -79,21 +79,32 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCompra
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            int id_User = ValidarUsuario(txtUsuario.Text, txtConfSenha.Text);
+            try
+            {
+                int id_User = ValidarUsuario(txtUsuario.Text, txtConfSenha.Text);
 
-            if (id_User == 0)
-                throw new ArgumentException("Usuário não autenticado!");
+                if (id_User == 0)
+                    throw new ArgumentException("Usuário não autenticado!");
 
-            PedidoCompraDTO pedido = new PedidoCompraDTO();
-            pedido.dt_Pedido = DateTime.Now;
-            pedido.fk_PedidoCompra_Filial = Program.id_Filial;
-            pedido.fk_PedidoCompra_Usuario = id_User;
+                PedidoCompraDTO pedido = new PedidoCompraDTO();
+                pedido.dt_Pedido = DateTime.Now;
+                pedido.fk_PedidoCompra_Filial = Program.id_Filial;
+                pedido.fk_PedidoCompra_Usuario = id_User;
 
-            PedidoItemCompraBusiness business = new PedidoItemCompraBusiness();
-            business.RegistrarProduto(pedido, produtosCarrinho);
+                PedidoItemCompraBusiness business = new PedidoItemCompraBusiness();
+                business.RegistrarProduto(pedido, produtosCarrinho);
 
-            MessageBox.Show("Compra efetuada com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
+                MessageBox.Show("Compra efetuada com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnRemover_Click(object sender, EventArgs e)

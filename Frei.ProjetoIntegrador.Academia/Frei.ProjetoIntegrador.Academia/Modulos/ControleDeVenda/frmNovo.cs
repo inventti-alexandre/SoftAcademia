@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.DB.PedidoItemVenda;
+﻿using Frei.ProjetoIntegrador.Academia.DB.Clientes;
+using Frei.ProjetoIntegrador.Academia.DB.PedidoItemVenda;
 using Frei.ProjetoIntegrador.Academia.DB.PedidoVenda;
 using Frei.ProjetoIntegrador.Academia.DB.ProdutoVenda;
 using Frei.ProjetoIntegrador.Academia.DB.Usuario;
@@ -37,6 +38,13 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeVenda
         {
             UsuarioDTO user = UserSession.UsuarioLogado;
             txtUsuario.Text = user.nm_Usuario;
+
+            ClientesBusiness business = new ClientesBusiness();
+            List<ClientesDTO> clientes = business.Consultar();
+
+            cboClientes.DisplayMember = nameof(ClientesDTO.nm_Nome);
+            cboClientes.ValueMember = nameof(ClientesDTO.id_Cliente);
+            cboClientes.DataSource = clientes;
         }
 
         private int ValidarUsuario(string nome, string senha)
@@ -77,22 +85,33 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeVenda
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            int id_User = ValidarUsuario(txtUsuario.Text, txtConfSenha.Text);
+            try
+            {
+                int id_User = ValidarUsuario(txtUsuario.Text, txtConfSenha.Text);
 
-            if (id_User == 0)
-                throw new ArgumentException("Usuário não autenticado!");
+                if (id_User == 0)
+                    throw new ArgumentException("Usuário não autenticado!");
 
-            PedidoVendaDTO pedido = new PedidoVendaDTO();
-            pedido.dt_Pedido = DateTime.Now;
-            pedido.fk_PedidoVenda_Filial = Program.id_Filial;
-            pedido.fk_PedidoVenda_Usuario = id_User;
-            pedido.fk_PedidoVenda_Cliente = Convert.ToInt32(cboClientes.SelectedValue);
+                PedidoVendaDTO pedido = new PedidoVendaDTO();
+                pedido.dt_Pedido = DateTime.Now;
+                pedido.fk_PedidoVenda_Filial = Program.id_Filial;
+                pedido.fk_PedidoVenda_Usuario = id_User;
+                pedido.fk_PedidoVenda_Cliente = Convert.ToInt32(cboClientes.SelectedValue);
 
-            PedidoItemVendaBusiness business = new PedidoItemVendaBusiness();
-            business.AdicionarCarrinho(pedido, produtosCarrinho);
+                PedidoItemVendaBusiness business = new PedidoItemVendaBusiness();
+                business.AdicionarCarrinho(pedido, produtosCarrinho);
 
-            MessageBox.Show("Compra efetuada com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
+                MessageBox.Show("Compra efetuada com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnRemover_Click(object sender, EventArgs e)

@@ -20,6 +20,12 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Estoque
             return db.AlterarEstoque(dto);
         }
 
+        public int AdicionarProdutos(EstoqueDTO dto)
+        {
+            EstoqueDatabase db = new EstoqueDatabase();
+            return db.AdicionarProdutos(dto);
+        }
+
         public int ApagarEstoque(int idEstoque)
         {
             EstoqueDatabase db = new EstoqueDatabase();
