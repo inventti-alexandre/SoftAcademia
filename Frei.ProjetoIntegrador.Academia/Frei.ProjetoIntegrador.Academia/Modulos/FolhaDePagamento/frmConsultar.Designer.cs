@@ -44,9 +44,11 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVisualizar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFolha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -54,7 +56,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(186, 119);
+            this.label7.Location = new System.Drawing.Point(234, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(367, 34);
             this.label7.TabIndex = 36;
@@ -64,7 +66,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(278, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(326, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,7 +79,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(249, 31);
+            this.label2.Location = new System.Drawing.Point(72, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 20);
             this.label2.TabIndex = 4;
@@ -85,19 +87,20 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.txtCPF);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Location = new System.Drawing.Point(12, 188);
+            this.panel1.Location = new System.Drawing.Point(60, 177);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 76);
             this.panel1.TabIndex = 45;
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(290, 34);
+            this.txtCPF.Location = new System.Drawing.Point(113, 34);
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(151, 20);
+            this.txtCPF.Size = new System.Drawing.Size(328, 20);
             this.txtCPF.TabIndex = 5;
             // 
             // btnBuscar
@@ -114,7 +117,7 @@
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnRemover.Location = new System.Drawing.Point(531, 526);
+            this.btnRemover.Location = new System.Drawing.Point(531, 514);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(87, 28);
             this.btnRemover.TabIndex = 40;
@@ -125,7 +128,7 @@
             // btnAlterar
             // 
             this.btnAlterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnAlterar.Location = new System.Drawing.Point(438, 526);
+            this.btnAlterar.Location = new System.Drawing.Point(438, 515);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(87, 28);
             this.btnAlterar.TabIndex = 41;
@@ -136,7 +139,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(12, 526);
+            this.btnNovo.Location = new System.Drawing.Point(12, 514);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(87, 28);
             this.btnNovo.TabIndex = 42;
@@ -157,7 +160,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dgvFolha.Location = new System.Drawing.Point(12, 276);
+            this.dgvFolha.Location = new System.Drawing.Point(60, 265);
             this.dgvFolha.Name = "dgvFolha";
             this.dgvFolha.ReadOnly = true;
             this.dgvFolha.RowHeadersVisible = false;
@@ -211,13 +214,24 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnVisualizar.Location = new System.Drawing.Point(624, 526);
+            this.btnVisualizar.Location = new System.Drawing.Point(624, 514);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(87, 28);
             this.btnVisualizar.TabIndex = 41;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.academia;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(655, 1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(133, 170);
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
             // 
             // frmConsultar
             // 
@@ -227,6 +241,7 @@
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 532);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnVisualizar);
@@ -243,6 +258,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFolha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +281,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
