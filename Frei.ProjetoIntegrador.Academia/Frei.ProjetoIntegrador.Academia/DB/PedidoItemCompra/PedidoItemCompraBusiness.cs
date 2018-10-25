@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.DB.PedidoCompra;
+﻿using Frei.ProjetoIntegrador.Academia.DB.Estoque;
+using Frei.ProjetoIntegrador.Academia.DB.PedidoCompra;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,14 @@ namespace Frei.ProjetoIntegrador.Academia.DB.PedidoItemCompra
             PedidoItemCompraDatabase db = new PedidoItemCompraDatabase();
             foreach (PedidoItemCompraDTO itens in carrinho)
             {
+                EstoqueBusiness esBusiness = new EstoqueBusiness();
+                List<view_Estoque> estoque = esBusiness.ConsultarViewPorNome(itens.nm_Produto);
+
+                if(estoque.Count > 0)
+                {
+
+                }
+
                 itens.fk_PedidoItemCompra_PedidoCompra = idCompra;
                 db.RegistrarProduto(itens);
             }

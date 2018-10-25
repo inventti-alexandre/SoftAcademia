@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Frei.ProjetoIntegrador.Academia.DB.Estoque;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeEstoque
         public frmConsultar()
         {
             InitializeComponent();
+            CarregarGrid();
+        }
+
+        private void CarregarGrid()
+        {
+            EstoqueBusiness business = new EstoqueBusiness();
+            List<view_Estoque> estoque = business.ConsultarView();
+
+            dgvEstoque.AutoGenerateColumns = false;
+            dgvEstoque.DataSource = estoque;
         }
     }
 }

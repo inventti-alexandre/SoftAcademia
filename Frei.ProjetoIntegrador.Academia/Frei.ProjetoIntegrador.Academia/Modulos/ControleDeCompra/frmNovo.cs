@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.DB.PedidoCompra;
+﻿using Frei.ProjetoIntegrador.Academia.DB.Estoque;
+using Frei.ProjetoIntegrador.Academia.DB.PedidoCompra;
 using Frei.ProjetoIntegrador.Academia.DB.PedidoItemCompra;
 using Frei.ProjetoIntegrador.Academia.DB.ProdutoCompra;
 using Frei.ProjetoIntegrador.Academia.DB.Usuario;
