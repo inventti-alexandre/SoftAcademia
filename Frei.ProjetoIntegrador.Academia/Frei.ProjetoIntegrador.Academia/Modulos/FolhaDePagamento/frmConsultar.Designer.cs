@@ -117,7 +117,7 @@
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnRemover.Location = new System.Drawing.Point(531, 514);
+            this.btnRemover.Location = new System.Drawing.Point(579, 515);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(87, 28);
             this.btnRemover.TabIndex = 40;
@@ -128,7 +128,7 @@
             // btnAlterar
             // 
             this.btnAlterar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnAlterar.Location = new System.Drawing.Point(438, 515);
+            this.btnAlterar.Location = new System.Drawing.Point(486, 516);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(87, 28);
             this.btnAlterar.TabIndex = 41;
@@ -140,7 +140,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnNovo.Location = new System.Drawing.Point(12, 514);
+            this.btnNovo.Location = new System.Drawing.Point(60, 516);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(87, 28);
             this.btnNovo.TabIndex = 42;
@@ -215,7 +215,7 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnVisualizar.Location = new System.Drawing.Point(624, 514);
+            this.btnVisualizar.Location = new System.Drawing.Point(672, 515);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(87, 28);
             this.btnVisualizar.TabIndex = 41;

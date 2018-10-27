@@ -41,25 +41,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pnDadosPessoais = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFornecedor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtVlCompra = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtQntAtual = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtQntRetirada = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtQntAtual = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtVlCompra = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFornecedor = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtEstMin = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtEstMax = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtEstMin = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnDadosPessoais.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnUsuario
@@ -217,68 +221,13 @@
             this.pnDadosPessoais.Size = new System.Drawing.Size(479, 184);
             this.pnDadosPessoais.TabIndex = 71;
             // 
-            // label2
+            // txtQntRetirada
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(59, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Fornecedor:";
-            // 
-            // txtFornecedor
-            // 
-            this.txtFornecedor.Enabled = false;
-            this.txtFornecedor.Location = new System.Drawing.Point(151, 71);
-            this.txtFornecedor.MaxLength = 150;
-            this.txtFornecedor.Name = "txtFornecedor";
-            this.txtFornecedor.Size = new System.Drawing.Size(307, 20);
-            this.txtFornecedor.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(27, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Valor de Compra:";
-            // 
-            // txtVlCompra
-            // 
-            this.txtVlCompra.Enabled = false;
-            this.txtVlCompra.Location = new System.Drawing.Point(151, 97);
-            this.txtVlCompra.MaxLength = 150;
-            this.txtVlCompra.Name = "txtVlCompra";
-            this.txtVlCompra.Size = new System.Drawing.Size(307, 20);
-            this.txtVlCompra.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(24, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Quantidade Atual:";
-            // 
-            // txtQntAtual
-            // 
-            this.txtQntAtual.Enabled = false;
-            this.txtQntAtual.Location = new System.Drawing.Point(151, 123);
-            this.txtQntAtual.MaxLength = 150;
-            this.txtQntAtual.Name = "txtQntAtual";
-            this.txtQntAtual.Size = new System.Drawing.Size(76, 20);
-            this.txtQntAtual.TabIndex = 0;
+            this.txtQntRetirada.Location = new System.Drawing.Point(384, 126);
+            this.txtQntRetirada.MaxLength = 150;
+            this.txtQntRetirada.Name = "txtQntRetirada";
+            this.txtQntRetirada.Size = new System.Drawing.Size(74, 20);
+            this.txtQntRetirada.TabIndex = 0;
             // 
             // label6
             // 
@@ -292,25 +241,68 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Quantidade Retirada:";
             // 
-            // txtQntRetirada
+            // txtQntAtual
             // 
-            this.txtQntRetirada.Location = new System.Drawing.Point(384, 126);
-            this.txtQntRetirada.MaxLength = 150;
-            this.txtQntRetirada.Name = "txtQntRetirada";
-            this.txtQntRetirada.Size = new System.Drawing.Size(74, 20);
-            this.txtQntRetirada.TabIndex = 0;
+            this.txtQntAtual.Enabled = false;
+            this.txtQntAtual.Location = new System.Drawing.Point(151, 123);
+            this.txtQntAtual.MaxLength = 150;
+            this.txtQntAtual.Name = "txtQntAtual";
+            this.txtQntAtual.Size = new System.Drawing.Size(76, 20);
+            this.txtQntAtual.TabIndex = 0;
             // 
-            // label7
+            // label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(402, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Id:";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(24, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Quantidade Atual:";
+            // 
+            // txtVlCompra
+            // 
+            this.txtVlCompra.Enabled = false;
+            this.txtVlCompra.Location = new System.Drawing.Point(151, 97);
+            this.txtVlCompra.MaxLength = 150;
+            this.txtVlCompra.Name = "txtVlCompra";
+            this.txtVlCompra.Size = new System.Drawing.Size(307, 20);
+            this.txtVlCompra.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(27, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Valor de Compra:";
+            // 
+            // txtFornecedor
+            // 
+            this.txtFornecedor.Enabled = false;
+            this.txtFornecedor.Location = new System.Drawing.Point(151, 71);
+            this.txtFornecedor.MaxLength = 150;
+            this.txtFornecedor.Name = "txtFornecedor";
+            this.txtFornecedor.Size = new System.Drawing.Size(307, 20);
+            this.txtFornecedor.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(59, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Fornecedor:";
             // 
             // lblId
             // 
@@ -324,6 +316,18 @@
             this.lblId.TabIndex = 0;
             this.lblId.Text = "0";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(402, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(25, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Id:";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -336,6 +340,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(311, 75);
             this.panel1.TabIndex = 72;
+            // 
+            // txtEstMin
+            // 
+            this.txtEstMin.Location = new System.Drawing.Point(152, 45);
+            this.txtEstMin.Name = "txtEstMin";
+            this.txtEstMin.Size = new System.Drawing.Size(141, 20);
+            this.txtEstMin.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(53, 42);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Estoque Min.:";
             // 
             // txtEstMax
             // 
@@ -356,24 +379,27 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Estoque Max.:";
             // 
-            // label10
+            // pictureBox3
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(53, 42);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Estoque Min.:";
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.ballerina_silhouette_gif_9;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(125, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(175, 208);
+            this.pictureBox3.TabIndex = 76;
+            this.pictureBox3.TabStop = false;
             // 
-            // txtEstMin
+            // pictureBox5
             // 
-            this.txtEstMin.Location = new System.Drawing.Point(152, 45);
-            this.txtEstMin.Name = "txtEstMin";
-            this.txtEstMin.Size = new System.Drawing.Size(141, 20);
-            this.txtEstMin.TabIndex = 19;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.musculacao;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(581, 32);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(221, 166);
+            this.pictureBox5.TabIndex = 77;
+            this.pictureBox5.TabStop = false;
             // 
             // frmAlterar
             // 
@@ -382,6 +408,8 @@
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 532);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnUsuario);
@@ -402,6 +430,8 @@
             this.pnDadosPessoais.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,5 +467,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtEstMin;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
