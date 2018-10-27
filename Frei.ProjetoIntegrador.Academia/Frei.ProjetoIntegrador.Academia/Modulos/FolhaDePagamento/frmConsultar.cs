@@ -33,10 +33,8 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
             view_func_folha data = dgvFolha.CurrentRow.DataBoundItem as view_func_folha;
 
             frmVisualizar frm = new frmVisualizar();
-            Hide();
             frm.CarregarCampos(data.id_Folha_Pgmt.ToString());
-            frm.ShowDialog();
-            Show();
+            frm.Show();
         }
 
         private void btnRemover_Click(object sender, EventArgs e)

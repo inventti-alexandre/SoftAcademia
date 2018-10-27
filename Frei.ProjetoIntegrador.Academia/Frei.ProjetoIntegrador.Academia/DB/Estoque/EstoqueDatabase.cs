@@ -17,8 +17,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Estoque
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("qnt_Produto", dto.qnt_Produto));
-            parms.Add(new MySqlParameter("num_Est_Min", 2000));
-            parms.Add(new MySqlParameter("num_Est_Max", 0));
+            parms.Add(new MySqlParameter("num_Est_Min", 1));
+            parms.Add(new MySqlParameter("num_Est_Max", 1000));
             parms.Add(new MySqlParameter("fk_Estoque_Produto", dto.fk_Estoque_Produto));
 
             Database db = new Database();

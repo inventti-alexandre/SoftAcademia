@@ -1,4 +1,0 @@
-﻿USE `blackfitdb`;
-
-INSERT `tb_Filial` VALUES (1, 'Matriz', '05651-002', 'Avenida Giovanni Gronchi', 'Morumbi', 'SP', '');
-INSERT `tb_usuario` VALUES (1, 'Admin', '1234', '10000', '1', 1);

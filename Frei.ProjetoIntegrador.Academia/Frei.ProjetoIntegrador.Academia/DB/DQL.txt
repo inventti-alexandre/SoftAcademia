@@ -1,2 +1,0 @@
-﻿SELECT * FROM `tb_Filial`;
-SELECT * FROM `tb_usuario` WHERE nm_Usuario = 'admin' AND ds_Senha = '1234';

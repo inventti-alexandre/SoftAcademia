@@ -150,11 +150,6 @@ namespace Frei.ProjetoIntegrador.Academia
 
             if (permissoes.FluxoDeCaixa.Substring(0, 1) == "0")
             {
-                if (permissoes.FluxoDeCaixa.Substring(1, 1) == "0")
-                {
-                    novoToolStripMenuItem.Enabled = false;
-                }
-
                 if (permissoes.FluxoDeCaixa.Substring(2, 1) == "0")
                 {
                     consultarToolStripMenuItem4.Enabled = false;
@@ -359,15 +354,6 @@ namespace Frei.ProjetoIntegrador.Academia
         private void consultarToolStripMenuItem7_Click(object sender, EventArgs e)
         {
             Modulos.ControleDeFornecedor.frmConsultar frm = new Modulos.ControleDeFornecedor.frmConsultar();
-            Hide();
-            frm.ShowDialog();
-            Show();
-            Permissoes();
-        }
-
-        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Modulos.FluxoDeCaixa.frmNovo frm = new Modulos.FluxoDeCaixa.frmNovo();
             Hide();
             frm.ShowDialog();
             Show();

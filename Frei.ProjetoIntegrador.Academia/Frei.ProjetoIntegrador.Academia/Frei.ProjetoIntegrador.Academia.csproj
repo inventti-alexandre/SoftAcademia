@@ -84,6 +84,7 @@
     <Compile Include="DB\FolhaPgmt\INSS_DTO.cs" />
     <Compile Include="DB\FolhaPgmt\IR_DTO.cs" />
     <Compile Include="DB\FolhaPgmt\view_func_folha.cs" />
+    <Compile Include="DB\Folha_Pgmt.cs" />
     <Compile Include="DB\Fornecedor\FornecedorBusiness.cs" />
     <Compile Include="DB\Fornecedor\FornecedorDatabase.cs" />
     <Compile Include="DB\Fornecedor\FornecedorDTO.cs" />
@@ -348,23 +349,11 @@
     <Compile Include="Modulos\ControleDeVenda\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\FluxoDeCaixa\frmAlterar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\FluxoDeCaixa\frmAlterar.Designer.cs">
-      <DependentUpon>frmAlterar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modulos\FluxoDeCaixa\frmConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\FluxoDeCaixa\frmConsultar.Designer.cs">
       <DependentUpon>frmConsultar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modulos\FluxoDeCaixa\frmNovo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\FluxoDeCaixa\frmNovo.Designer.cs">
-      <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\FolhaDePagamento\frmAlterar.cs">
       <SubType>Form</SubType>
@@ -510,14 +499,8 @@
     <EmbeddedResource Include="Modulos\ControleDeVenda\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\FluxoDeCaixa\frmAlterar.resx">
-      <DependentUpon>frmAlterar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\FluxoDeCaixa\frmConsultar.resx">
       <DependentUpon>frmConsultar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\FluxoDeCaixa\frmNovo.resx">
-      <DependentUpon>frmNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\FolhaDePagamento\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
@@ -556,9 +539,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\DDL.txt" />
-    <Content Include="DB\DML.txt" />
-    <Content Include="DB\DQL.txt" />
     <Content Include="logo.ico" />
     <None Include="Resources\athlete-2026894_960_720.png" />
     <None Include="Resources\kid-jump-icon.gif" />
