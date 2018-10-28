@@ -22,6 +22,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
         public decimal vl_Adiantamento { get; set; }
         public decimal vl_INSS { get; set; }
         public decimal vl_HoraE50 { get; set; }
+        public decimal vl_mesSalario { get; set; }
         public decimal vl_HoraE100 { get; set; }
         public decimal vl_Proventos { get; set; }
         public decimal vl_Descontos { get; set; }

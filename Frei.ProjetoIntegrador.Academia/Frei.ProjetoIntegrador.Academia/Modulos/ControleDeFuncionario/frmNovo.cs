@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.APIs.Correio;
+﻿using Blibioteca.Developers.APIs.Email;
+using Frei.ProjetoIntegrador.Academia.APIs.Correio;
 using Frei.ProjetoIntegrador.Academia.DB.Funcionario;
 using Frei.ProjetoIntegrador.Academia.DB.Usuario;
 using System;
@@ -71,8 +72,6 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
                 dto.fk_Func_Filial = Program.id_Filial;
                 dto.fk_Func_Usuario = id_User;
 
-                VerificarEmail(dto.ds_Email, dto.nm_NomeFunc);               
-
                 FuncionarioBusiness business = new FuncionarioBusiness();
                 business.CadastrarFuncionario(dto);
 
@@ -96,21 +95,13 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
             }
         }
 
-        private void VerificarEmail(string email, string nome)
+        private void VerificarEmail(EmailDTO dto)
         {
-            Random cod = new Random();
-
-            APIs.Email.EmailDTO mail = new APIs.Email.EmailDTO();
-            mail.Assunto = "Verificação de Email";
-            mail.CodVerificacao = cod.Next(11111, 99999);
-            mail.ReceptorEmail = email;
-            mail.ReceptorNome = nome;
-
-            APIs.Email.Send verificar = new APIs.Email.Send();
-            verificar.EnviarEmail(mail);
+            EmailSend send = new EmailSend();
+            int cod = send.CodEmailVerificar(dto);
 
             frmVerificarEmail frm = new frmVerificarEmail();
-            frm.Codigo(mail.CodVerificacao);
+            frm.Codigo(cod);
             frm.ShowDialog();
 
             if (frm.Verificado == false)

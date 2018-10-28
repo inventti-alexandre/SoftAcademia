@@ -25,6 +25,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
         public decimal vl_HoraE100 { get; set; }
         public decimal vl_Proventos { get; set; }
         public decimal vl_Descontos { get; set; }
+        public decimal vl_mesSalario { get; set; }
         public decimal vl_Liquido { get; set; }
         public decimal vl_BaseINSS { get; set; }
         public decimal vl_BaseFGTS { get; set; }

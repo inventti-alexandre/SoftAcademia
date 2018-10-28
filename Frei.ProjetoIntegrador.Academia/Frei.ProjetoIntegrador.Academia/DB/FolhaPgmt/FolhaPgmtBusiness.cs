@@ -11,8 +11,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
     {
         public void SalvarFolha(FolhaPgmtDTO dto)
         {
-            exReg regex = new exReg();
-            regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
+            //exReg regex = new exReg();
+            //regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
 
             if (dto.ds_Cargo == string.Empty)
                 throw new ArgumentException("O cargo não pode ser nulo.");
@@ -29,8 +29,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
 
         public int AlterarFolha(FolhaPgmtDTO dto)
         {
-            exReg regex = new exReg();
-            regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
+            //exReg regex = new exReg();
+            //regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
 
             if (dto.ds_Cargo == string.Empty)
                 throw new ArgumentException("O cargo não pode ser nulo.");

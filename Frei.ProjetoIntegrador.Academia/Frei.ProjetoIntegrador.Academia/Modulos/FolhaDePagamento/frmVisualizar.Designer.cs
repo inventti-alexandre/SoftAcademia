@@ -502,7 +502,9 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.lblINSS);
             this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.lblValeTransporte);
             this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.lblValeRefeicao);
             this.panel6.Controls.Add(this.lblAdiantamentos);
             this.panel6.Controls.Add(this.label20);
             this.panel6.Location = new System.Drawing.Point(669, 154);
@@ -626,8 +628,6 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lblHoraE100);
             this.panel4.Controls.Add(this.lblHoraE50);
-            this.panel4.Controls.Add(this.lblValeTransporte);
-            this.panel4.Controls.Add(this.lblValeRefeicao);
             this.panel4.Controls.Add(this.lblSalario);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label14);
@@ -661,7 +661,7 @@
             // 
             this.lblValeTransporte.AutoSize = true;
             this.lblValeTransporte.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValeTransporte.Location = new System.Drawing.Point(23, 56);
+            this.lblValeTransporte.Location = new System.Drawing.Point(46, 56);
             this.lblValeTransporte.Name = "lblValeTransporte";
             this.lblValeTransporte.Size = new System.Drawing.Size(32, 12);
             this.lblValeTransporte.TabIndex = 67;
@@ -671,7 +671,7 @@
             // 
             this.lblValeRefeicao.AutoSize = true;
             this.lblValeRefeicao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValeRefeicao.Location = new System.Drawing.Point(23, 90);
+            this.lblValeRefeicao.Location = new System.Drawing.Point(46, 90);
             this.lblValeRefeicao.Name = "lblValeRefeicao";
             this.lblValeRefeicao.Size = new System.Drawing.Size(32, 12);
             this.lblValeRefeicao.TabIndex = 66;

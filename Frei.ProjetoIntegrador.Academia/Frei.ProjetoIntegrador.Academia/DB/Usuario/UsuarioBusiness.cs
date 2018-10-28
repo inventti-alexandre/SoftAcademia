@@ -11,8 +11,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Usuario
     {
         public int CadastrarUsuario(UsuarioDTO dto)
         {
-            exReg regex = new exReg();
-            regex.ValidarSenha(dto.ds_Senha);
+            //exReg regex = new exReg();
+           // regex.ValidarSenha(dto.ds_Senha);
 
             UsuarioDatabase db = new UsuarioDatabase();
             return db.CadastrarUsuario(dto);
@@ -20,8 +20,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Usuario
 
         public int AlterarUsuario(UsuarioDTO dto)
         {
-            exReg regex = new exReg();
-            regex.ValidarSenha(dto.ds_Senha);
+            //exReg regex = new exReg();
+            //regex.ValidarSenha(dto.ds_Senha);
 
             UsuarioDatabase db = new UsuarioDatabase();
             return db.AlterarUsuario(dto);

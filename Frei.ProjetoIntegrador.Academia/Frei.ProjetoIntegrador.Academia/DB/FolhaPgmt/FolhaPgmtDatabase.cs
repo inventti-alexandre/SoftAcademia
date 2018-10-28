@@ -51,7 +51,8 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
                                                        vl_BaseFGTS = @vl_BaseFGTS,
                                                         vl_FGTSmes = @vl_FGTSmes,
                                                        vl_BaseIRRF = @vl_BaseIRRF,
-                                                      vl_FaixaIRRF = @vl_FaixaIRRF
+                                                      vl_FaixaIRRF = @vl_FaixaIRRF,
+                                                     vl_mesSalario = @vl_mesSalario
 
                                                WHERE id_Folha_Pgmt = @id_Folha_Pgmt";
 
@@ -75,6 +76,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
             parms.Add(new MySqlParameter("vl_Liquido", dto.vl_Liquido));
             parms.Add(new MySqlParameter("vl_BaseINSS", dto.vl_BaseINSS));
             parms.Add(new MySqlParameter("vl_BaseFGTS", dto.vl_BaseFGTS));
+            parms.Add(new MySqlParameter("vl_mesSalario", dto.vl_mesSalario));
             parms.Add(new MySqlParameter("vl_FGTSmes", dto.vl_FGTSmes));
             parms.Add(new MySqlParameter("vl_BaseIRRF", dto.vl_BaseIRRF));
             parms.Add(new MySqlParameter("vl_FaixaIRRF", dto.vl_FaixaIRRF));
@@ -243,6 +245,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
                 folha.vl_FGTSmes = reader.GetDecimal("vl_FGTSmes");
                 folha.vl_HoraE100 = reader.GetDecimal("vl_HoraE100");
                 folha.vl_HoraE50 = reader.GetDecimal("vl_HoraE50");
+                folha.vl_mesSalario = reader.GetDecimal("vl_mesSalario");
                 folha.vl_INSS = reader.GetDecimal("vl_INSS");
                 folha.vl_Liquido = reader.GetDecimal("vl_Liquido");
                 folha.vl_Proventos = reader.GetDecimal("vl_Proventos");

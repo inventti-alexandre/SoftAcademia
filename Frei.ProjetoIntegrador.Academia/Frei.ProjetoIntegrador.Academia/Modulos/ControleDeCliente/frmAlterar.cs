@@ -65,6 +65,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
             try
             {
                 ClientesDTO dto = new ClientesDTO();
+                dto.id_Cliente = Convert.ToInt32(lblId.Text);
                 dto.nm_Nome = txtNome.Text;
                 dto.ds_CPF = txtCPF.Text;
                 dto.ds_CEP = txtCEP.Text;
@@ -73,6 +74,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
                 dto.ds_UF = txtUF.Text;
                 dto.ds_Complemento = txtComplemento.Text;
                 dto.ds_Email = txtEmail.Text;
+                dto.ds_Situacao = true;
                 dto.num_Celular = txtNCelular.Text;
                 dto.num_Telefone = txtNTelefone.Text;
 
@@ -86,9 +88,14 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (ex.Message.Contains("'ds_CPF'"))
+                    MessageBox.Show("Este CPF já está cadastrado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (ex.Message.Contains("'ds_Email'"))
+                    MessageBox.Show("Este Email já está cadastrado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    MessageBox.Show($"Ocorreu um erro não identificado: {ex.Message}", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

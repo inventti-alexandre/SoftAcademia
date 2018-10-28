@@ -28,7 +28,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
             lblNome.Text = folha.nm_NomeFunc;
             lblFuncao.Text = folha.ds_Cargo;
             lblDiasTrabalhados.Text = folha.ds_DiasTrabalhados.ToString();
-            lblSalario.Text = Math.Round(folha.vl_SalarioBruto, 2).ToString();
+            lblSalario.Text = folha.vl_mesSalario.ToString();
             lblVencimentos.Text = folha.vl_Proventos.ToString();
             lblDescontos.Text = folha.vl_Descontos.ToString();
             lblReceber.Text = folha.vl_Liquido.ToString();

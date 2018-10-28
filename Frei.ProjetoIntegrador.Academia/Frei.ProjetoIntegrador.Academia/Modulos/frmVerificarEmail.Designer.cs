@@ -1,4 +1,4 @@
-﻿namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
+﻿namespace Frei.ProjetoIntegrador.Academia.Modulos
 {
     partial class frmVerificarEmail
     {
@@ -28,20 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnVerificar = new System.Windows.Forms.Button();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnVerificar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(199, 122);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 28);
+            this.button1.TabIndex = 44;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnVerificar
+            // 
+            this.btnVerificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerificar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
+            this.btnVerificar.ForeColor = System.Drawing.Color.Black;
+            this.btnVerificar.Location = new System.Drawing.Point(91, 122);
+            this.btnVerificar.Name = "btnVerificar";
+            this.btnVerificar.Size = new System.Drawing.Size(102, 28);
+            this.btnVerificar.TabIndex = 45;
+            this.btnVerificar.Text = "Verificar";
+            this.btnVerificar.UseVisualStyleBackColor = false;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // txtCod
             // 
-            this.txtCod.Location = new System.Drawing.Point(68, 58);
+            this.txtCod.Location = new System.Drawing.Point(91, 87);
             this.txtCod.MaxLength = 150;
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(196, 20);
-            this.txtCod.TabIndex = 37;
+            this.txtCod.TabIndex = 41;
             // 
             // label1
             // 
@@ -49,10 +75,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(5, 55);
+            this.label1.Location = new System.Drawing.Point(28, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 38;
+            this.label1.TabIndex = 42;
             this.label1.Text = "Código:";
             // 
             // label11
@@ -61,45 +87,17 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(12, 9);
+            this.label11.Location = new System.Drawing.Point(35, 38);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(252, 34);
-            this.label11.TabIndex = 39;
+            this.label11.TabIndex = 43;
             this.label11.Text = "Código de Segurança";
-            // 
-            // btnVerificar
-            // 
-            this.btnVerificar.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerificar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnVerificar.ForeColor = System.Drawing.Color.Black;
-            this.btnVerificar.Location = new System.Drawing.Point(68, 93);
-            this.btnVerificar.Name = "btnVerificar";
-            this.btnVerificar.Size = new System.Drawing.Size(102, 28);
-            this.btnVerificar.TabIndex = 40;
-            this.btnVerificar.Text = "Verificar";
-            this.btnVerificar.UseVisualStyleBackColor = false;
-            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(176, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 28);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmVerificarEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(274, 131);
+            this.ClientSize = new System.Drawing.Size(330, 179);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVerificar);
             this.Controls.Add(this.txtCod);
@@ -110,7 +108,6 @@
             this.MinimizeBox = false;
             this.Name = "frmVerificarEmail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,10 +115,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVerificar;
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnVerificar;
-        private System.Windows.Forms.Button button1;
     }
 }

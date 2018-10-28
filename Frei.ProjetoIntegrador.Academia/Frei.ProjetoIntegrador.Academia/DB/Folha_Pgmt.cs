@@ -50,6 +50,7 @@ namespace Frei.ProjetoIntegrador.Academia.DB
             dto.vl_Proventos = totalDeProventos;
             dto.vl_VR = ValorVR(folha.vl_SalarioBruto);
             dto.vl_VT = ValorVT(folha.vl_SalarioBruto);
+            dto.vl_mesSalario = mes_valor;
 
             return dto;
         }

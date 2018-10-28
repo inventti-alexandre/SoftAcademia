@@ -60,7 +60,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
                 business.RemoverCliente(data.id_Cliente);
 
                 MessageBox.Show("Cliente Removido com Sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                CarregarGrid();
             }
             catch (ArgumentException ex)
             {
@@ -93,6 +93,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
                 frm.CarregarCampos(data.id_Cliente);
                 frm.ShowDialog();
                 Show();
+                CarregarGrid();
             }
             catch (ArgumentException ex)
             {

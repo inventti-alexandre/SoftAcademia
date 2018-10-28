@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnComprar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBV = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUsu = new System.Windows.Forms.Button();
             this.btnFunc = new System.Windows.Forms.Button();
             this.btnFornecedores = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
+            this.lblBV = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVender = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -82,22 +83,30 @@
             this.folhaDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelSub = new System.Windows.Forms.Panel();
+            this.imgAtention = new System.Windows.Forms.PictureBox();
+            this.lblClima = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.hora = new System.Windows.Forms.Timer(this.components);
+            this.tempo = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panelSub.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAtention)).BeginInit();
             this.SuspendLayout();
             // 
             // btnComprar
             // 
             this.btnComprar.BackColor = System.Drawing.Color.White;
             this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComprar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.Location = new System.Drawing.Point(0, 222);
+            this.btnComprar.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComprar.Location = new System.Drawing.Point(0, 250);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(279, 46);
+            this.btnComprar.Size = new System.Drawing.Size(305, 46);
             this.btnComprar.TabIndex = 3;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = false;
@@ -107,26 +116,16 @@
             // 
             this.panel1.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.capa_para_facebook_academia_8;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.lblBV);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnUsu);
             this.panel1.Controls.Add(this.btnFunc);
             this.panel1.Controls.Add(this.btnFornecedores);
             this.panel1.Controls.Add(this.btnCliente);
             this.panel1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(3, 27);
+            this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(912, 211);
+            this.panel1.Size = new System.Drawing.Size(915, 211);
             this.panel1.TabIndex = 2;
-            // 
-            // lblBV
-            // 
-            this.lblBV.AutoSize = true;
-            this.lblBV.Location = new System.Drawing.Point(9, 5);
-            this.lblBV.Name = "lblBV";
-            this.lblBV.Size = new System.Drawing.Size(12, 20);
-            this.lblBV.TabIndex = 36;
-            this.lblBV.Text = " ";
             // 
             // pictureBox2
             // 
@@ -143,7 +142,7 @@
             // 
             this.btnUsu.BackColor = System.Drawing.Color.White;
             this.btnUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsu.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsu.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsu.Location = new System.Drawing.Point(640, 165);
             this.btnUsu.Name = "btnUsu";
             this.btnUsu.Size = new System.Drawing.Size(281, 46);
@@ -156,7 +155,7 @@
             // 
             this.btnFunc.BackColor = System.Drawing.Color.White;
             this.btnFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFunc.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFunc.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFunc.Location = new System.Drawing.Point(407, 165);
             this.btnFunc.Name = "btnFunc";
             this.btnFunc.Size = new System.Drawing.Size(234, 46);
@@ -169,7 +168,7 @@
             // 
             this.btnFornecedores.BackColor = System.Drawing.Color.White;
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedores.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedores.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.Location = new System.Drawing.Point(198, 165);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.Size = new System.Drawing.Size(213, 46);
@@ -181,9 +180,8 @@
             // btnCliente
             // 
             this.btnCliente.BackColor = System.Drawing.Color.White;
-            this.btnCliente.Enabled = false;
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.Location = new System.Drawing.Point(0, 165);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(204, 46);
@@ -192,25 +190,34 @@
             this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
+            // lblBV
+            // 
+            this.lblBV.AutoSize = true;
+            this.lblBV.Font = new System.Drawing.Font("Oswald", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBV.Location = new System.Drawing.Point(9, 4);
+            this.lblBV.Name = "lblBV";
+            this.lblBV.Size = new System.Drawing.Size(66, 20);
+            this.lblBV.TabIndex = 36;
+            this.lblBV.Text = "Bem vindo,";
+            // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.home;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.btnVender);
-            this.panel2.Location = new System.Drawing.Point(322, 258);
+            this.panel2.Location = new System.Drawing.Point(298, 237);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(278, 268);
+            this.panel2.Size = new System.Drawing.Size(314, 297);
             this.panel2.TabIndex = 3;
             // 
             // btnVender
             // 
             this.btnVender.BackColor = System.Drawing.Color.White;
-            this.btnVender.Enabled = false;
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVender.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVender.Location = new System.Drawing.Point(0, 222);
+            this.btnVender.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVender.Location = new System.Drawing.Point(3, 250);
             this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(278, 46);
+            this.btnVender.Size = new System.Drawing.Size(311, 46);
             this.btnVender.TabIndex = 3;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = false;
@@ -221,9 +228,9 @@
             this.panel3.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__4_;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.btnComprar);
-            this.panel3.Location = new System.Drawing.Point(622, 258);
+            this.panel3.Location = new System.Drawing.Point(611, 237);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(279, 268);
+            this.panel3.Size = new System.Drawing.Size(305, 297);
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -231,27 +238,27 @@
             this.panel4.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources._4eda16ef97c2e9b205bb2bed92def2c0;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.btnAula);
-            this.panel4.Location = new System.Drawing.Point(17, 258);
+            this.panel4.Location = new System.Drawing.Point(2, 237);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(278, 268);
+            this.panel4.Size = new System.Drawing.Size(300, 298);
             this.panel4.TabIndex = 4;
             // 
             // btnAula
             // 
             this.btnAula.BackColor = System.Drawing.Color.White;
-            this.btnAula.Enabled = false;
             this.btnAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAula.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAula.Location = new System.Drawing.Point(3, 222);
+            this.btnAula.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAula.Location = new System.Drawing.Point(-2, 251);
             this.btnAula.Name = "btnAula";
-            this.btnAula.Size = new System.Drawing.Size(275, 46);
+            this.btnAula.Size = new System.Drawing.Size(302, 46);
             this.btnAula.TabIndex = 3;
-            this.btnAula.Text = "Aulas";
+            this.btnAula.Text = "Estoque de Compra";
             this.btnAula.UseVisualStyleBackColor = false;
             this.btnAula.Click += new System.EventHandler(this.btnAula_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pessoalToolStripMenuItem,
             this.serviçosToolStripMenuItem,
@@ -358,7 +365,7 @@
             this.consultarToolStripMenuItem6,
             this.cadastrarToolStripMenuItem4});
             this.aulasToolStripMenuItem.Name = "aulasToolStripMenuItem";
-            this.aulasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aulasToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.aulasToolStripMenuItem.Text = "Aulas";
             // 
             // consultarToolStripMenuItem6
@@ -545,6 +552,7 @@
             // 
             // fluxoDeCaixaToolStripMenuItem
             // 
+            this.fluxoDeCaixaToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.fluxoDeCaixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultarToolStripMenuItem4});
             this.fluxoDeCaixaToolStripMenuItem.Name = "fluxoDeCaixaToolStripMenuItem";
@@ -554,7 +562,7 @@
             // consultarToolStripMenuItem4
             // 
             this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
-            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem4.Text = "Consultar";
             this.consultarToolStripMenuItem4.Click += new System.EventHandler(this.consultarToolStripMenuItem4_Click);
             // 
@@ -581,6 +589,62 @@
             this.consultarToolStripMenuItem5.Text = "Consultar";
             this.consultarToolStripMenuItem5.Click += new System.EventHandler(this.consultarToolStripMenuItem5_Click);
             // 
+            // panelSub
+            // 
+            this.panelSub.BackColor = System.Drawing.Color.Silver;
+            this.panelSub.Controls.Add(this.imgAtention);
+            this.panelSub.Controls.Add(this.lblClima);
+            this.panelSub.Controls.Add(this.lblHora);
+            this.panelSub.Controls.Add(this.lblBV);
+            this.panelSub.Location = new System.Drawing.Point(0, 532);
+            this.panelSub.Name = "panelSub";
+            this.panelSub.Size = new System.Drawing.Size(915, 29);
+            this.panelSub.TabIndex = 6;
+            // 
+            // imgAtention
+            // 
+            this.imgAtention.BackColor = System.Drawing.Color.Transparent;
+            this.imgAtention.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.attention;
+            this.imgAtention.Location = new System.Drawing.Point(630, 0);
+            this.imgAtention.Name = "imgAtention";
+            this.imgAtention.Padding = new System.Windows.Forms.Padding(5);
+            this.imgAtention.Size = new System.Drawing.Size(29, 29);
+            this.imgAtention.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgAtention.TabIndex = 37;
+            this.imgAtention.TabStop = false;
+            this.imgAtention.Visible = false;
+            // 
+            // lblClima
+            // 
+            this.lblClima.AutoSize = true;
+            this.lblClima.Font = new System.Drawing.Font("Oswald", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClima.Location = new System.Drawing.Point(679, 4);
+            this.lblClima.Name = "lblClima";
+            this.lblClima.Size = new System.Drawing.Size(38, 20);
+            this.lblClima.TabIndex = 36;
+            this.lblClima.Text = "Clima";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Oswald", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(421, 4);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(57, 20);
+            this.lblHora.TabIndex = 36;
+            this.lblHora.Text = "00:00:00";
+            // 
+            // hora
+            // 
+            this.hora.Enabled = true;
+            this.hora.Interval = 1000;
+            this.hora.Tick += new System.EventHandler(this.hora_Tick);
+            // 
+            // tempo
+            // 
+            this.tempo.Interval = 300000;
+            this.tempo.Tick += new System.EventHandler(this.tempo_Tick);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,7 +652,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(915, 532);
+            this.ClientSize = new System.Drawing.Size(915, 559);
+            this.Controls.Add(this.panelSub);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -596,17 +661,21 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Black Fit LTDA - System";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panelSub.ResumeLayout(false);
+            this.panelSub.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAtention)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,6 +736,12 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem11;
         private System.Windows.Forms.ToolStripMenuItem estoqueDeCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estoqueDeVendaToolStripMenuItem;
+        private System.Windows.Forms.Panel panelSub;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Timer hora;
+        private System.Windows.Forms.Label lblClima;
+        private System.Windows.Forms.Timer tempo;
+        private System.Windows.Forms.PictureBox imgAtention;
     }
 }
 

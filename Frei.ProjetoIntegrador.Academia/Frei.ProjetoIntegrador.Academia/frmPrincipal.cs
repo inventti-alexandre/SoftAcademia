@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.DB.Usuario;
+﻿using Blibioteca.Developers.APIs.Clima;
+using Frei.ProjetoIntegrador.Academia.DB.Usuario;
 using Nsf._2018.Modulo3.App;
 using System;
 using System.Collections.Generic;
@@ -18,12 +19,13 @@ namespace Frei.ProjetoIntegrador.Academia
         {
             InitializeComponent();
             Permissoes();
+            Clima();
         }
 
         private void Permissoes()
         {
             UsuarioDTO user = UserSession.UsuarioLogado;
-            lblBV.Text = $"Bem vindo, {user.nm_Usuario}";
+            lblBV.Text = $"Bem vindo, {user.nm_Usuario}.";
 
             UsuarioPermissoes chamar = new UsuarioPermissoes();
             UsuarioPermissoes permissoes = chamar.Permissoes(user.Cod_Perm);
@@ -425,7 +427,7 @@ namespace Frei.ProjetoIntegrador.Academia
 
         private void btnAula_Click(object sender, EventArgs e)
         {
-            Modulos.ControleDeAulas.frmConsultar frm = new Modulos.ControleDeAulas.frmConsultar();
+            Modulos.ControleDeEstoque.frmConsultar frm = new Modulos.ControleDeEstoque.frmConsultar();
             Hide();
             frm.ShowDialog();
             Show();
@@ -475,6 +477,23 @@ namespace Frei.ProjetoIntegrador.Academia
             frm.ShowDialog();
             Show();
             Permissoes();
+        }
+
+        private void hora_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        private void tempo_Tick(object sender, EventArgs e)
+        {
+            Clima();
+        }
+
+        private void Clima()
+        {
+            ClimaModel clima = new ClimaModel();
+            TempoResponse tempo = clima.AdivisorTempo("São Paulo");
+            lblClima.Text = $"{tempo.name},  {tempo.state}     Umidade: {tempo.data.humidity}    {tempo.data.temperature.ToString()}°";
         }
     }
 }

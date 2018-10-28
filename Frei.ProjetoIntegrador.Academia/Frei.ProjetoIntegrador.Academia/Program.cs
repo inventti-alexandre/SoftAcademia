@@ -20,5 +20,6 @@ namespace Frei.ProjetoIntegrador.Academia
         }
 
         static public int id_Filial = 1;
+        static public string chave = "academia";
     }
 }

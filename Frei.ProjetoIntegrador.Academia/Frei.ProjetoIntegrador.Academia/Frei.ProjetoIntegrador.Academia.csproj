@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,10 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIs\Clima\CidadeResponse.cs" />
+    <Compile Include="APIs\Clima\ClimaModel.cs" />
+    <Compile Include="APIs\Clima\ClimaResponse.cs" />
+    <Compile Include="APIs\Clima\TempoResponse.cs" />
     <Compile Include="APIs\Correio\CorreioModel.cs" />
     <Compile Include="APIs\Correio\CorreioResponse.cs" />
     <Compile Include="APIs\Email\EmailDTO.cs" />
-    <Compile Include="APIs\Email\Send.cs" />
+    <Compile Include="APIs\Email\EmailSend.cs" />
     <Compile Include="Criptografia\DESCripto.cs" />
     <Compile Include="DB\Base\Connection.cs" />
     <Compile Include="DB\Base\Database.cs" />
@@ -271,12 +276,6 @@
     <Compile Include="Modulos\ControleDeFuncionario\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\ControleDeFuncionario\frmVerificarEmail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modulos\ControleDeFuncionario\frmVerificarEmail.Designer.cs">
-      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modulos\ControleDeProdutosCompra\frmAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,12 +378,20 @@
     <Compile Include="Modulos\FolhaDePagamento\frmNovo.Designer.cs">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\frmVerificarEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\frmVerificarEmail.Designer.cs">
+      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserSession.cs" />
     <Compile Include="Validacoes\CNPJ.cs" />
     <Compile Include="Validacoes\CPF.cs" />
-    <Compile Include="Validacoes\exReg.cs" />
+    <Compile Include="Validacoes\Email.cs" />
+    <Compile Include="Validacoes\ER\ValidarNumero.cs" />
+    <Compile Include="Validacoes\ER\ValidarTexto.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -460,9 +467,6 @@
     <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmNovo.resx">
       <DependentUpon>frmNovo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\ControleDeFuncionario\frmVerificarEmail.resx">
-      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ControleDeProdutosCompra\frmAlterar.resx">
       <DependentUpon>frmAlterar.cs</DependentUpon>
     </EmbeddedResource>
@@ -514,6 +518,9 @@
     <EmbeddedResource Include="Modulos\FolhaDePagamento\frmVisualizar.resx">
       <DependentUpon>frmVisualizar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\frmVerificarEmail.resx">
+      <DependentUpon>frmVerificarEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -540,6 +547,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\attention.gif" />
     <None Include="Resources\athlete-2026894_960_720.png" />
     <None Include="Resources\kid-jump-icon.gif" />
     <None Include="Resources\musculacao.png" />

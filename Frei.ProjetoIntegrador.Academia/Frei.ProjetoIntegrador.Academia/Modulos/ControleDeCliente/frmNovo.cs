@@ -41,21 +41,23 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCliente
                 dto.num_Telefone = txtNTelefone.Text;
 
                 ClientesBusiness business = new ClientesBusiness();
-                int idCliente = business.CadastrarCliente(dto);
+                business.CadastrarCliente(dto);
 
-                if (idCliente == 0)
-                    throw new ArgumentException("O cliente não foi cadastrado com sucesso!");
-                else
-                    MessageBox.Show("Cliente cadastrado com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cliente cadastrado com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(ex.Message.Contains("'ds_CPF'"))
+                    MessageBox.Show("Este CPF já está cadastrado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (ex.Message.Contains("'ds_Email'"))
+                    MessageBox.Show("Este Email já está cadastrado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    MessageBox.Show($"Ocorreu um erro não identificado: {ex.Message}", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

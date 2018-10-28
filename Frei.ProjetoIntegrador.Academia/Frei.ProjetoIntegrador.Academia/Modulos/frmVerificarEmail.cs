@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
+namespace Frei.ProjetoIntegrador.Academia.Modulos
 {
     public partial class frmVerificarEmail : Form
     {
@@ -36,7 +36,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeFuncionario
         private void btnVerificar_Click(object sender, EventArgs e)
         {
             if (txtCod.Text != codVerificacao.ToString())
-                    throw new ArgumentException("O código de segurança está incorreto!");
+                throw new ArgumentException("O código de segurança está incorreto!");
             else
             {
                 Verificado = true;
