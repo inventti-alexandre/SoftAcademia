@@ -24,9 +24,9 @@ namespace Frei.ProjetoIntegrador.Academia
         private string Cripto()
         {
             DESCripto cripto = new DESCripto();
-            string chave = "camaleao";
+            string chave = "academia";
 
-            string senha = cripto.Descriptografar(chave, "qZ3ITTGVzu0kdIPfsbDJWQ==");
+            string senha = cripto.Descriptografar(chave, "izliGuG6Q5U=");
             return senha;
         }
 

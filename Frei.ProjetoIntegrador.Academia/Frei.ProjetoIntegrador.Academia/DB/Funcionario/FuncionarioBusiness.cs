@@ -132,13 +132,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorNome(string nome)
         {
+            DESCripto cripto = new DESCripto();
+            nome = cripto.Criptografar(Program.chave, nome);
+
             FuncionarioDatabase db = new FuncionarioDatabase();
             List<view_Func_Usua_Filial> funcionario = db.ConsultarPorNome(nome);
 
             if (funcionario.Count != 0)
             {
                 List<view_Func_Usua_Filial> funcDescripto = new List<view_Func_Usua_Filial>();
-                DESCripto cripto = new DESCripto();
                 foreach (view_Func_Usua_Filial func in funcionario)
                 {
                     func.nm_NomeFunc = cripto.Descriptografar(Program.chave, func.nm_NomeFunc);
@@ -158,12 +160,13 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public view_Func_Usua_Filial ConsultarPorId(int id)
         {
+            DESCripto cripto = new DESCripto();
+
             FuncionarioDatabase db = new FuncionarioDatabase();
             view_Func_Usua_Filial funcionario = db.ConsultarPorId(id);
 
             if (funcionario.id_Funcionario != 0)
             {
-                DESCripto cripto = new DESCripto();
                 funcionario.nm_NomeFunc = cripto.Descriptografar(Program.chave, funcionario.nm_NomeFunc);
                 funcionario.ds_CPF = cripto.Descriptografar(Program.chave, funcionario.ds_CPF);
                 funcionario.num_Celular = cripto.Descriptografar(Program.chave, funcionario.num_Celular);
@@ -178,13 +181,15 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorCPF(string cpf)
         {
+            DESCripto cripto = new DESCripto();
+            cpf = cripto.Criptografar(Program.chave, cpf);
+
             FuncionarioDatabase db = new FuncionarioDatabase();
             List<view_Func_Usua_Filial> funcionario = db.ConsultarPorCPF(cpf);
 
             if (funcionario.Count != 0)
             {
                 List<view_Func_Usua_Filial> funcDescripto = new List<view_Func_Usua_Filial>();
-                DESCripto cripto = new DESCripto();
                 foreach (view_Func_Usua_Filial func in funcionario)
                 {
                     func.nm_NomeFunc = cripto.Descriptografar(Program.chave, func.nm_NomeFunc);
@@ -204,13 +209,13 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorFilial(int idFilial)
         {
+            DESCripto cripto = new DESCripto();
             FuncionarioDatabase db = new FuncionarioDatabase();
             List<view_Func_Usua_Filial> funcionario = db.ConsultarPorFilial(idFilial);
 
             if (funcionario.Count != 0)
             {
                 List<view_Func_Usua_Filial> funcDescripto = new List<view_Func_Usua_Filial>();
-                DESCripto cripto = new DESCripto();
                 foreach (view_Func_Usua_Filial func in funcionario)
                 {
                     func.nm_NomeFunc = cripto.Descriptografar(Program.chave, func.nm_NomeFunc);
@@ -230,13 +235,14 @@ namespace Frei.ProjetoIntegrador.Academia.DB.Funcionario
 
         public List<view_Func_Usua_Filial> ConsultarPorNome_Filial(int idFilial, string nome)
         {
+            DESCripto cripto = new DESCripto();
+            nome = cripto.Criptografar(Program.chave, nome);
             FuncionarioDatabase db = new FuncionarioDatabase();
             List<view_Func_Usua_Filial> funcionario = db.ConsultarPorNome_Filial(idFilial, nome);
 
             if (funcionario.Count != 0)
             {
                 List<view_Func_Usua_Filial> funcDescripto = new List<view_Func_Usua_Filial>();
-                DESCripto cripto = new DESCripto();
                 foreach (view_Func_Usua_Filial func in funcionario)
                 {
                     func.nm_NomeFunc = cripto.Descriptografar(Program.chave, func.nm_NomeFunc);

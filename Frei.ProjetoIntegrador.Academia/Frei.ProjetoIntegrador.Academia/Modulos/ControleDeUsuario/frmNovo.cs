@@ -57,9 +57,12 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
             {
                 MessageBox.Show(ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro não identificado.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (ex.Message.Contains("'nm_Usuario'"))
+                    MessageBox.Show("Este nome de usuário já está em uso.", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    MessageBox.Show($"Ocorreu um erro não identificado: {ex.Message}", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

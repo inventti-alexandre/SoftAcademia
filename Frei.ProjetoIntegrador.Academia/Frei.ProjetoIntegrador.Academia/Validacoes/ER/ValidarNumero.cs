@@ -80,5 +80,15 @@ namespace Blibioteca.Developers.Validacao.ER
                     throw new ArgumentException("O telefone é invalido!");
             }
         }
+
+        public void ValidarSenha(string senha)
+        {
+            if (senha == string.Empty)
+                throw new ArgumentException("Digite uma senha.");
+            if (senha.Length > 30)
+                throw new ArgumentException("A senha não pode ter mais de 30 caractéres");
+            if (senha.Length <= 3)
+                throw new ArgumentException("A senha não pode ter menos de 4 caractéres");
+        }
     }
 }

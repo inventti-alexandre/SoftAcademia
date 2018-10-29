@@ -43,5 +43,13 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos
                 Close();
             }
         }
+
+        private void txtCod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
     }
 }
