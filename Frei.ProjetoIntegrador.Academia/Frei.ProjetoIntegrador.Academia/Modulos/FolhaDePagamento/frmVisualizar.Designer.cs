@@ -66,7 +66,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblINSS = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.lblValeTransporte = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.lblValeRefeicao = new System.Windows.Forms.Label();
             this.lblAdiantamentos = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -78,47 +80,45 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblHoraE100 = new System.Windows.Forms.Label();
             this.lblHoraE50 = new System.Windows.Forms.Label();
-            this.lblValeTransporte = new System.Windows.Forms.Label();
-            this.lblValeRefeicao = new System.Windows.Forms.Label();
             this.lblSalario = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.lblFaixaIRRF = new System.Windows.Forms.Label();
-            this.lblBaseIRRF = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.lblFGTSBase = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.lblFGTSMes = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.lblINSSBase = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblSalarioBase = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblDiasTrabalhados = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblDiasTrabalhados = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblSalarioBase = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.lblINSSBase = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.lblFGTSMes = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.lblFGTSBase = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.lblBaseIRRF = new System.Windows.Forms.Label();
+            this.lblFaixaIRRF = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel23.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -135,13 +135,13 @@
             this.panel22.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -531,6 +531,16 @@
             this.label10.TabIndex = 63;
             this.label10.Text = "Salario:";
             // 
+            // lblValeTransporte
+            // 
+            this.lblValeTransporte.AutoSize = true;
+            this.lblValeTransporte.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValeTransporte.Location = new System.Drawing.Point(46, 56);
+            this.lblValeTransporte.Name = "lblValeTransporte";
+            this.lblValeTransporte.Size = new System.Drawing.Size(32, 12);
+            this.lblValeTransporte.TabIndex = 67;
+            this.lblValeTransporte.Text = "R$ ...";
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -539,6 +549,16 @@
             this.label21.Size = new System.Drawing.Size(42, 13);
             this.label21.TabIndex = 62;
             this.label21.Text = "Salario:";
+            // 
+            // lblValeRefeicao
+            // 
+            this.lblValeRefeicao.AutoSize = true;
+            this.lblValeRefeicao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValeRefeicao.Location = new System.Drawing.Point(46, 90);
+            this.lblValeRefeicao.Name = "lblValeRefeicao";
+            this.lblValeRefeicao.Size = new System.Drawing.Size(32, 12);
+            this.lblValeRefeicao.TabIndex = 66;
+            this.lblValeRefeicao.Text = "R$ ...";
             // 
             // lblAdiantamentos
             // 
@@ -657,26 +677,6 @@
             this.lblHoraE50.TabIndex = 73;
             this.lblHoraE50.Text = "R$ ...";
             // 
-            // lblValeTransporte
-            // 
-            this.lblValeTransporte.AutoSize = true;
-            this.lblValeTransporte.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValeTransporte.Location = new System.Drawing.Point(46, 56);
-            this.lblValeTransporte.Name = "lblValeTransporte";
-            this.lblValeTransporte.Size = new System.Drawing.Size(32, 12);
-            this.lblValeTransporte.TabIndex = 67;
-            this.lblValeTransporte.Text = "R$ ...";
-            // 
-            // lblValeRefeicao
-            // 
-            this.lblValeRefeicao.AutoSize = true;
-            this.lblValeRefeicao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValeRefeicao.Location = new System.Drawing.Point(46, 90);
-            this.lblValeRefeicao.Name = "lblValeRefeicao";
-            this.lblValeRefeicao.Size = new System.Drawing.Size(32, 12);
-            this.lblValeRefeicao.TabIndex = 66;
-            this.lblValeRefeicao.Text = "R$ ...";
-            // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
@@ -737,341 +737,8 @@
             this.panel2.Controls.Add(this.label11);
             this.panel2.Location = new System.Drawing.Point(27, 154);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(766, 368);
+            this.panel2.Size = new System.Drawing.Size(766, 564);
             this.panel2.TabIndex = 98;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(13, 223);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(26, 12);
-            this.label62.TabIndex = 82;
-            this.label62.Text = "456";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(13, 26);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(26, 12);
-            this.label61.TabIndex = 81;
-            this.label61.Text = "001";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(13, 56);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(26, 12);
-            this.label60.TabIndex = 80;
-            this.label60.Text = "672";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(13, 90);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(26, 12);
-            this.label59.TabIndex = 79;
-            this.label59.Text = "677";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(13, 127);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(26, 12);
-            this.label58.TabIndex = 78;
-            this.label58.Text = "420";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(13, 161);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(26, 12);
-            this.label57.TabIndex = 77;
-            this.label57.Text = "903";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(13, 190);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(26, 12);
-            this.label56.TabIndex = 76;
-            this.label56.Text = "455";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(208, 323);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(85, 13);
-            this.label36.TabIndex = 66;
-            this.label36.Text = "Base calc FGTS";
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.White;
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.label41);
-            this.panel21.Controls.Add(this.lblFaixaIRRF);
-            this.panel21.Controls.Add(this.lblBaseIRRF);
-            this.panel21.Controls.Add(this.label38);
-            this.panel21.Location = new System.Drawing.Point(432, 324);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(331, 42);
-            this.panel21.TabIndex = 74;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(163, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(64, 12);
-            this.label41.TabIndex = 69;
-            this.label41.Text = "Faixa IRRF";
-            // 
-            // lblFaixaIRRF
-            // 
-            this.lblFaixaIRRF.AutoSize = true;
-            this.lblFaixaIRRF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFaixaIRRF.Location = new System.Drawing.Point(163, 27);
-            this.lblFaixaIRRF.Name = "lblFaixaIRRF";
-            this.lblFaixaIRRF.Size = new System.Drawing.Size(23, 12);
-            this.lblFaixaIRRF.TabIndex = 68;
-            this.lblFaixaIRRF.Text = "R$ ";
-            // 
-            // lblBaseIRRF
-            // 
-            this.lblBaseIRRF.AutoSize = true;
-            this.lblBaseIRRF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBaseIRRF.Location = new System.Drawing.Point(33, 27);
-            this.lblBaseIRRF.Name = "lblBaseIRRF";
-            this.lblBaseIRRF.Size = new System.Drawing.Size(23, 12);
-            this.lblBaseIRRF.TabIndex = 67;
-            this.lblBaseIRRF.Text = "R$ ";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(33, -1);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(89, 12);
-            this.label38.TabIndex = 66;
-            this.label38.Text = "Base calc IRRF";
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.lblFGTSBase);
-            this.panel19.Location = new System.Drawing.Point(195, 324);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(112, 42);
-            this.panel19.TabIndex = 73;
-            // 
-            // lblFGTSBase
-            // 
-            this.lblFGTSBase.AutoSize = true;
-            this.lblFGTSBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFGTSBase.Location = new System.Drawing.Point(26, 27);
-            this.lblFGTSBase.Name = "lblFGTSBase";
-            this.lblFGTSBase.Size = new System.Drawing.Size(32, 12);
-            this.lblFGTSBase.TabIndex = 65;
-            this.lblFGTSBase.Text = "R$ ...";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.label37);
-            this.panel20.Controls.Add(this.lblFGTSMes);
-            this.panel20.Location = new System.Drawing.Point(313, 324);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(110, 42);
-            this.panel20.TabIndex = 73;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(20, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(61, 12);
-            this.label37.TabIndex = 65;
-            this.label37.Text = "FGTS mes";
-            // 
-            // lblFGTSMes
-            // 
-            this.lblFGTSMes.AutoSize = true;
-            this.lblFGTSMes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFGTSMes.Location = new System.Drawing.Point(27, 27);
-            this.lblFGTSMes.Name = "lblFGTSMes";
-            this.lblFGTSMes.Size = new System.Drawing.Size(32, 12);
-            this.lblFGTSMes.TabIndex = 64;
-            this.lblFGTSMes.Text = "R$ ...";
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.label35);
-            this.panel18.Controls.Add(this.lblINSSBase);
-            this.panel18.Location = new System.Drawing.Point(102, 324);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(87, 42);
-            this.panel18.TabIndex = 73;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(5, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(88, 12);
-            this.label35.TabIndex = 65;
-            this.label35.Text = "Base calc INSS";
-            // 
-            // lblINSSBase
-            // 
-            this.lblINSSBase.AutoSize = true;
-            this.lblINSSBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblINSSBase.Location = new System.Drawing.Point(11, 27);
-            this.lblINSSBase.Name = "lblINSSBase";
-            this.lblINSSBase.Size = new System.Drawing.Size(32, 12);
-            this.lblINSSBase.TabIndex = 64;
-            this.lblINSSBase.Text = "R$ ...";
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.label7);
-            this.panel17.Controls.Add(this.lblSalarioBase);
-            this.panel17.Location = new System.Drawing.Point(6, 323);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(90, 42);
-            this.panel17.TabIndex = 72;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 1);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 12);
-            this.label7.TabIndex = 65;
-            this.label7.Text = "Salario base";
-            // 
-            // lblSalarioBase
-            // 
-            this.lblSalarioBase.AutoSize = true;
-            this.lblSalarioBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalarioBase.Location = new System.Drawing.Point(12, 28);
-            this.lblSalarioBase.Name = "lblSalarioBase";
-            this.lblSalarioBase.Size = new System.Drawing.Size(32, 12);
-            this.lblSalarioBase.TabIndex = 64;
-            this.lblSalarioBase.Text = "R$ ...";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.lblDiasTrabalhados);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Location = new System.Drawing.Point(440, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(100, 260);
-            this.panel5.TabIndex = 67;
-            // 
-            // lblDiasTrabalhados
-            // 
-            this.lblDiasTrabalhados.AutoSize = true;
-            this.lblDiasTrabalhados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiasTrabalhados.Location = new System.Drawing.Point(36, 26);
-            this.lblDiasTrabalhados.Name = "lblDiasTrabalhados";
-            this.lblDiasTrabalhados.Size = new System.Drawing.Size(14, 12);
-            this.lblDiasTrabalhados.TabIndex = 74;
-            this.lblDiasTrabalhados.Text = "...";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 12);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "Referencia:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(631, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(42, 13);
-            this.label18.TabIndex = 63;
-            this.label18.Text = "Salario:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(405, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 13);
-            this.label19.TabIndex = 62;
-            this.label19.Text = "Salario:";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Location = new System.Drawing.Point(48, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(386, 260);
-            this.panel3.TabIndex = 66;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(631, 11);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 13);
-            this.label15.TabIndex = 63;
-            this.label15.Text = "Salario:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(405, 11);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(42, 13);
-            this.label16.TabIndex = 62;
-            this.label16.Text = "Salario:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 12);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "Cod:";
             // 
             // label6
             // 
@@ -1084,6 +751,339 @@
             this.label6.TabIndex = 104;
             this.label6.Text = "Folha de Pagamento";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 37);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 12);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "Cod:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(405, 11);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(42, 13);
+            this.label16.TabIndex = 62;
+            this.label16.Text = "Salario:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(631, 11);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(42, 13);
+            this.label15.TabIndex = 63;
+            this.label15.Text = "Salario:";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Location = new System.Drawing.Point(47, 26);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(386, 260);
+            this.panel3.TabIndex = 66;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(405, 11);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(42, 13);
+            this.label19.TabIndex = 62;
+            this.label19.Text = "Salario:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(631, 11);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Salario:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 12);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Referencia:";
+            // 
+            // lblDiasTrabalhados
+            // 
+            this.lblDiasTrabalhados.AutoSize = true;
+            this.lblDiasTrabalhados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiasTrabalhados.Location = new System.Drawing.Point(36, 26);
+            this.lblDiasTrabalhados.Name = "lblDiasTrabalhados";
+            this.lblDiasTrabalhados.Size = new System.Drawing.Size(14, 12);
+            this.lblDiasTrabalhados.TabIndex = 74;
+            this.lblDiasTrabalhados.Text = "...";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.lblDiasTrabalhados);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Location = new System.Drawing.Point(439, 26);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(100, 260);
+            this.panel5.TabIndex = 67;
+            // 
+            // lblSalarioBase
+            // 
+            this.lblSalarioBase.AutoSize = true;
+            this.lblSalarioBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioBase.Location = new System.Drawing.Point(12, 28);
+            this.lblSalarioBase.Name = "lblSalarioBase";
+            this.lblSalarioBase.Size = new System.Drawing.Size(32, 12);
+            this.lblSalarioBase.TabIndex = 64;
+            this.lblSalarioBase.Text = "R$ ...";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 1);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 12);
+            this.label7.TabIndex = 65;
+            this.label7.Text = "Salario base";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.label7);
+            this.panel17.Controls.Add(this.lblSalarioBase);
+            this.panel17.Location = new System.Drawing.Point(5, 349);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(90, 42);
+            this.panel17.TabIndex = 72;
+            // 
+            // lblINSSBase
+            // 
+            this.lblINSSBase.AutoSize = true;
+            this.lblINSSBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSBase.Location = new System.Drawing.Point(11, 27);
+            this.lblINSSBase.Name = "lblINSSBase";
+            this.lblINSSBase.Size = new System.Drawing.Size(32, 12);
+            this.lblINSSBase.TabIndex = 64;
+            this.lblINSSBase.Text = "R$ ...";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(5, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(88, 12);
+            this.label35.TabIndex = 65;
+            this.label35.Text = "Base calc INSS";
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.White;
+            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.label35);
+            this.panel18.Controls.Add(this.lblINSSBase);
+            this.panel18.Location = new System.Drawing.Point(101, 350);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(87, 42);
+            this.panel18.TabIndex = 73;
+            // 
+            // lblFGTSMes
+            // 
+            this.lblFGTSMes.AutoSize = true;
+            this.lblFGTSMes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSMes.Location = new System.Drawing.Point(27, 27);
+            this.lblFGTSMes.Name = "lblFGTSMes";
+            this.lblFGTSMes.Size = new System.Drawing.Size(32, 12);
+            this.lblFGTSMes.TabIndex = 64;
+            this.lblFGTSMes.Text = "R$ ...";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(20, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(61, 12);
+            this.label37.TabIndex = 65;
+            this.label37.Text = "FGTS mes";
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.label37);
+            this.panel20.Controls.Add(this.lblFGTSMes);
+            this.panel20.Location = new System.Drawing.Point(312, 350);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(110, 42);
+            this.panel20.TabIndex = 73;
+            // 
+            // lblFGTSBase
+            // 
+            this.lblFGTSBase.AutoSize = true;
+            this.lblFGTSBase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSBase.Location = new System.Drawing.Point(26, 27);
+            this.lblFGTSBase.Name = "lblFGTSBase";
+            this.lblFGTSBase.Size = new System.Drawing.Size(32, 12);
+            this.lblFGTSBase.TabIndex = 65;
+            this.lblFGTSBase.Text = "R$ ...";
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.lblFGTSBase);
+            this.panel19.Location = new System.Drawing.Point(194, 350);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(112, 42);
+            this.panel19.TabIndex = 73;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(33, -1);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(89, 12);
+            this.label38.TabIndex = 66;
+            this.label38.Text = "Base calc IRRF";
+            // 
+            // lblBaseIRRF
+            // 
+            this.lblBaseIRRF.AutoSize = true;
+            this.lblBaseIRRF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBaseIRRF.Location = new System.Drawing.Point(33, 27);
+            this.lblBaseIRRF.Name = "lblBaseIRRF";
+            this.lblBaseIRRF.Size = new System.Drawing.Size(23, 12);
+            this.lblBaseIRRF.TabIndex = 67;
+            this.lblBaseIRRF.Text = "R$ ";
+            // 
+            // lblFaixaIRRF
+            // 
+            this.lblFaixaIRRF.AutoSize = true;
+            this.lblFaixaIRRF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFaixaIRRF.Location = new System.Drawing.Point(163, 27);
+            this.lblFaixaIRRF.Name = "lblFaixaIRRF";
+            this.lblFaixaIRRF.Size = new System.Drawing.Size(23, 12);
+            this.lblFaixaIRRF.TabIndex = 68;
+            this.lblFaixaIRRF.Text = "R$ ";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(163, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(64, 12);
+            this.label41.TabIndex = 69;
+            this.label41.Text = "Faixa IRRF";
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.White;
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.label41);
+            this.panel21.Controls.Add(this.lblFaixaIRRF);
+            this.panel21.Controls.Add(this.lblBaseIRRF);
+            this.panel21.Controls.Add(this.label38);
+            this.panel21.Location = new System.Drawing.Point(431, 350);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(326, 42);
+            this.panel21.TabIndex = 74;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(207, 349);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(85, 13);
+            this.label36.TabIndex = 66;
+            this.label36.Text = "Base calc FGTS";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(12, 216);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(26, 12);
+            this.label56.TabIndex = 76;
+            this.label56.Text = "455";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(12, 187);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(26, 12);
+            this.label57.TabIndex = 77;
+            this.label57.Text = "903";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(12, 153);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(26, 12);
+            this.label58.TabIndex = 78;
+            this.label58.Text = "420";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(12, 116);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(26, 12);
+            this.label59.TabIndex = 79;
+            this.label59.Text = "677";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(12, 82);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(26, 12);
+            this.label60.TabIndex = 80;
+            this.label60.Text = "672";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(12, 52);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(26, 12);
+            this.label61.TabIndex = 81;
+            this.label61.Text = "001";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(12, 249);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(26, 12);
+            this.label62.TabIndex = 82;
+            this.label62.Text = "456";
+            // 
             // frmVisualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1091,7 +1091,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(831, 532);
+            this.ClientSize = new System.Drawing.Size(933, 742);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel25);
@@ -1137,20 +1137,20 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1214,6 +1214,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label60;
@@ -1247,6 +1248,5 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label6;
     }
 }
