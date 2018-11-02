@@ -27,25 +27,40 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
 
             lblNome.Text = folha.nm_NomeFunc;
             lblFuncao.Text = folha.ds_Cargo;
-            lblDiasTrabalhados.Text = folha.ds_DiasTrabalhados.ToString();
-            lblSalario.Text = folha.vl_mesSalario.ToString();
-            lblVencimentos.Text = folha.vl_Proventos.ToString();
-            lblDescontos.Text = folha.vl_Descontos.ToString();
-            lblReceber.Text = folha.vl_Liquido.ToString();
-
-            lblValeTransporte.Text = folha.vl_VT.ToString();
-            lblValeRefeicao.Text = folha.vl_VR.ToString();
-            lblINSS.Text = folha.vl_INSS.ToString();
-            lblHoraE50.Text = folha.vl_HoraE50.ToString();
-            lblHoraE100.Text = folha.vl_HoraE100.ToString();
             lblMensagem.Text = folha.ds_Mensagem;
 
-            lblSalarioBase.Text = folha.vl_SalarioBruto.ToString();
-            lblINSSBase.Text = folha.vl_BaseINSS.ToString();
-            lblFGTSBase.Text = folha.vl_BaseFGTS.ToString();
-            lblFGTSMes.Text = folha.vl_FGTSmes.ToString();
-            lblBaseIRRF.Text = folha.vl_BaseIRRF.ToString();
-            lblFaixaIRRF.Text = folha.vl_FaixaIRRF.ToString();
+            lblDiasTrabalhados.Text = $"R$ {folha.ds_DiasTrabalhados}";
+            lblSalario.Text         = $"R$ {folha.vl_mesSalario}";
+            lblVencimentos.Text     = $"R$ {folha.vl_Proventos}";
+            lblDescontos.Text       = $"R$ {folha.vl_Descontos}";
+            lblReceber.Text         = $"R$ {folha.vl_Liquido}";
+
+            lblValeTransporte.Text  = $"R$ {folha.vl_VT}";
+            lblValeRefeicao.Text    = $"R$ {folha.vl_VR}";
+            lblINSS.Text            = $"R$ {folha.vl_INSS}";
+            lblHoraE50.Text         = $"R$ {folha.vl_HoraE50}";
+            lblHoraE100.Text        = $"R$ {folha.vl_HoraE100}";
+            lblDedIR.Text           = $"R$ {folha.vl_DedIR}";
+            lblIR.Text              = $"R$ {folha.vl_IR}";
+            lblValorIR.Text         = $"R$ {folha.vl_ValorIR}";
+            lblValorFGTS.Text       = $"R$ {folha.vl_ValorFGTS}";            
+
+            lblSalarioBase.Text     = $"R$ {folha.vl_SalarioBruto}";
+            lblINSSBase.Text        = $"R$ {folha.vl_BaseINSS}";
+            lblFGTSBase.Text        = $"R$ {folha.vl_BaseFGTS}";
+            lblFGTSMes.Text         = $"R$ {folha.vl_FGTSmes}";
+            lblBaseIRRF.Text        = $"R$ {folha.vl_BaseIRRF}";
+            lblFaixaIRRF.Text       = $"R$ {folha.vl_FaixaIRRF}";
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmVisualizar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

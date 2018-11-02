@@ -52,6 +52,10 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
                                                         vl_FGTSmes = @vl_FGTSmes,
                                                        vl_BaseIRRF = @vl_BaseIRRF,
                                                       vl_FaixaIRRF = @vl_FaixaIRRF,
+                                                          vl_DedIR = @vl_DedIR,
+                                                             vl_IR = @vl_IR,
+                                                        vl_ValorIR = @vl_ValorIR,
+                                                      vl_ValorFGTS = @vl_ValorFGTS,
                                                      vl_mesSalario = @vl_mesSalario
 
                                                WHERE id_Folha_Pgmt = @id_Folha_Pgmt";
@@ -59,6 +63,10 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("id_Folha_Pgmt", dto.id_Folha_Pgmt));
             parms.Add(new MySqlParameter("dt_Registro", dto.dt_Registro));
+            parms.Add(new MySqlParameter("vl_DedIR", dto.vl_DedIR));
+            parms.Add(new MySqlParameter("vl_IR", dto.vl_IR));
+            parms.Add(new MySqlParameter("vl_ValorIR", dto.vl_ValorIR));
+            parms.Add(new MySqlParameter("vl_ValorFGTS", dto.vl_ValorFGTS));
             parms.Add(new MySqlParameter("vl_SalarioBruto", dto.vl_SalarioBruto));
             parms.Add(new MySqlParameter("ds_DiasTrabalhados", dto.ds_DiasTrabalhados));
             parms.Add(new MySqlParameter("ds_Cargo", dto.ds_Cargo));
@@ -251,6 +259,10 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
                 folha.vl_Proventos = reader.GetDecimal("vl_Proventos");
                 folha.vl_VR = reader.GetDecimal("vl_VR");
                 folha.vl_VT = reader.GetDecimal("vl_VT");
+                folha.vl_DedIR = reader.GetDecimal("vl_DedIR");
+                folha.vl_IR = reader.GetDecimal("vl_IR");
+                folha.vl_ValorIR = reader.GetDecimal("vl_ValorIR");
+                folha.vl_ValorFGTS = reader.GetDecimal("vl_ValorFGTS");
             }
             reader.Close();
             return folha;

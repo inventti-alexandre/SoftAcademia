@@ -51,6 +51,10 @@ namespace Frei.ProjetoIntegrador.Academia.DB
             dto.vl_VR = ValorVR(folha.vl_SalarioBruto);
             dto.vl_VT = ValorVT(folha.vl_SalarioBruto);
             dto.vl_mesSalario = mes_valor;
+            dto.vl_DedIR = deducao_ir;
+            dto.vl_IR = ValorIR(folha.vl_SalarioBruto);
+            dto.vl_ValorIR = ValorFinar_IR(ValorIR(folha.vl_SalarioBruto), Deducao_IR(folha.vl_SalarioBruto));
+            dto.vl_ValorFGTS = ValorFGTS(folha.vl_SalarioBruto);
 
             return dto;
         }
