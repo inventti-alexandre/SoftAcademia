@@ -1,4 +1,5 @@
-﻿using Frei.ProjetoIntegrador.Academia.Criptografia;
+﻿using Blibioteca.Developers.Validacao.ER;
+using Frei.ProjetoIntegrador.Academia.Criptografia;
 using Frei.ProjetoIntegrador.Academia.Validacoes;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,16 @@ namespace Frei.ProjetoIntegrador.Academia.DB.FolhaPgmt
     {
         public void SalvarFolha(FolhaPgmtDTO dto)
         {
-            //exReg regex = new exReg();
-            //regex.ValidarSalario(dto.vl_SalarioBruto.ToString());
+            ValidarNumero regexNum = new ValidarNumero();
+            regexNum.ValidarDinheiro(dto.vl_SalarioBruto.ToString());
+
+            int dM = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
 
             if (dto.ds_Cargo == string.Empty)
                 throw new ArgumentException("O cargo não pode ser nulo.");
+
+            if (dto.ds_DiasTrabalhados > dM)
+                throw new ArgumentException("Impossivél trabalhar essa quantidade de dias no mês decorrente!");
 
             FolhaPgmtDatabase db = new FolhaPgmtDatabase();
             int idFolha = db.SalvarFolha(dto);

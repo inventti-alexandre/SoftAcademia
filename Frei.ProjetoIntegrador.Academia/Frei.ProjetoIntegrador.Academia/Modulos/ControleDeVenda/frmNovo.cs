@@ -33,14 +33,14 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeVenda
             dgvItens.AutoGenerateColumns = false;
             dgvItens.DataSource = produtosCarrinho;
         }
-
+        List<ClientesDTO> clientes = new List<ClientesDTO>();
         private void CarregarCampos()
         {
             UsuarioDTO user = UserSession.UsuarioLogado;
             txtUsuario.Text = user.nm_Usuario;
 
             ClientesBusiness business = new ClientesBusiness();
-            List<ClientesDTO> clientes = business.Consultar();
+            clientes = business.Consultar();
 
             cboClientes.DisplayMember = nameof(ClientesDTO.nm_Nome);
             cboClientes.ValueMember = nameof(ClientesDTO.id_Cliente);
@@ -55,10 +55,11 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeVenda
             return user.id_Usuario;
         }
 
+        List<ProdutoVendaDTO> produtos = new List<ProdutoVendaDTO>();
         private void CarregarProdutos()
         {
             ProdutoVendaBusiness business = new ProdutoVendaBusiness();
-            List<ProdutoVendaDTO> produtos = business.Consultar();
+            produtos = business.Consultar();
 
             cboProdutos.ValueMember = nameof(ProdutoVendaDTO.id_produtoVenda);
             cboProdutos.DisplayMember = nameof(ProdutoVendaDTO.nm_Produto);
@@ -123,6 +124,22 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeVenda
         {
             while (produtosCarrinho.Count > 0)
                 produtosCarrinho.RemoveAt(0);
+        }
+
+        private void frmNovo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (clientes.Count == 0)
+            {
+                MessageBox.Show("Não há clientes cadastrados!", "Black Fit LTDA",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Close();
+            }
+            if (produtos.Count == 0)
+            {
+                MessageBox.Show("Não há produtos cadastrados!", "Black Fit LTDA",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Close();
+            }
         }
     }
 }

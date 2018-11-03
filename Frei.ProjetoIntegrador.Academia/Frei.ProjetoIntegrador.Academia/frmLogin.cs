@@ -26,7 +26,7 @@ namespace Frei.ProjetoIntegrador.Academia
             DESCripto cripto = new DESCripto();
             string chave = "academia";
 
-            string senha = cripto.Descriptografar(chave, "izliGuG6Q5U=");
+            string senha = cripto.Descriptografar(chave, "");
             return senha;
         }
 
@@ -39,7 +39,12 @@ namespace Frei.ProjetoIntegrador.Academia
 
                 if (user.nm_Usuario != null)
                 {
-                    UserSession.UsuarioLogado = user;
+                    if (user.ds_Situacao == true)
+                    {
+                        UserSession.UsuarioLogado = user;
+                    }
+                    else
+                        throw new ArgumentException("Este usuário está bloqueado para fazer login!");
 
                     frmPrincipal frm = new frmPrincipal();
                     Hide();

@@ -101,7 +101,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
                 UsuarioDTO user = new UsuarioDTO();
                 user.id_Usuario = Convert.ToInt32(lblId.Text);
                 user.nm_Usuario = txtUsuario.Text;
-                user.ds_Situacao = true;
+                user.ds_Situacao = rbnAtivo.Checked == true ? true : false;
                 user.Cod_Perm = Code();
 
                 if (txtNSenha.Text == string.Empty)
@@ -111,8 +111,8 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
                     else
                         throw new ArgumentException("Autenticação falhou!");
                 }
-                //else
-                //    user.ds_Senha = txtSenha.Text == txtNSenha.Text ? txtSenha.Text : throw new ArgumentException("As senhas não são iguais.");
+                else if (txtSenha.Text == txtNSenha.Text)
+                    throw new ArgumentException("As senhas não são iguais.");
 
                 if (user.id_Usuario == UserSession.UsuarioLogado.id_Usuario)
                     throw new ArgumentException("Impossível alterar seu usuário enquanto estiver logado.");
@@ -124,6 +124,7 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeUsuario
                 business.AlterarUsuario(user);
 
                 MessageBox.Show("Alterações salvas com sucesso!", "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
             }
             catch (ArgumentException ex)
             {

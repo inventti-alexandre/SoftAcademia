@@ -403,6 +403,7 @@
             this.Name = "frmNovo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Fit LTDA";
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmNovo_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItens)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

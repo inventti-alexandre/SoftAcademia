@@ -21,9 +21,9 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCompra
         public frmNovo()
         {
             InitializeComponent();
-            CarregarProdutos();
             CarregarCampos();
             CarregarGrid();
+            CarregarProdutos();
         }
 
         BindingList<PedidoItemCompraDTO> produtosCarrinho = new BindingList<PedidoItemCompraDTO>();
@@ -48,10 +48,11 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCompra
             return user.id_Usuario;
         }
 
+        List<view_produtoCompra_Forn_Filial> produtos = new List<view_produtoCompra_Forn_Filial>();
         private void CarregarProdutos()
         {
             ProdutoCompraBusiness business = new ProdutoCompraBusiness();
-            List<view_produtoCompra_Forn_Filial> produtos = business.Consultar();
+            produtos = business.Consultar();
 
             cboProdutos.ValueMember = nameof(view_produtoCompra_Forn_Filial.id_Produto);
             cboProdutos.DisplayMember = nameof(view_produtoCompra_Forn_Filial.nm_Produto);
@@ -116,6 +117,16 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.ControleDeCompra
         {
             while(produtosCarrinho.Count > 0)
                 produtosCarrinho.RemoveAt(0);
+        }
+
+        private void frmNovo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(produtos.Count == 0)
+            {
+                MessageBox.Show("Não há produtos cadastrados!", "Black Fit LTDA",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Close();
+            }
         }
     }
 }

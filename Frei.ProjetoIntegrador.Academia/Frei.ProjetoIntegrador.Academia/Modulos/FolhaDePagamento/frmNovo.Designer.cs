@@ -67,10 +67,10 @@
             // btnGerar
             // 
             this.btnGerar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Italic);
-            this.btnGerar.Location = new System.Drawing.Point(539, 545);
+            this.btnGerar.Location = new System.Drawing.Point(532, 498);
             this.btnGerar.Name = "btnGerar";
             this.btnGerar.Size = new System.Drawing.Size(270, 28);
-            this.btnGerar.TabIndex = 3;
+            this.btnGerar.TabIndex = 10;
             this.btnGerar.Text = "Gerar";
             this.btnGerar.UseVisualStyleBackColor = true;
             this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
@@ -80,7 +80,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(336, 133);
+            this.label7.Location = new System.Drawing.Point(349, 118);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(204, 34);
             this.label7.TabIndex = 36;
@@ -90,7 +90,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.logoAcademia;
-            this.pictureBox1.Location = new System.Drawing.Point(351, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(364, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(63, 161);
+            this.label5.Location = new System.Drawing.Point(63, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 29);
             this.label5.TabIndex = 42;
@@ -120,10 +120,10 @@
             this.pnDadosPessoais.Controls.Add(this.label3);
             this.pnDadosPessoais.Controls.Add(this.label4);
             this.pnDadosPessoais.Controls.Add(this.txtCPF);
-            this.pnDadosPessoais.Location = new System.Drawing.Point(28, 184);
+            this.pnDadosPessoais.Location = new System.Drawing.Point(28, 170);
             this.pnDadosPessoais.Name = "pnDadosPessoais";
             this.pnDadosPessoais.Size = new System.Drawing.Size(479, 113);
-            this.pnDadosPessoais.TabIndex = 43;
+            this.pnDadosPessoais.TabIndex = 1;
             // 
             // btnBuscar
             // 
@@ -131,7 +131,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(248, 20);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(93, 28);
-            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -142,7 +142,8 @@
             this.txtCargo.MaxLength = 45;
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(307, 20);
-            this.txtCargo.TabIndex = 0;
+            this.txtCargo.TabIndex = 4;
+            this.txtCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCargo_KeyPress);
             // 
             // label1
             // 
@@ -161,7 +162,8 @@
             this.txtNome.Location = new System.Drawing.Point(142, 50);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(307, 20);
-            this.txtNome.TabIndex = 0;
+            this.txtNome.TabIndex = 3;
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label3
             // 
@@ -206,10 +208,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDias);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(28, 346);
+            this.panel1.Location = new System.Drawing.Point(28, 320);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(479, 211);
-            this.panel1.TabIndex = 43;
+            this.panel1.TabIndex = 2;
             // 
             // txtHorasE100
             // 
@@ -217,7 +219,8 @@
             this.txtHorasE100.MaxLength = 4;
             this.txtHorasE100.Name = "txtHorasE100";
             this.txtHorasE100.Size = new System.Drawing.Size(184, 20);
-            this.txtHorasE100.TabIndex = 0;
+            this.txtHorasE100.TabIndex = 7;
+            this.txtHorasE100.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHorasE100_KeyPress);
             // 
             // txtHorasE50
             // 
@@ -225,7 +228,8 @@
             this.txtHorasE50.MaxLength = 4;
             this.txtHorasE50.Name = "txtHorasE50";
             this.txtHorasE50.Size = new System.Drawing.Size(184, 20);
-            this.txtHorasE50.TabIndex = 0;
+            this.txtHorasE50.TabIndex = 6;
+            this.txtHorasE50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHorasE50_KeyPress);
             // 
             // label8
             // 
@@ -257,7 +261,8 @@
             this.txtDias.MaxLength = 2;
             this.txtDias.Name = "txtDias";
             this.txtDias.Size = new System.Drawing.Size(184, 20);
-            this.txtDias.TabIndex = 0;
+            this.txtDias.TabIndex = 5;
+            this.txtDias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDias_KeyPress);
             // 
             // label6
             // 
@@ -277,7 +282,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(63, 327);
+            this.label9.Location = new System.Drawing.Point(63, 301);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(189, 29);
             this.label9.TabIndex = 42;
@@ -289,17 +294,17 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txtSalarioBruto);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(539, 215);
+            this.panel2.Location = new System.Drawing.Point(532, 196);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 113);
-            this.panel2.TabIndex = 43;
+            this.panel2.TabIndex = 3;
             // 
             // txtSalarioBruto
             // 
             this.txtSalarioBruto.Location = new System.Drawing.Point(115, 23);
             this.txtSalarioBruto.Name = "txtSalarioBruto";
             this.txtSalarioBruto.Size = new System.Drawing.Size(120, 20);
-            this.txtSalarioBruto.TabIndex = 0;
+            this.txtSalarioBruto.TabIndex = 8;
             // 
             // label10
             // 
@@ -319,7 +324,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(574, 196);
+            this.label13.Location = new System.Drawing.Point(567, 177);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(82, 29);
             this.label13.TabIndex = 42;
@@ -331,10 +336,10 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.txtMensagem);
-            this.panel3.Location = new System.Drawing.Point(539, 363);
+            this.panel3.Location = new System.Drawing.Point(532, 315);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(270, 176);
-            this.panel3.TabIndex = 43;
+            this.panel3.TabIndex = 4;
             // 
             // label11
             // 
@@ -355,14 +360,14 @@
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(237, 135);
-            this.txtMensagem.TabIndex = 0;
+            this.txtMensagem.TabIndex = 9;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Frei.ProjetoIntegrador.Academia.Properties.Resources.academia;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(662, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(670, 8);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(122, 182);
             this.pictureBox2.TabIndex = 72;

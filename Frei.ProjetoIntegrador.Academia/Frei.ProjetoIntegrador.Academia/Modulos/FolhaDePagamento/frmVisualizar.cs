@@ -28,8 +28,8 @@ namespace Frei.ProjetoIntegrador.Academia.Modulos.FolhaDePagamento
             lblNome.Text = folha.nm_NomeFunc;
             lblFuncao.Text = folha.ds_Cargo;
             lblMensagem.Text = folha.ds_Mensagem;
+            lblDiasTrabalhados.Text = folha.ds_DiasTrabalhados.ToString();
 
-            lblDiasTrabalhados.Text = $"R$ {folha.ds_DiasTrabalhados}";
             lblSalario.Text         = $"R$ {folha.vl_mesSalario}";
             lblVencimentos.Text     = $"R$ {folha.vl_Proventos}";
             lblDescontos.Text       = $"R$ {folha.vl_Descontos}";

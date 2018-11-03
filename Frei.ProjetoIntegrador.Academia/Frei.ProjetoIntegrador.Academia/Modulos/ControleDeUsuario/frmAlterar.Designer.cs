@@ -963,7 +963,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(164, 195);
+            this.label1.Location = new System.Drawing.Point(188, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 23);
             this.label1.TabIndex = 62;
@@ -972,7 +972,7 @@
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txtSenha.Location = new System.Drawing.Point(245, 230);
+            this.txtSenha.Location = new System.Drawing.Point(269, 250);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(162, 29);
             this.txtSenha.TabIndex = 1;
@@ -981,7 +981,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txtUsuario.Location = new System.Drawing.Point(245, 194);
+            this.txtUsuario.Location = new System.Drawing.Point(269, 214);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(162, 29);
             this.txtUsuario.TabIndex = 0;
@@ -992,7 +992,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(175, 232);
+            this.label2.Location = new System.Drawing.Point(199, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 64;
@@ -1004,7 +1004,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Italic);
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(135, 267);
+            this.label22.Location = new System.Drawing.Point(50, 328);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 23);
             this.label22.TabIndex = 64;
@@ -1013,7 +1013,7 @@
             // txtNSenha
             // 
             this.txtNSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txtNSenha.Location = new System.Drawing.Point(245, 266);
+            this.txtNSenha.Location = new System.Drawing.Point(160, 327);
             this.txtNSenha.Name = "txtNSenha";
             this.txtNSenha.Size = new System.Drawing.Size(162, 29);
             this.txtNSenha.TabIndex = 2;
