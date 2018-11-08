@@ -32,6 +32,11 @@ namespace Frei.ProjetoIntegrador.Academia
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Enter();
+        }
+
+        private void Enter()
+        {
             try
             {
                 LoginBusiness business = new LoginBusiness();
@@ -63,6 +68,14 @@ namespace Frei.ProjetoIntegrador.Academia
             catch (Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro não identificado: " + ex.Message, "Black Fit LTDA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                Enter();
             }
         }
     }

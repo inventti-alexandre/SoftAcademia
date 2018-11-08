@@ -145,6 +145,7 @@
             this.lblGerais.Size = new System.Drawing.Size(60, 20);
             this.lblGerais.TabIndex = 33;
             this.lblGerais.Text = "R$ 0,00";
+            this.lblGerais.Visible = false;
             // 
             // lblFolha
             // 
@@ -205,6 +206,7 @@
             this.label9.Size = new System.Drawing.Size(104, 20);
             this.label9.TabIndex = 33;
             this.label9.Text = "Gastos Gerais:";
+            this.label9.Visible = false;
             // 
             // label6
             // 
