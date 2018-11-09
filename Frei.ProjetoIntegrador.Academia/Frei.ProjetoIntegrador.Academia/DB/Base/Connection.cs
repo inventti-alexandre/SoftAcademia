@@ -11,8 +11,14 @@ namespace Nsf._2018.Modulo3.App.DB.Base
     {
         public MySqlConnection Create()
         {
-            //string connectionString = "server=localhost;database=blackfitdb;uid=root;password=1234;sslmode=none";
-            string connectionString = "server=104.214.59.125;database=blackfitdb;uid=nsf;password=nsf@2018;sslmode=none";
+            //Base de dados Local
+            string connectionString = "server=localhost;database=blackfitdb;uid=root;password=1234;sslmode=none";
+
+            //Base de dados FREI
+            //string connectionString = "server=192.168.0.100;database=blackfitdb;uid=nsf;password=nsf@2018;sslmode=none";
+
+            //Base de dados Azure
+            //string connectionString = "server=70.37.57.127;database=blackfitdb;uid=nsf;password=nsf@2018;sslmode=none";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();

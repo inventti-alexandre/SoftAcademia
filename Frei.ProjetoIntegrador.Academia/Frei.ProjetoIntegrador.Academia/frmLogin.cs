@@ -24,18 +24,18 @@ namespace Frei.ProjetoIntegrador.Academia
         private string Cripto()
         {
             DESCripto cripto = new DESCripto();
-            string chave = "academia";
+            string chave = "barzinho";
 
-            string senha = cripto.Descriptografar(chave, "");
+            string senha = cripto.Criptografar(chave, "1234");
             return senha;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Enter();
+            Novo();
         }
 
-        private void Enter()
+        private void Novo()
         {
             try
             {
@@ -75,7 +75,7 @@ namespace Frei.ProjetoIntegrador.Academia
         {
             if (e.KeyChar == 13)
             {
-                Enter();
+                Novo();
             }
         }
     }
